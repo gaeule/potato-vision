@@ -1,0 +1,3187 @@
+{
+  "schema_version": "potato-p0-historical-metrics-v1",
+  "date": "2026-11-05",
+  "scope": "G005 historical portion; stored evidence only",
+  "overall_G005_complete": false,
+  "new_session_question_pending": true,
+  "current_selected": {
+    "path": "retraining_experiment/outputs/selection/selected.pt",
+    "sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+    "stored_hash_match": true,
+    "trained_classes": {
+      "0": "potato",
+      "1": "stone"
+    }
+  },
+  "taskA": {
+    "class_mapping": {
+      "0": "potato",
+      "1": "stone"
+    },
+    "unit": "boxes_per_frame_not_unique_objects",
+    "models": {
+      "current": {
+        "path": "retraining_experiment/outputs/selection/selected.pt",
+        "sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "stored_hash_match": true,
+        "trained_classes": {
+          "0": "potato",
+          "1": "stone"
+        }
+      },
+      "stone40": {
+        "path": "stone_experiment/outputs/selection/selected.pt",
+        "sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "stored_hash_match": true,
+        "trained_classes": {
+          "0": "potato",
+          "1": "stone"
+        }
+      },
+      "baseline": {
+        "path": "baseline/runs/train/weights/selected.pt",
+        "sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "stored_hash_match": true,
+        "trained_classes": {
+          "0": "potato"
+        }
+      },
+      "current_last": {
+        "path": "retraining_experiment/outputs/train/weights/last.pt",
+        "sha256": "d734a9e5fe7bf8a60e1f406e788f996ba5534dc26f4fb3da00e6bc57bd215cc0",
+        "stored_hash_match": true,
+        "trained_classes": {
+          "0": "potato",
+          "1": "stone"
+        }
+      },
+      "stone_last": {
+        "path": "stone_experiment/outputs/train/weights/last.pt",
+        "sha256": "d80ebbe97d981cb11328dcb3fc95cdcdf13d2ffca72bcc1a9f3e9c5e76cd8878",
+        "stored_hash_match": true,
+        "trained_classes": {
+          "0": "potato",
+          "1": "stone"
+        }
+      },
+      "baseline_best": {
+        "path": "baseline/runs/train/weights/best.pt",
+        "sha256": "5d153d5f7d7797125ac2efc3752daac0b31921c06a9afcd564a29bce080fc3b6",
+        "stored_hash_match": null,
+        "trained_classes": {
+          "0": "potato"
+        }
+      }
+    },
+    "datasets": {
+      "v2": {
+        "path": "retraining_data/outputs/dataset_v2",
+        "manifest_sha256": "0b261b4a1758483e9cfd2fd4d1fadd4de48f57269e200d84af3917dc52f33b97",
+        "data_yaml_sha256": "1ed07f04d55598f9f9506e0d347c4448f2a3f7b0e5631b3bb76a49f6dc20066e",
+        "label_counts": {
+          "train": {
+            "images": 88,
+            "class0_gt": 473,
+            "class1_gt": 39,
+            "empty_gt_images": 12
+          },
+          "val": {
+            "images": 11,
+            "class0_gt": 60,
+            "class1_gt": 8,
+            "empty_gt_images": 0
+          },
+          "test": {
+            "images": 12,
+            "class0_gt": 33,
+            "class1_gt": 7,
+            "empty_gt_images": 3
+          }
+        },
+        "annotation_sha256": "1fc05b9affccdfbdfe814a4b411c914780b34320f40f4b84a9f4f838691c4b33",
+        "capture_source_sha256": "1b931cf852c3f4a97652ae94b800447d302ab7a1bebca7ae95905a61e23e3b42",
+        "session_status": "same_source_video_time_split_not_new_session",
+        "annotation_authority": "AI_visual_not_human_expert",
+        "class1_gt_available": true
+      },
+      "stone": {
+        "path": "stone_experiment/outputs/dataset",
+        "manifest_sha256": "713848519231ddc5ddad2418de3572df4750f69f82b90a93fe63c367b67920c1",
+        "data_yaml_sha256": "c2ae90a1779b049a216ca50f9917bda5eb87e5cbf6182ea0cee81ff66128acdc",
+        "label_counts": {
+          "train": {
+            "images": 40,
+            "class0_gt": 222,
+            "class1_gt": 16,
+            "empty_gt_images": 5
+          },
+          "val": {
+            "images": 11,
+            "class0_gt": 60,
+            "class1_gt": 8,
+            "empty_gt_images": 0
+          },
+          "test": {
+            "images": 12,
+            "class0_gt": 33,
+            "class1_gt": 7,
+            "empty_gt_images": 3
+          }
+        },
+        "annotation_sha256": "91548c55a382f571b777062bcf5d4260d26f24836fe9f7a9b1eedd45b6932460",
+        "capture_source_sha256": "1b931cf852c3f4a97652ae94b800447d302ab7a1bebca7ae95905a61e23e3b42",
+        "session_status": "same_source_video_time_split_not_new_session",
+        "annotation_authority": "AI_visual_not_human_expert",
+        "class1_gt_available": true
+      },
+      "baseline_internal": {
+        "path": "baseline/internal",
+        "manifest_sha256": "2c26bccdd7d766308c79b37492891b9791efc539cb38960c5b81850d170b8fa8",
+        "data_yaml_sha256": "c31a27173d7f178ceea58d42710b069d7f1a672db7eb6eed5f970eed007e8547",
+        "label_counts": {
+          "train": {
+            "images": 40,
+            "class0_gt": 222,
+            "class1_gt": null,
+            "empty_gt_images": 5
+          },
+          "val": {
+            "images": 11,
+            "class0_gt": 60,
+            "class1_gt": null,
+            "empty_gt_images": 0
+          },
+          "test": {
+            "images": 12,
+            "class0_gt": 33,
+            "class1_gt": null,
+            "empty_gt_images": 3
+          }
+        },
+        "annotation_sha256": null,
+        "capture_source_sha256": "1b931cf852c3f4a97652ae94b800447d302ab7a1bebca7ae95905a61e23e3b42",
+        "session_status": "same_source_video_time_split_not_new_session",
+        "annotation_authority": "AI_visual_not_human_expert",
+        "class1_gt_available": false
+      },
+      "external": {
+        "path": "baseline/external",
+        "manifest_sha256": "76a8967c64213c250afa4e89273184b1dda2b63107f7c1c2730136248460ba4a",
+        "data_yaml_sha256": "03b92942fe50c5a38f60be72874e069224413bfb9561da217ea000f8b90033d8",
+        "label_counts": {
+          "test": {
+            "images": 166,
+            "class0_gt": 192,
+            "class1_gt": null,
+            "empty_gt_images": 87
+          }
+        },
+        "annotation_sha256": null,
+        "capture_source_sha256": null,
+        "session_status": "previously_seen_166_images_capture_session_independence_unknown",
+        "annotation_authority": "supplied_labels_not_expert_gold",
+        "class1_gt_available": false
+      },
+      "source_video": {
+        "path": "KakaoTalk_261020_161759.mp4",
+        "stored_source_sha256": "1b931cf852c3f4a97652ae94b800447d302ab7a1bebca7ae95905a61e23e3b42",
+        "source_hash_evidence": "retraining_experiment/outputs/comparison/provenance.json; tracking_experiment/outputs/video/summary.json",
+        "frames": 2224,
+        "duration_seconds_stored": 147.875,
+        "width": 1280,
+        "height": 720,
+        "session_status": "same_previous_training_and_evaluation_video",
+        "reference_authority": "AI_visual_not_human_expert",
+        "actual_video_rehash_this_turn": false
+      }
+    },
+    "detection_rows": [
+      {
+        "id": "v2_old_two_class_val",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "v2",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 11,
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 3,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.9516129032258065,
+            "recall": 0.9833333333333333,
+            "f1": 0.9672131147540983,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9502732240437158,
+        "source": "retraining_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/scores/old_two_class/val",
+        "cached_records_directory": "retraining_experiment/outputs/comparison/old_two_class/val",
+        "cache_manifest_sha256": "96d0de8a84b1866523076fc9d105e5b456de34c5014a5ecddea6e60d10b3ef8b",
+        "source_summary_sha256": "9f6a09bb74ba59ef1505a3c8b8d3f8e5cd3e8fc2bf6d4eea5b9b9e5ed12ed743",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              59,
+              0,
+              1
+            ],
+            [
+              0,
+              7,
+              1
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 0,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "v2_old_two_class_test",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "v2",
+        "split": "test",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 12,
+        "metrics": {
+          "potato": {
+            "gt": 33,
+            "tp": 33,
+            "fp": 6,
+            "fn": 0,
+            "tn": null,
+            "precision": 0.8461538461538461,
+            "recall": 1.0,
+            "f1": 0.9166666666666666,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 7,
+            "tp": 6,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.8571428571428571,
+            "f1": 0.9230769230769231,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9198717948717949,
+        "source": "retraining_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/scores/old_two_class/test",
+        "cached_records_directory": "retraining_experiment/outputs/comparison/old_two_class/test",
+        "cache_manifest_sha256": "ebe0a9fcf19c434c0d8177db720b3388cfd4d7182d750a4d938366373a5cb6f7",
+        "source_summary_sha256": "1b7b871eeb53ce206a5ee9921747f09bff7da040bbd8e63c1fd3a2c03c4eb118",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              33,
+              0,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 3,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "v2_old_two_class_external",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "external",
+        "split": "external",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 166,
+        "metrics": {
+          "potato": {
+            "gt": 192,
+            "tp": 183,
+            "fp": 72,
+            "fn": 9,
+            "tn": null,
+            "precision": 0.7176470588235294,
+            "recall": 0.953125,
+            "f1": 0.8187919463087249,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.8187919463087249,
+        "source": "retraining_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/scores/old_two_class/external",
+        "cached_records_directory": "retraining_experiment/outputs/comparison/old_two_class/external",
+        "cache_manifest_sha256": "452f7709b4e7cee3120a6ef155c533127de2582fe17e40af6b1c1d04463404b1",
+        "source_summary_sha256": "2755369e3000e29de8908d596af82dc72808ea7f856f68d3226eee713779a0a4",
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              183,
+              9
+            ],
+            [
+              72,
+              null
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": "외부 GT는 감자만; 돌 예측을 매칭 전 제거",
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 87,
+          "false_positive_boxes": 27,
+          "images_with_fp": 24,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "v2_new_selected_val",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "v2",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 11,
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.9833333333333333,
+            "f1": 0.9915966386554622,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9624649859943978,
+        "source": "retraining_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/scores/new_selected/val",
+        "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val",
+        "cache_manifest_sha256": "ec85166e559eb66be9b639b52e47e699012d2ce2d8067bd40ad3535ae180e905",
+        "source_summary_sha256": "a7618f6f71218f30160a0b8f93498ed2b188e64d5e30d33ddd3dd52542000e09",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              59,
+              0,
+              1
+            ],
+            [
+              0,
+              7,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 0,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "v2_new_selected_test",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "v2",
+        "split": "test",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 12,
+        "metrics": {
+          "potato": {
+            "gt": 33,
+            "tp": 33,
+            "fp": 2,
+            "fn": 0,
+            "tn": null,
+            "precision": 0.9428571428571428,
+            "recall": 1.0,
+            "f1": 0.9705882352941176,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 7,
+            "tp": 6,
+            "fp": 1,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.8571428571428571,
+            "recall": 0.8571428571428571,
+            "f1": 0.8571428571428571,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9138655462184874,
+        "source": "retraining_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/scores/new_selected/test",
+        "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test",
+        "cache_manifest_sha256": "d791ba3595e7ca12bd78f0de4c270dbd8206939532d61e79db13a307c34739fe",
+        "source_summary_sha256": "6bcd09098b78c8336c030e83b384afbab8ee842423d8cf3019aa8bf9373c3c19",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              33,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 3,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "v2_new_selected_external",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "external",
+        "split": "external",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 166,
+        "metrics": {
+          "potato": {
+            "gt": 192,
+            "tp": 182,
+            "fp": 23,
+            "fn": 10,
+            "tn": null,
+            "precision": 0.8878048780487805,
+            "recall": 0.9479166666666666,
+            "f1": 0.9168765743073047,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9168765743073047,
+        "source": "retraining_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/scores/new_selected/external",
+        "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/external",
+        "cache_manifest_sha256": "33c1f7e0a511edd28d286b4611109e0cf3acba7a7d2e5c87c3afd4836489cb34",
+        "source_summary_sha256": "da78e98a3c56f691f3fffb67319d8bff027790f4a6fb71c17ae17b0bde98c47d",
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              182,
+              10
+            ],
+            [
+              23,
+              null
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": "외부 GT는 감자만; 돌 예측을 매칭 전 제거",
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 87,
+          "false_positive_boxes": 9,
+          "images_with_fp": 9,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "stone_baseline_val",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 11,
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.9833333333333333,
+            "f1": 0.9915966386554622,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 0,
+            "fp": 0,
+            "fn": 8,
+            "tn": null,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의",
+              "precision": "단일 클래스 모델에는 stone 출력 헤드가 없고 예측 분모 0"
+            },
+            "class_support": "NOT_SUPPORTED",
+            "note": "돌 GT에 대한 미탐 8/7은 실제 관측; 과제 B 미학습과 별개"
+          }
+        },
+        "macro_f1": 0.4957983193277311,
+        "source": "stone_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/models/baseline/val",
+        "cached_records_directory": "stone_experiment/outputs/comparison/baseline/val",
+        "cache_manifest_sha256": "81ae3f0f2e6cbb6a91bac3e5b55c86660dabaae1ebd5113216f7749362863e9d",
+        "source_summary_sha256": "f8fe9d03c2f1bbaa4c0e1360e2d932571f5fb45be4c361b5327421958661fa68",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              59,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 0,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "stone_baseline_test",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "test",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 12,
+        "metrics": {
+          "potato": {
+            "gt": 33,
+            "tp": 33,
+            "fp": 4,
+            "fn": 0,
+            "tn": null,
+            "precision": 0.8918918918918919,
+            "recall": 1.0,
+            "f1": 0.9428571428571428,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 7,
+            "tp": 0,
+            "fp": 0,
+            "fn": 7,
+            "tn": null,
+            "precision": null,
+            "recall": 0.0,
+            "f1": 0.0,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의",
+              "precision": "단일 클래스 모델에는 stone 출력 헤드가 없고 예측 분모 0"
+            },
+            "class_support": "NOT_SUPPORTED",
+            "note": "돌 GT에 대한 미탐 8/7은 실제 관측; 과제 B 미학습과 별개"
+          }
+        },
+        "macro_f1": 0.4714285714285714,
+        "source": "stone_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/models/baseline/test",
+        "cached_records_directory": "stone_experiment/outputs/comparison/baseline/test",
+        "cache_manifest_sha256": "cb6a75d7b6dd5f05a732fe41e303b2c540a162478ca56e5da3138967c8f28b35",
+        "source_summary_sha256": "732024951cdcb57664eb67cb0c5981e4e214a5ae66f7efc24c943611203c0899",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              33,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              7
+            ],
+            [
+              4,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 3,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "stone_baseline_external",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "external",
+        "split": "external",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 166,
+        "metrics": {
+          "potato": {
+            "gt": 192,
+            "tp": 184,
+            "fp": 102,
+            "fn": 8,
+            "tn": null,
+            "precision": 0.6433566433566433,
+            "recall": 0.9583333333333334,
+            "f1": 0.7698744769874477,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.7698744769874477,
+        "source": "stone_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/models/baseline/external",
+        "cached_records_directory": "stone_experiment/outputs/comparison/baseline/external",
+        "cache_manifest_sha256": "6580b7dc66265429ddaedeb8877454abc628427d0f7542e166619e3f9fe83d0c",
+        "source_summary_sha256": "3745c94c21850a2635cafb45571cc478bf6acff9e672865f26eb129c3b716137",
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              184,
+              8
+            ],
+            [
+              102,
+              null
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": "외부 GT는 감자만; 돌 예측을 매칭 전 제거",
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 87,
+          "false_positive_boxes": 39,
+          "images_with_fp": 33,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "stone_new_val",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 11,
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 3,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.9516129032258065,
+            "recall": 0.9833333333333333,
+            "f1": 0.9672131147540983,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9502732240437158,
+        "source": "stone_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/models/new/val",
+        "cached_records_directory": "stone_experiment/outputs/comparison/new/val",
+        "cache_manifest_sha256": "2f87644820f7d2630fbc5591d7d476b2fdd1874432e10150c365337459478903",
+        "source_summary_sha256": "9f6a09bb74ba59ef1505a3c8b8d3f8e5cd3e8fc2bf6d4eea5b9b9e5ed12ed743",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              59,
+              0,
+              1
+            ],
+            [
+              0,
+              7,
+              1
+            ],
+            [
+              3,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 0,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "stone_new_test",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "test",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 12,
+        "metrics": {
+          "potato": {
+            "gt": 33,
+            "tp": 33,
+            "fp": 6,
+            "fn": 0,
+            "tn": null,
+            "precision": 0.8461538461538461,
+            "recall": 1.0,
+            "f1": 0.9166666666666666,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 7,
+            "tp": 6,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.8571428571428571,
+            "f1": 0.9230769230769231,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9198717948717949,
+        "source": "stone_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/models/new/test",
+        "cached_records_directory": "stone_experiment/outputs/comparison/new/test",
+        "cache_manifest_sha256": "a82b418ebcc71cc0b4a379dfed3d5a0f6309a71a2429d1f4dc4cecae171636f9",
+        "source_summary_sha256": "1b7b871eeb53ce206a5ee9921747f09bff7da040bbd8e63c1fd3a2c03c4eb118",
+        "confusion": {
+          "order": [
+            "potato",
+            "stone",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              33,
+              0,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": null,
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 3,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "stone_new_external",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "external",
+        "split": "external",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 166,
+        "metrics": {
+          "potato": {
+            "gt": 192,
+            "tp": 183,
+            "fp": 72,
+            "fn": 9,
+            "tn": null,
+            "precision": 0.7176470588235294,
+            "recall": 0.953125,
+            "f1": 0.8187919463087249,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.8187919463087249,
+        "source": "stone_experiment/outputs/comparison/comparison.json",
+        "json_pointer": "/models/new/external",
+        "cached_records_directory": "stone_experiment/outputs/comparison/new/external",
+        "cache_manifest_sha256": "92072540992b5e29ccaa652544b23be41d32ae698ef3e2f9a3c929eecf954749",
+        "source_summary_sha256": "2755369e3000e29de8908d596af82dc72808ea7f856f68d3226eee713779a0a4",
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              183,
+              9
+            ],
+            [
+              72,
+              null
+            ]
+          ],
+          "background_background": null,
+          "note": "저장 3x3의 배경 대각선 0은 TN이 아님; external stone 행/열의 0은 미평가 자리표시자이므로 제거"
+        },
+        "class1_unavailable_reason": "외부 GT는 감자만; 돌 예측을 매칭 전 제거",
+        "recomputed_from_cached_matches": true,
+        "empty_gt_subset": {
+          "images": 87,
+          "false_positive_boxes": 27,
+          "images_with_fp": 24,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 분모 0; FP 계수만 보고하며 빈 장면 정확도 0/100%로 치환하지 않음"
+        }
+      },
+      {
+        "id": "baseline_conf025_val",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "baseline_internal",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.25,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class0_one_to_one",
+          "imgsz": 640,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "scripts/run_baseline.py:100-139; scripts/select_checkpoint.py:49-74"
+        },
+        "images": 11,
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 5,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.921875,
+            "recall": 0.9833333333333333,
+            "f1": 0.9516129032258065,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.9516129032258065,
+        "source": "baseline/evaluations/val/fixed_confidence_metrics.json",
+        "json_pointer": "/",
+        "cached_records_directory": "baseline/evaluations/val/predictions/labels",
+        "recomputed_from_prediction_labels": true,
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              59,
+              1
+            ],
+            [
+              5,
+              null
+            ]
+          ],
+          "background_background": null
+        },
+        "class1_unavailable_reason": "모델/원 GT가 감자 단일 클래스",
+        "empty_gt_subset": {
+          "images": 0,
+          "false_positive_boxes": 0,
+          "images_with_fp": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 없음; FP 계수만 유효"
+        }
+      },
+      {
+        "id": "baseline_conf025_test",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "baseline_internal",
+        "split": "test",
+        "conditions": {
+          "confidence": 0.25,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class0_one_to_one",
+          "imgsz": 640,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "scripts/run_baseline.py:100-139; scripts/select_checkpoint.py:49-74"
+        },
+        "images": 12,
+        "metrics": {
+          "potato": {
+            "gt": 33,
+            "tp": 33,
+            "fp": 10,
+            "fn": 0,
+            "tn": null,
+            "precision": 0.7674418604651163,
+            "recall": 1.0,
+            "f1": 0.868421052631579,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.868421052631579,
+        "source": "baseline/evaluations/test/fixed_confidence_metrics.json",
+        "json_pointer": "/",
+        "cached_records_directory": "baseline/evaluations/test/predictions/labels",
+        "recomputed_from_prediction_labels": true,
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              33,
+              0
+            ],
+            [
+              10,
+              null
+            ]
+          ],
+          "background_background": null
+        },
+        "class1_unavailable_reason": "모델/원 GT가 감자 단일 클래스",
+        "empty_gt_subset": {
+          "images": 3,
+          "false_positive_boxes": 1,
+          "images_with_fp": 1,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 없음; FP 계수만 유효"
+        }
+      },
+      {
+        "id": "baseline_conf025_external",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "external",
+        "split": "external",
+        "conditions": {
+          "confidence": 0.25,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class0_one_to_one",
+          "imgsz": 640,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "scripts/run_baseline.py:100-139; scripts/select_checkpoint.py:49-74"
+        },
+        "images": 166,
+        "metrics": {
+          "potato": {
+            "gt": 192,
+            "tp": 184,
+            "fp": 150,
+            "fn": 8,
+            "tn": null,
+            "precision": 0.5508982035928144,
+            "recall": 0.9583333333333334,
+            "f1": 0.6996197718631179,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "macro_f1": 0.6996197718631179,
+        "source": "baseline/evaluations/external/fixed_confidence_metrics.json",
+        "json_pointer": "/",
+        "cached_records_directory": "baseline/evaluations/external/predictions/labels",
+        "recomputed_from_prediction_labels": true,
+        "confusion": {
+          "order": [
+            "potato",
+            "background"
+          ],
+          "truth_rows_prediction_columns": [
+            [
+              184,
+              8
+            ],
+            [
+              150,
+              null
+            ]
+          ],
+          "background_background": null
+        },
+        "class1_unavailable_reason": "모델/원 GT가 감자 단일 클래스",
+        "empty_gt_subset": {
+          "images": 87,
+          "false_positive_boxes": 62,
+          "images_with_fp": 45,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": null,
+          "na_reason": "양성 GT 없음; FP 계수만 유효"
+        }
+      }
+    ],
+    "selection_rows": [
+      {
+        "id": "retraining_experiment_best_val_selection",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "v2",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 11,
+        "source": "retraining_experiment/outputs/selection/selection.json",
+        "json_pointer": "/candidates/best",
+        "cached_records_directory": "retraining_experiment/outputs/selection/best",
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.9833333333333333,
+            "f1": 0.9915966386554622,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "confusion": [
+          [
+            59,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "macro_f1": 0.9624649859943978,
+        "selected": true,
+        "criterion": "max_val_macro_f1_then_potato_recall_then_native_best",
+        "recomputed_from_cached_matches": true
+      },
+      {
+        "id": "retraining_experiment_last_val_selection",
+        "model_id": "current_last",
+        "model_sha256": "d734a9e5fe7bf8a60e1f406e788f996ba5534dc26f4fb3da00e6bc57bd215cc0",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "v2",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "images": 11,
+        "source": "retraining_experiment/outputs/selection/selection.json",
+        "json_pointer": "/candidates/last",
+        "cached_records_directory": "retraining_experiment/outputs/selection/last",
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.9833333333333333,
+            "f1": 0.9915966386554622,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "confusion": [
+          [
+            59,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "macro_f1": 0.9624649859943978,
+        "selected": false,
+        "criterion": "max_val_macro_f1_then_potato_recall_then_native_best",
+        "recomputed_from_cached_matches": true
+      },
+      {
+        "id": "stone_experiment_best_val_selection",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 11,
+        "source": "stone_experiment/outputs/selection/selection.json",
+        "json_pointer": "/candidates/best",
+        "cached_records_directory": "stone_experiment/outputs/selection/best",
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 3,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.9516129032258065,
+            "recall": 0.9833333333333333,
+            "f1": 0.9672131147540983,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 0,
+            "fn": 1,
+            "tn": null,
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "confusion": [
+          [
+            59,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            1
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ],
+        "macro_f1": 0.9502732240437158,
+        "selected": true,
+        "criterion": "max_val_macro_f1_then_potato_recall_then_native_best",
+        "recomputed_from_cached_matches": true
+      },
+      {
+        "id": "stone_experiment_last_val_selection",
+        "model_id": "stone_last",
+        "model_sha256": "d80ebbe97d981cb11328dcb3fc95cdcdf13d2ffca72bcc1a9f3e9c5e76cd8878",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "val",
+        "conditions": {
+          "confidence": 0.45,
+          "nms_iou": 0.7,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "stone_experiment/outputs/comparison/comparison.json",
+          "inference_code": "stone_experiment/predict.py"
+        },
+        "images": 11,
+        "source": "stone_experiment/outputs/selection/selection.json",
+        "json_pointer": "/candidates/last",
+        "cached_records_directory": "stone_experiment/outputs/selection/last",
+        "metrics": {
+          "potato": {
+            "gt": 60,
+            "tp": 59,
+            "fp": 2,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.9672131147540983,
+            "recall": 0.9833333333333333,
+            "f1": 0.9752066115702479,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          },
+          "stone": {
+            "gt": 8,
+            "tp": 7,
+            "fp": 1,
+            "fn": 1,
+            "tn": null,
+            "precision": 0.875,
+            "recall": 0.875,
+            "f1": 0.875,
+            "AP50": null,
+            "AP50_95": null,
+            "accuracy": null,
+            "na_reasons": {
+              "AP50": "해당 모델·분할의 클래스별 AP 미저장; 고정 confidence 캐시로 AP 재구성 금지",
+              "AP50_95": "해당 모델·분할의 클래스별 AP 미저장",
+              "tn": "객체 탐지에서 유한한 배경 TN 모집단 미정의",
+              "accuracy": "TN 및 정확도 분모 미정의"
+            }
+          }
+        },
+        "confusion": [
+          [
+            59,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "macro_f1": 0.9251033057851239,
+        "selected": false,
+        "criterion": "max_val_macro_f1_then_potato_recall_then_native_best",
+        "recomputed_from_cached_matches": true
+      }
+    ],
+    "stored_AP_rows": [
+      {
+        "id": "baseline_ap_val",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "baseline_internal",
+        "split": "val",
+        "conditions": {
+          "metric_conf_floor": 0.001,
+          "nms_iou": 0.7,
+          "imgsz": 640,
+          "scope": "confidence_sweep_not_fixed_operating_point",
+          "precision_recall_definition": "dataset_best_F1_operating_point_not_fixed_visualization_conf"
+        },
+        "source": "baseline/evaluations/val/metrics.json",
+        "json_pointer": "/metrics",
+        "mAP50": 0.9935714285714287,
+        "mAP50_95": 0.793375487038223,
+        "library_best_f1_precision": 0.9980896901229355,
+        "library_best_f1_recall": 0.9833333333333333,
+        "class_AP": null,
+        "class_AP_reason": "명시적 클래스별 AP는 저장되지 않음; 이 행은 potato 단일 클래스 aggregate mAP이며 신모델 지표가 아님",
+        "checkpoint_sha256_matches_actual": true
+      },
+      {
+        "id": "baseline_ap_test",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "baseline_internal",
+        "split": "test",
+        "conditions": {
+          "metric_conf_floor": 0.001,
+          "nms_iou": 0.7,
+          "imgsz": 640,
+          "scope": "confidence_sweep_not_fixed_operating_point",
+          "precision_recall_definition": "dataset_best_F1_operating_point_not_fixed_visualization_conf"
+        },
+        "source": "baseline/evaluations/test/metrics.json",
+        "json_pointer": "/metrics",
+        "mAP50": 0.995,
+        "mAP50_95": 0.8167925457218221,
+        "library_best_f1_precision": 0.9698308304475466,
+        "library_best_f1_recall": 1.0,
+        "class_AP": null,
+        "class_AP_reason": "명시적 클래스별 AP는 저장되지 않음; 이 행은 potato 단일 클래스 aggregate mAP이며 신모델 지표가 아님",
+        "checkpoint_sha256_matches_actual": true
+      },
+      {
+        "id": "baseline_ap_external",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "external",
+        "split": "external",
+        "conditions": {
+          "metric_conf_floor": 0.001,
+          "nms_iou": 0.7,
+          "imgsz": 640,
+          "scope": "confidence_sweep_not_fixed_operating_point",
+          "precision_recall_definition": "dataset_best_F1_operating_point_not_fixed_visualization_conf"
+        },
+        "source": "baseline/evaluations/external/metrics.json",
+        "json_pointer": "/metrics",
+        "mAP50": 0.9101439711930812,
+        "mAP50_95": 0.7057996840287399,
+        "library_best_f1_precision": 0.873856041248107,
+        "library_best_f1_recall": 0.9166666666666666,
+        "class_AP": null,
+        "class_AP_reason": "명시적 클래스별 AP는 저장되지 않음; 이 행은 potato 단일 클래스 aggregate mAP이며 신모델 지표가 아님",
+        "checkpoint_sha256_matches_actual": true
+      }
+    ],
+    "trainer_validation_rows": [
+      {
+        "id": "retraining_experiment_trainer_val_epoch29",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "v2",
+        "split": "val",
+        "conditions": {
+          "scope": "trainer_validation_aggregate_not_heldout_test_not_reopened_selected",
+          "imgsz": 640,
+          "nms_iou": 0.7,
+          "confidence_setting_in_args": null,
+          "effective_metric_conf_floor": null,
+          "effective_metric_conf_reason": "args.yaml의 conf:null; 실행 시 기본값 수령증 없음, 0.45 운영점으로 해석 금지",
+          "args_source": "retraining_experiment/outputs/train/args.yaml"
+        },
+        "epoch": 29,
+        "source": "retraining_experiment/outputs/train/results.csv",
+        "csv_row_number_including_header": 30,
+        "mAP50": 0.96929,
+        "mAP50_95": 0.80996,
+        "precision_library": 0.99511,
+        "recall_library": 0.93511,
+        "class_AP": null,
+        "class_AP_reason": "CSV에는 aggregate 열만 존재; potato/stone 개별 AP를 분리할 수 없음",
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "counts_reason": "에폭별 원시 매칭 미저장; P/R에서 정수 계수 역산 금지",
+        "epoch_binding_source": "retraining_experiment/review/verification.json",
+        "binding_caveat": "저장 로그/검증 보고서의 epoch-체크포인트 매핑; 모델 객체 역직렬화하지 않음"
+      },
+      {
+        "id": "retraining_experiment_trainer_val_epoch44",
+        "model_id": "current_last",
+        "model_sha256": "d734a9e5fe7bf8a60e1f406e788f996ba5534dc26f4fb3da00e6bc57bd215cc0",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "v2",
+        "split": "val",
+        "conditions": {
+          "scope": "trainer_validation_aggregate_not_heldout_test_not_reopened_selected",
+          "imgsz": 640,
+          "nms_iou": 0.7,
+          "confidence_setting_in_args": null,
+          "effective_metric_conf_floor": null,
+          "effective_metric_conf_reason": "args.yaml의 conf:null; 실행 시 기본값 수령증 없음, 0.45 운영점으로 해석 금지",
+          "args_source": "retraining_experiment/outputs/train/args.yaml"
+        },
+        "epoch": 44,
+        "source": "retraining_experiment/outputs/train/results.csv",
+        "csv_row_number_including_header": 45,
+        "mAP50": 0.98825,
+        "mAP50_95": 0.77948,
+        "precision_library": 0.99254,
+        "recall_library": 0.92917,
+        "class_AP": null,
+        "class_AP_reason": "CSV에는 aggregate 열만 존재; potato/stone 개별 AP를 분리할 수 없음",
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "counts_reason": "에폭별 원시 매칭 미저장; P/R에서 정수 계수 역산 금지",
+        "epoch_binding_source": "retraining_experiment/review/verification.json",
+        "binding_caveat": "저장 로그/검증 보고서의 epoch-체크포인트 매핑; 모델 객체 역직렬화하지 않음"
+      },
+      {
+        "id": "stone_experiment_trainer_val_epoch32",
+        "model_id": "stone40",
+        "model_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "val",
+        "conditions": {
+          "scope": "trainer_validation_aggregate_not_heldout_test_not_reopened_selected",
+          "imgsz": 640,
+          "nms_iou": 0.7,
+          "confidence_setting_in_args": null,
+          "effective_metric_conf_floor": null,
+          "effective_metric_conf_reason": "args.yaml의 conf:null; 실행 시 기본값 수령증 없음, 0.45 운영점으로 해석 금지",
+          "args_source": "stone_experiment/outputs/train/args.yaml"
+        },
+        "epoch": 32,
+        "source": "stone_experiment/outputs/train/results.csv",
+        "csv_row_number_including_header": 33,
+        "mAP50": 0.95213,
+        "mAP50_95": 0.81885,
+        "precision_library": 0.98179,
+        "recall_library": 0.92917,
+        "class_AP": null,
+        "class_AP_reason": "CSV에는 aggregate 열만 존재; potato/stone 개별 AP를 분리할 수 없음",
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "counts_reason": "에폭별 원시 매칭 미저장; P/R에서 정수 계수 역산 금지",
+        "epoch_binding_source": "stone_experiment/review/final_verification.json",
+        "binding_caveat": "저장 로그/검증 보고서의 epoch-체크포인트 매핑; 모델 객체 역직렬화하지 않음"
+      },
+      {
+        "id": "stone_experiment_trainer_val_epoch47",
+        "model_id": "stone_last",
+        "model_sha256": "d80ebbe97d981cb11328dcb3fc95cdcdf13d2ffca72bcc1a9f3e9c5e76cd8878",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "stone",
+        "split": "val",
+        "conditions": {
+          "scope": "trainer_validation_aggregate_not_heldout_test_not_reopened_selected",
+          "imgsz": 640,
+          "nms_iou": 0.7,
+          "confidence_setting_in_args": null,
+          "effective_metric_conf_floor": null,
+          "effective_metric_conf_reason": "args.yaml의 conf:null; 실행 시 기본값 수령증 없음, 0.45 운영점으로 해석 금지",
+          "args_source": "stone_experiment/outputs/train/args.yaml"
+        },
+        "epoch": 47,
+        "source": "stone_experiment/outputs/train/results.csv",
+        "csv_row_number_including_header": 48,
+        "mAP50": 0.96676,
+        "mAP50_95": 0.68621,
+        "precision_library": 0.98756,
+        "recall_library": 0.92917,
+        "class_AP": null,
+        "class_AP_reason": "CSV에는 aggregate 열만 존재; potato/stone 개별 AP를 분리할 수 없음",
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "counts_reason": "에폭별 원시 매칭 미저장; P/R에서 정수 계수 역산 금지",
+        "epoch_binding_source": "stone_experiment/review/final_verification.json",
+        "binding_caveat": "저장 로그/검증 보고서의 epoch-체크포인트 매핑; 모델 객체 역직렬화하지 않음"
+      },
+      {
+        "id": "baseline_trainer_val_epoch21",
+        "model_id": "baseline_best",
+        "model_sha256": "5d153d5f7d7797125ac2efc3752daac0b31921c06a9afcd564a29bce080fc3b6",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "baseline_internal",
+        "split": "val",
+        "conditions": {
+          "scope": "trainer_validation_aggregate_not_heldout_test_not_reopened_selected",
+          "imgsz": 640,
+          "nms_iou": 0.7,
+          "confidence_setting_in_args": null,
+          "effective_metric_conf_floor": null,
+          "effective_metric_conf_reason": "args.yaml의 conf:null; 실행 시 기본값 수령증 없음, 0.45 운영점으로 해석 금지",
+          "args_source": "baseline/runs/train/args.yaml"
+        },
+        "epoch": 21,
+        "source": "baseline/runs/train/results.csv",
+        "csv_row_number_including_header": 22,
+        "mAP50": 0.99138,
+        "mAP50_95": 0.82625,
+        "precision_library": 1.0,
+        "recall_library": 0.98333,
+        "class_AP": null,
+        "class_AP_reason": "CSV에는 aggregate 열만 존재; potato/stone 개별 AP를 분리할 수 없음",
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "counts_reason": "에폭별 원시 매칭 미저장; P/R에서 정수 계수 역산 금지",
+        "epoch_binding_source": "baseline/RESULTS.md",
+        "binding_caveat": "저장 로그/검증 보고서의 epoch-체크포인트 매핑; 모델 객체 역직렬화하지 않음"
+      },
+      {
+        "id": "baseline_trainer_val_epoch36",
+        "model_id": "baseline",
+        "model_sha256": "ae991c19df8beae8997af93636cd4e5855513fafbb45087f45a8fa78aa351b18",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": false,
+        "dataset_id": "baseline_internal",
+        "split": "val",
+        "conditions": {
+          "scope": "trainer_validation_aggregate_not_heldout_test_not_reopened_selected",
+          "imgsz": 640,
+          "nms_iou": 0.7,
+          "confidence_setting_in_args": null,
+          "effective_metric_conf_floor": null,
+          "effective_metric_conf_reason": "args.yaml의 conf:null; 실행 시 기본값 수령증 없음, 0.45 운영점으로 해석 금지",
+          "args_source": "baseline/runs/train/args.yaml"
+        },
+        "epoch": 36,
+        "source": "baseline/runs/train/results.csv",
+        "csv_row_number_including_header": 37,
+        "mAP50": 0.99357,
+        "mAP50_95": 0.79447,
+        "precision_library": 0.99805,
+        "recall_library": 0.98333,
+        "class_AP": null,
+        "class_AP_reason": "CSV에는 aggregate 열만 존재; potato/stone 개별 AP를 분리할 수 없음",
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "counts_reason": "에폭별 원시 매칭 미저장; P/R에서 정수 계수 역산 금지",
+        "epoch_binding_source": "baseline/RESULTS.md",
+        "binding_caveat": "저장 로그/검증 보고서의 epoch-체크포인트 매핑; 모델 객체 역직렬화하지 않음"
+      }
+    ],
+    "current_bbox_area_strata": {
+      "definition": "original_1280x720_GT_box_area_pixels; small<1024; medium>=1024 and <9216; large>=9216; post_hoc_descriptive_not_COCO_AP",
+      "rows": [
+        {
+          "id": "current_val_potato_small",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "val",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "small",
+          "gt": 1,
+          "tp": 0,
+          "fn": 1,
+          "recall": 0.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val"
+        },
+        {
+          "id": "current_val_potato_medium",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "val",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "medium",
+          "gt": 58,
+          "tp": 58,
+          "fn": 0,
+          "recall": 1.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val"
+        },
+        {
+          "id": "current_val_potato_large",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "val",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "large",
+          "gt": 1,
+          "tp": 1,
+          "fn": 0,
+          "recall": 1.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val"
+        },
+        {
+          "id": "current_val_stone_small",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "val",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "stone",
+          "bbox_area_pixels_bin": "small",
+          "gt": 1,
+          "tp": 0,
+          "fn": 1,
+          "recall": 0.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val"
+        },
+        {
+          "id": "current_val_stone_medium",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "val",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "stone",
+          "bbox_area_pixels_bin": "medium",
+          "gt": 7,
+          "tp": 7,
+          "fn": 0,
+          "recall": 1.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val"
+        },
+        {
+          "id": "current_val_stone_large",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "val",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "stone",
+          "bbox_area_pixels_bin": "large",
+          "gt": 0,
+          "tp": 0,
+          "fn": 0,
+          "recall": null,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지; GT 분모 0",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/val"
+        },
+        {
+          "id": "current_test_potato_small",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "test",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "small",
+          "gt": 0,
+          "tp": 0,
+          "fn": 0,
+          "recall": null,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지; GT 분모 0",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test"
+        },
+        {
+          "id": "current_test_potato_medium",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "test",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "medium",
+          "gt": 33,
+          "tp": 33,
+          "fn": 0,
+          "recall": 1.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test"
+        },
+        {
+          "id": "current_test_potato_large",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "test",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "large",
+          "gt": 0,
+          "tp": 0,
+          "fn": 0,
+          "recall": null,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지; GT 분모 0",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test"
+        },
+        {
+          "id": "current_test_stone_small",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "test",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "stone",
+          "bbox_area_pixels_bin": "small",
+          "gt": 1,
+          "tp": 0,
+          "fn": 1,
+          "recall": 0.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test"
+        },
+        {
+          "id": "current_test_stone_medium",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "test",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "stone",
+          "bbox_area_pixels_bin": "medium",
+          "gt": 6,
+          "tp": 6,
+          "fn": 0,
+          "recall": 1.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test"
+        },
+        {
+          "id": "current_test_stone_large",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "v2",
+          "split": "test",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "stone",
+          "bbox_area_pixels_bin": "large",
+          "gt": 0,
+          "tp": 0,
+          "fn": 0,
+          "recall": null,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지; GT 분모 0",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/test"
+        },
+        {
+          "id": "current_external_potato_small",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "external",
+          "split": "external",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "small",
+          "gt": 0,
+          "tp": 0,
+          "fn": 0,
+          "recall": null,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지; GT 분모 0",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/external"
+        },
+        {
+          "id": "current_external_potato_medium",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "external",
+          "split": "external",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "medium",
+          "gt": 178,
+          "tp": 168,
+          "fn": 10,
+          "recall": 0.9438202247191011,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/external"
+        },
+        {
+          "id": "current_external_potato_large",
+          "model_id": "current",
+          "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+          "is_current_selected": true,
+          "dataset_id": "external",
+          "split": "external",
+          "conditions": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "class": "potato",
+          "bbox_area_pixels_bin": "large",
+          "gt": 14,
+          "tp": 14,
+          "fn": 0,
+          "recall": 1.0,
+          "precision": null,
+          "f1": null,
+          "AP50": null,
+          "AP50_95": null,
+          "accuracy": null,
+          "reason": "GT 박스 원본 픽셀 면적에 따른 사후 기술 통계; FP의 GT 크기 분모·할당 규약 없으므로 P/F1 미평가; confidence 0.45 캐시로 AP 계산 금지",
+          "cached_records_directory": "retraining_experiment/outputs/comparison/new_selected/external"
+        }
+      ]
+    },
+    "occlusion_strata": {
+      "status": "NA",
+      "reason": "M05; 개체별 가림 태그 없음"
+    },
+    "semantic_background_strata": {
+      "status": "NA",
+      "reason": "M06; 빈 GT FP와 의미별 장갑/흙/설비 성능은 다름"
+    }
+  },
+  "taskB": {
+    "task": "B",
+    "unit": "per_potato_multilabel_not_image_multiclass",
+    "status": "NOT_TRAINED/NOT_EVALUATED",
+    "model_sha256": null,
+    "current_A_selected_sha256_reference_only": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+    "fields": {
+      "greening": {
+        "status": "NOT_TRAINED/NOT_EVALUATED",
+        "allowed_values": [
+          "present",
+          "absent",
+          "unknown"
+        ],
+        "evaluable_gt": null,
+        "unknown_count": null,
+        "AP50": null,
+        "AP50_95": null,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "tn": null,
+        "accuracy": null,
+        "na_reason": "M02; unknown을 absent로 처리하거나 수치를 0으로 채우지 않음"
+      },
+      "sprouting": {
+        "status": "NOT_TRAINED/NOT_EVALUATED",
+        "allowed_values": [
+          "present",
+          "absent",
+          "unknown"
+        ],
+        "evaluable_gt": null,
+        "unknown_count": null,
+        "AP50": null,
+        "AP50_95": null,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "tn": null,
+        "accuracy": null,
+        "na_reason": "M02; unknown을 absent로 처리하거나 수치를 0으로 채우지 않음"
+      },
+      "rot": {
+        "status": "NOT_TRAINED/NOT_EVALUATED",
+        "allowed_values": [
+          "present",
+          "absent",
+          "unknown"
+        ],
+        "evaluable_gt": null,
+        "unknown_count": null,
+        "AP50": null,
+        "AP50_95": null,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "tn": null,
+        "accuracy": null,
+        "na_reason": "M02; unknown을 absent로 처리하거나 수치를 0으로 채우지 않음"
+      },
+      "damage": {
+        "status": "NOT_TRAINED/NOT_EVALUATED",
+        "allowed_values": [
+          "present",
+          "absent",
+          "unknown"
+        ],
+        "evaluable_gt": null,
+        "unknown_count": null,
+        "AP50": null,
+        "AP50_95": null,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tp": null,
+        "fp": null,
+        "fn": null,
+        "tn": null,
+        "accuracy": null,
+        "na_reason": "M02; unknown을 absent로 처리하거나 수치를 0으로 채우지 않음"
+      }
+    },
+    "normal_visible_count": null,
+    "unknown_count": null,
+    "reason": "별도 결함 모델/개체 GT/결함 예측 미보유; A 감자·돌 지표와 분리"
+  },
+  "tracking": {
+    "rows": [
+      {
+        "id": "full_comparison",
+        "tp": 100,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.9803921568627451,
+        "f1": 0.9900990099009901,
+        "source": "tracking_experiment/review/full_comparison.json",
+        "matching": "one_to_one_greedy; time within reference bracket +-0.35s; |x| <= 90px",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "source_video",
+        "split": "full_2224_frames",
+        "conditions": {
+          "detection": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "tracking_configuration": {
+            "line_y": 360.0,
+            "x_min": 220.0,
+            "x_max": 1000.0,
+            "direction": "up",
+            "hysteresis": 8.0,
+            "max_gap": 0.5,
+            "max_distance": 100,
+            "min_hits": 2
+          },
+          "event_matching": "one_to_one_greedy; time within reference bracket +-0.35s; |x| <= 90px",
+          "event_unit": "all_crossings_including_two_ambiguous_recrossings"
+        },
+        "reference_potato_crossings": 102,
+        "reference_stone_crossings": 10,
+        "automatic_crossings": 100,
+        "tn": null,
+        "AP50": null,
+        "AP50_95": null,
+        "accuracy": null,
+        "na_reason": "단일 영상 AI 참조 대응; 유한 TN과 탐지 AP 모집단 아님",
+        "generalization_accuracy": null,
+        "reference_authority": "AI_visual_not_human_expert",
+        "paired_events_raw_binding": "auto frame/id exact; stored crossing_second rounded 3 decimals and x 1 decimal",
+        "reference_source": "tracking_experiment/review/full_reference.json",
+        "events_source": "tracking_experiment/outputs/video/events.json"
+      },
+      {
+        "id": "full_comparison_strict",
+        "tp": 99,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.99,
+        "recall": 0.9705882352941176,
+        "f1": 0.9801980198019802,
+        "source": "tracking_experiment/review/full_comparison_strict.json",
+        "matching": "one_to_one_greedy; time within reference bracket +-0.1s; |x| <= 50px",
+        "model_id": "current",
+        "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+        "is_current_selected": true,
+        "dataset_id": "source_video",
+        "split": "full_2224_frames",
+        "conditions": {
+          "detection": {
+            "confidence": 0.45,
+            "nms_iou": 0.5,
+            "matching_iou": 0.5,
+            "matching": "confidence_ranked_class_agnostic_one_to_one",
+            "imgsz": 640,
+            "agnostic_nms": false,
+            "device": 0,
+            "count_unit": "frame_observations_not_unique_objects",
+            "source": "retraining_experiment/outputs/comparison/comparison.json",
+            "inference_code": "postprocess_review/common.py:56-65"
+          },
+          "tracking_configuration": {
+            "line_y": 360.0,
+            "x_min": 220.0,
+            "x_max": 1000.0,
+            "direction": "up",
+            "hysteresis": 8.0,
+            "max_gap": 0.5,
+            "max_distance": 100,
+            "min_hits": 2
+          },
+          "event_matching": "one_to_one_greedy; time within reference bracket +-0.1s; |x| <= 50px",
+          "event_unit": "all_crossings_including_two_ambiguous_recrossings"
+        },
+        "reference_potato_crossings": 102,
+        "reference_stone_crossings": 10,
+        "automatic_crossings": 100,
+        "tn": null,
+        "AP50": null,
+        "AP50_95": null,
+        "accuracy": null,
+        "na_reason": "단일 영상 AI 참조 대응; 유한 TN과 탐지 AP 모집단 아님",
+        "generalization_accuracy": null,
+        "reference_authority": "AI_visual_not_human_expert",
+        "paired_events_raw_binding": "auto frame/id exact; stored crossing_second rounded 3 decimals and x 1 decimal",
+        "reference_source": "tracking_experiment/review/full_reference.json",
+        "events_source": "tracking_experiment/outputs/video/events.json"
+      }
+    ],
+    "conditional_distinct_reference_row": {
+      "id": "tracking_excluding_two_ambiguous_recrossings",
+      "model_id": "current",
+      "model_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+      "current_selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+      "is_current_selected": true,
+      "dataset_id": "source_video",
+      "split": "full_2224_frames",
+      "conditions": {
+        "detection": {
+          "confidence": 0.45,
+          "nms_iou": 0.5,
+          "matching_iou": 0.5,
+          "matching": "confidence_ranked_class_agnostic_one_to_one",
+          "imgsz": 640,
+          "agnostic_nms": false,
+          "device": 0,
+          "count_unit": "frame_observations_not_unique_objects",
+          "source": "retraining_experiment/outputs/comparison/comparison.json",
+          "inference_code": "postprocess_review/common.py:56-65"
+        },
+        "tracking_configuration": {
+          "line_y": 360.0,
+          "x_min": 220.0,
+          "x_max": 1000.0,
+          "direction": "up",
+          "hysteresis": 8.0,
+          "max_gap": 0.5,
+          "max_distance": 100,
+          "min_hits": 2
+        },
+        "event_matching": "one_to_one_greedy; time within reference bracket +-0.35s; |x| <= 90px",
+        "event_unit": "reference_estimated_distinct_potato_crossings"
+      },
+      "source": "tracking_experiment/review/full_comparison.json",
+      "reference_source": "tracking_experiment/review/full_reference.json",
+      "reference_all_crossings": 102,
+      "excluded_reference_ids": [
+        "E077",
+        "E097"
+      ],
+      "exclusion_reason": "원참조에 같은 감자의 재통과로 기록되었으나 identity/reversal은 ambiguous로 명시됨",
+      "reference_distinct_estimate": 100,
+      "paired_matches": 100,
+      "extra": 0,
+      "unpaired_after_exclusions": 0,
+      "conditional_precision": 1.0,
+      "conditional_recall": 1.0,
+      "conditional_f1": 1.0,
+      "accuracy": null,
+      "generalization_accuracy": null,
+      "claim": "같은 한 영상 AI 참조의 재통과 제외 조건부 일치이며 일반화 정확도 100%가 아님"
+    },
+    "provenance_warning": "one previously seen video; AI not human expert; not generalization 100%"
+  },
+  "negative_cases": [
+    {
+      "id": "empty_actual_gt",
+      "kind": "actual_cached_record",
+      "source": "retraining_experiment/outputs/comparison/new_selected/external/extra2_t000000000ms_f000000.json",
+      "truth_count": 0,
+      "prediction_count": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "accuracy": null,
+      "reason": "분모 없는 빈 장면은 완전 정답 100%도 오답 0%도 아님"
+    },
+    {
+      "id": "empty_gt_with_false_positives",
+      "kind": "actual_cached_subset",
+      "source": "retraining_experiment/outputs/comparison/new_selected/external",
+      "images": 87,
+      "false_positive_boxes": 9,
+      "images_with_fp": 9,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "accuracy": null,
+      "reason": "양성 GT 없음; FP는 계수로 보존"
+    },
+    {
+      "id": "taskB_untrained",
+      "kind": "policy_contract_not_executed_model",
+      "status": "NOT_TRAINED/NOT_EVALUATED",
+      "AP50": null,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "accuracy": null,
+      "reason": "미학습은 성능 0이 아님"
+    },
+    {
+      "id": "unknown_defect_label",
+      "kind": "policy_contract_no_fabricated_observation",
+      "input_label": "unknown",
+      "scored_as_absent": false,
+      "normal_visible": null,
+      "metric": null,
+      "unknown_count": null,
+      "evaluable_denominator": null,
+      "reason": "unknown은 항목별 평가 분모에서 제외하고 사유·개수를 따로 기록해야 함; 현재 B 개체 기록 자체가 없어 unknown 개수도 NA"
+    }
+  ],
+  "provenance": {
+    "source_sha256": {
+      ".omo/evidence/potato-p0-20261105/class-policy.md": "2f9fe67b48f236d8a4e227a13049c1f991949f26aa6be2dddd27e3e23900af3e",
+      ".omo/evidence/potato-p0-20261105/integrity/model-environment-binding.json": "1e8024a79e563e4c21dcfe4243c6a966421e7d80f3dc83816c5cbcd439248b14",
+      ".omo/evidence/potato-p0-20261105/new-session/inventory.json": "b89c46ecf841da611105164c5b088734ff144c17acdc723a56db3dde53966c80",
+      "baseline/RESULTS.md": "8f898e4479948e2e9f3f45aabe2413cc86eef108e9bdc4a39972dac02541b0c9",
+      "baseline/evaluations/external/fixed_confidence_metrics.json": "48d17ff50fd4145fadc231e8d9d03bc451a61400ac3bb4685d5b249f0055d062",
+      "baseline/evaluations/external/metrics.json": "9e9993bd9f98e77f98941746b479da7986d816e40446be35279abf7b5cce46a5",
+      "baseline/evaluations/test/fixed_confidence_metrics.json": "0ff1b104215957a5f9e76cbe2eb79a8e2fd358d068588b65d2b2813f0f2f5f01",
+      "baseline/evaluations/test/metrics.json": "c945762a1a54b518960f1d8addeb1384525898eadc8a8e670fba35e7bae7911a",
+      "baseline/evaluations/val/fixed_confidence_metrics.json": "b6bbe40532140ec3be5f1f1d8d83ce57ad573f8db4dcd7337903f1d5d0fe7d16",
+      "baseline/evaluations/val/metrics.json": "0831d0b36a4c477c24de5f0de4267a9b6152d548173f97046233ce60e559439c",
+      "baseline/external/data.yaml": "03b92942fe50c5a38f60be72874e069224413bfb9561da217ea000f8b90033d8",
+      "baseline/external/manifest.json": "76a8967c64213c250afa4e89273184b1dda2b63107f7c1c2730136248460ba4a",
+      "baseline/internal/data.yaml": "c31a27173d7f178ceea58d42710b069d7f1a672db7eb6eed5f970eed007e8547",
+      "baseline/internal/manifest.json": "2c26bccdd7d766308c79b37492891b9791efc539cb38960c5b81850d170b8fa8",
+      "baseline/runs/train/results.csv": "3a865a8ba2980d14e900212fcb7f2ec7327d42f61174a4d45a62e8da4357c7fb",
+      "baseline/selection/selection.json": "5c84ecb5611aab5319b22fc75a812a73147860fffa5f1d4482c74fed2c83ae4a",
+      "postprocess_review/common.py": "2bf23ec69f876efeb4518078e6567b77d09232fbe4dbb012a9136a445b7425f9",
+      "retraining_data/outputs/dataset_v2/data.yaml": "1ed07f04d55598f9f9506e0d347c4448f2a3f7b0e5631b3bb76a49f6dc20066e",
+      "retraining_data/outputs/dataset_v2/manifest.json": "0b261b4a1758483e9cfd2fd4d1fadd4de48f57269e200d84af3917dc52f33b97",
+      "retraining_experiment/RESULTS.md": "cdbfc346ef626b13425a191a91ca9e85a7f50e945ab66f33c0cae78420eabcde",
+      "retraining_experiment/evaluate.py": "0a159c55b264a99d1ec1036f101da18d7f388875d514c2df913c916bff5356cf",
+      "retraining_experiment/outputs/comparison/comparison.json": "7f229e396026609a049ad69bce240e8b6dd4dc6b0df903e2c253dd316f5a6565",
+      "retraining_experiment/outputs/comparison/dataset.json": "ed3e3f29626ae3fd1bedcd5caa575afdaeb73b8f6499ba2f0c0b6a2ce9435faa",
+      "retraining_experiment/outputs/comparison/environment.json": "bd1c85da06db121a8d62e60553f213a9bb899d106c2d3699b7de8a5e5b8d5975",
+      "retraining_experiment/outputs/comparison/provenance.json": "45f49f9259b7524a8f8f8525898a159bdb752524228c26b0b7e7932592989361",
+      "retraining_experiment/outputs/selection/selection.json": "a3f95e6ac601ea8bd8867266961dadada54d00f539fcfc242949028b9d44e171",
+      "retraining_experiment/outputs/train/checkpoints.json": "b79e7c505045d08df886c7901cfb5638903a0eb8142e505b51bbae955018b21d",
+      "retraining_experiment/outputs/train/data-provenance.json": "55e7059786864b41e0140ef0255861e6754665b1753f25248e118a097a6fcd0b",
+      "retraining_experiment/outputs/train/results.csv": "cd34cc901b6f00264f3c0014c564c819494036f455dd0e991c99dd19aa17c15c",
+      "retraining_experiment/review/verification.json": "fd1651401b351cffd4313e4e1b303fab14b46e476a500f8f3703790f065a1d4b",
+      "retraining_experiment/select.py": "e2c380c5311fc27c580c356f74852f0fb267b69788cd69fa6c46bef0807cc94c",
+      "scripts/run_baseline.py": "8e8244c9fe90583574bd35e4b15df527a330beed320b1b9995db48d7e84d5dbe",
+      "scripts/select_checkpoint.py": "02f729851b2c5f1481ed237270eee85df04bd97f04e117008fd24ee4569f4f39",
+      "stone_experiment/RESULTS.md": "c384e0bab877e7befb5c32fd0444a377d768c6cea3b007f1aa6e3b86e7eed9f3",
+      "stone_experiment/metrics.py": "24d4925b6c9df07bac73a861cdc91ca43957752ba1891a49c721c2b9eca806fc",
+      "stone_experiment/outputs/comparison/comparison.json": "83af867a5eb03a0917a811ac9d14e03c67d2568c6ddf88a04d5a01fb6ea39214",
+      "stone_experiment/outputs/dataset/data.yaml": "c2ae90a1779b049a216ca50f9917bda5eb87e5cbf6182ea0cee81ff66128acdc",
+      "stone_experiment/outputs/dataset/manifest.json": "713848519231ddc5ddad2418de3572df4750f69f82b90a93fe63c367b67920c1",
+      "stone_experiment/outputs/selection/selection.json": "be1738370b0d61487d69ad6edec9b6270e3be1541bf26bd19e598b1acc00a747",
+      "stone_experiment/outputs/train/results.csv": "25e796e02200dc27bf1ec59cc010e6e16ab92e81e2868c8f8649af14d610f61f",
+      "stone_experiment/review/final_verification.json": "a255d9fe396ca6d441d71c1cf6d9eaeecb9389c7a8e0341ee93950201f7d743d",
+      "tracking_experiment/RESULTS.md": "dd97b98b29a225f6492592f40a52bfdbdaace0c970373d2c73dcf9e30fe6c822",
+      "tracking_experiment/outputs/video/events.json": "4f60705d71aa7c6bb05a06281f99a0fbe8af6c520ccf80ba57fd521fcd151062",
+      "tracking_experiment/outputs/video/summary.json": "8154416adf15146fbe1bca0e1e2621a5daa611f4a8593ffd41a1adb1967df7c7",
+      "tracking_experiment/review/full_comparison.json": "9e27c3a4d89fe4c3bf39641bae59ad829ffa1efe323902387d6ecd63798a2150",
+      "tracking_experiment/review/full_comparison_strict.json": "b992d653b65466fa573f37dd92c85ef7a2e800ce301b4f0a25611de19b5222dc",
+      "tracking_experiment/review/full_reference.json": "771654f12f7360b3254298de9f77248a123c7668496efecd97140dea58c6cf7a"
+    },
+    "dataset_receipt_checks": [
+      {
+        "receipt": "retraining_experiment/outputs/comparison/dataset.json",
+        "field": "snapshot_sha256",
+        "path": "retraining_data/outputs/dataset_v2/annotations.json",
+        "sha256": "1fc05b9affccdfbdfe814a4b411c914780b34320f40f4b84a9f4f838691c4b33",
+        "match": true
+      },
+      {
+        "receipt": "retraining_experiment/outputs/comparison/dataset.json",
+        "field": "manifest_sha256",
+        "path": "retraining_data/outputs/dataset_v2/manifest.json",
+        "sha256": "0b261b4a1758483e9cfd2fd4d1fadd4de48f57269e200d84af3917dc52f33b97",
+        "match": true
+      },
+      {
+        "receipt": "retraining_experiment/outputs/comparison/dataset.json",
+        "field": "data_yaml_sha256",
+        "path": "retraining_data/outputs/dataset_v2/data.yaml",
+        "sha256": "1ed07f04d55598f9f9506e0d347c4448f2a3f7b0e5631b3bb76a49f6dc20066e",
+        "match": true
+      },
+      {
+        "receipt": "retraining_experiment/outputs/selection/dataset.json",
+        "field": "snapshot_sha256",
+        "path": "retraining_data/outputs/dataset_v2/annotations.json",
+        "sha256": "1fc05b9affccdfbdfe814a4b411c914780b34320f40f4b84a9f4f838691c4b33",
+        "match": true
+      },
+      {
+        "receipt": "retraining_experiment/outputs/selection/dataset.json",
+        "field": "manifest_sha256",
+        "path": "retraining_data/outputs/dataset_v2/manifest.json",
+        "sha256": "0b261b4a1758483e9cfd2fd4d1fadd4de48f57269e200d84af3917dc52f33b97",
+        "match": true
+      },
+      {
+        "receipt": "retraining_experiment/outputs/selection/dataset.json",
+        "field": "data_yaml_sha256",
+        "path": "retraining_data/outputs/dataset_v2/data.yaml",
+        "sha256": "1ed07f04d55598f9f9506e0d347c4448f2a3f7b0e5631b3bb76a49f6dc20066e",
+        "match": true
+      }
+    ],
+    "cache_manifest_definition": "SHA256 of json.dumps({basename:sha256_file_bytes},sort_keys=True).encode() for non-summary *.json in each cached_records_directory",
+    "comparison_cached_model_frame_records_recomputed": 756,
+    "selection_cached_model_frame_records_counted": 44,
+    "baseline_fixed_images_recomputed": 189,
+    "recomputation": "Python stdlib JSON/CSV/hashlib only; no project/model imports; no inference/train/export/install/delegation; no changed thresholds",
+    "source_preservation_baseline_files": 1985,
+    "owned_subprocesses_spawned": 0,
+    "heavy_model_modules_imported": []
+  },
+  "na_convention": {
+    "json_value": null,
+    "display": "NA with reason; NOT_TRAINED/NOT_EVALUATED for B",
+    "zero_rule": "관측된 계수/정의된 양성 GT 기반 실제 0만 수치 0; 외부 stone 미평가 자리표시자·TN·결측·unknown은 0 금지",
+    "external_confusion": "감자/배경 2x2만 보고; stone 필터링 후의 구조상 0은 stone 평가로 재해석하지 않음"
+  }
+}

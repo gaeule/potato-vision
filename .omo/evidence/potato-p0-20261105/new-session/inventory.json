@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-05",
+  "scope": ["Project tree /mnt/c/Users/USER/Desktop/협력/potato", "Immediate /mnt/c/Users/USER/Desktop/협력 directory listing", "final-dataset.zip member headers only; no media extraction"],
+  "global_absence_claim": false,
+  "accepted_new_sessions": [],
+  "candidates": [
+    {
+      "path": "KakaoTalk_261020_161759.mp4",
+      "disposition": "previously_used",
+      "evidence": ["baseline/internal/manifest.json", "retraining_experiment/RESULTS.md", "tracking_experiment/RESULTS.md"],
+      "recorded_source_sha256": "1b931cf852c3f4a97652ae94b800447d302ab7a1bebca7ae95905a61e23e3b42",
+      "reason": "Existing source for training/time-split evaluation and whole-video inference/tracking; not unseen-session evidence"
+    },
+    {
+      "path": "추가영상2_돌검수.zip",
+      "disposition": "previously_used",
+      "evidence": ["baseline/external/manifest.json", "retraining_experiment/RESULTS.md"],
+      "images_recorded": 166,
+      "labels": "potato only; no complete stone or defect ground truth",
+      "reason": "Already used external exploratory evaluation"
+    },
+    {
+      "path": "final-dataset.zip",
+      "disposition": "image_sessions_unverified_not_new_video",
+      "actual_header_entries": 5650,
+      "actual_media_images": 2808,
+      "actual_video_members": [],
+      "images_by_subset": {"harvest": 748, "public": 2060},
+      "harvest_groups": {"harvest_01": 244, "harvest_02": 46, "harvest_03": 49, "harvest_04": 99, "harvest_05": 60, "harvest_06": 141, "harvest_07": 109},
+      "media_payloads_extracted": 0,
+      "labels": "Stored manifest declares potato only; no complete stone or defect ground truth",
+      "reason": "Some photos may be from other sessions, but session independence and evaluation eligibility are not established. Prior convention review also viewed 24 harvest samples. Do not classify all photos as novel or all as reused.",
+      "evidence": ["public_label_rework/outputs/source/manifest.json", "public_label_rework/outputs/inventory/harvest_convention.json", ".omo/evidence/potato-p0-20261105/integrity/harvest-receipt.json"]
+    }
+  ],
+  "derived_outputs": "Annotated MP4s and review/package ZIPs are derived artifacts, not newly captured footage.",
+  "user_question": "new_session_media",
+  "user_answer_verbatim": "확인이 필요함",
+  "user_answer_interpretation": "Availability of genuinely new shooting-session data remains unconfirmed; not an assertion that data exists or is absent.",
+  "source_note_check": "outputs/source/사용안내.txt identifies748harvest photos and group numbering, but provides no capture dates or proof of independence from prior model development. It explicitly distinguishes file-structure validation from visual label correctness.",
+  "still_required": ["Source path or new files", "Shooting session/date/location provenance", "Duplicate/session-family exclusion against prior training/tuning/evaluation", "Task A potato and stone ground truth", "Task B independent per-potato four-defect labels with unknown handling"],
+  "status": "No candidate accepted as a new evaluation session; capture provenance and availability require confirmation. Inventory is partial progress, not data acquisition completion.",
+  "task4_goal_complete": false
+}

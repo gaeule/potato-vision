@@ -1,0 +1,1451 @@
+{
+  "schema_version": "independent-error-sidecar-gate-v1",
+  "review_date": "2026-11-09",
+  "verdict": "PASS",
+  "output_validation": {
+    "json_parse_and_record_strata_report_consistency": "PASS",
+    "existing_sidecar_files_unchanged": 100,
+    "new_files_only_named_outputs": true,
+    "sidecar_files_after": 102,
+    "lsp": "NOT_RUN: Biome executable not installed; no installation performed"
+  },
+  "scope": "current model only; historical seen Task A frame observations; not new-session or Task B evaluation",
+  "annotation_authority": "annotations.json; errors.json visual_annotation and observations.json are provisional collector observations",
+  "counts": {
+    "records": 39,
+    "FP": 26,
+    "FN": 13,
+    "unique_frames": 38,
+    "external_stone": "NOT_SCORED"
+  },
+  "model": {
+    "id": "current",
+    "path": "retraining_experiment/outputs/selection/selected.pt",
+    "sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8"
+  },
+  "operating_point": {
+    "confidence": 0.45,
+    "nms_iou": 0.5,
+    "matching_iou": 0.5,
+    "matching": "confidence_ranked_class_agnostic_one_to_one",
+    "count_unit": "frame_observations_not_unique_objects"
+  },
+  "artifact_sha256": {
+    "protocol.json": "d4914a282d3da2639b6713bfca2084ffdbf332746650572e8a28fb24b7c4249f",
+    "roster-core.json": "202402d2a81423d9eb99db3263dd3e0e94501983c895b6eba5af1b7e7de5b942",
+    "errors.json": "30d697edfd3695b41b77bd6d31a1cfced17a907098a38b01bb08c40c74d825e3",
+    "annotations.json": "ac4390d69fddae1bd9c5863a2f323d84d36f60bafe28dcd91c44920b173a4e8d",
+    "source-hashes.json": "7a579e56b74a223761b4aab66ff5b30d59114b40df280365bec2036033648ff9"
+  },
+  "roster_sha256": "9f6f36b54cd24d03ca481196d96b204e5035369fcc276424e5953d488bb3fe04",
+  "checks": {
+    "source_file_hashes_verified": 626,
+    "source_hash_mismatches": [],
+    "frame_caches_verified": 189,
+    "frame_caches_by_split": {
+      "val": 11,
+      "test": 12,
+      "external": 166
+    },
+    "source_label_coordinates_verified": 189,
+    "label_coordinate_tolerance_pixels": 0.000001,
+    "independent_greedy_matching_verified": 189,
+    "all_error_id_hashes_reconstructed": 39,
+    "all_error_coordinates_verified": 39,
+    "all_error_size_bins_recomputed": 39,
+    "render_hash_dimension_and_affine_checks": 78,
+    "visual_full_frames_viewed": 39,
+    "visual_crops_viewed": 39,
+    "unviewable": [],
+    "visual_disagreements": [],
+    "pre_annotation_baseline_hash_mismatches": []
+  },
+  "strata": {
+    "split": {
+      "val": {
+        "FP": 0,
+        "FN": 2
+      },
+      "test": {
+        "FP": 3,
+        "FN": 1
+      },
+      "external": {
+        "FP": 23,
+        "FN": 10
+      }
+    },
+    "class_name": {
+      "stone": {
+        "FP": 1,
+        "FN": 2
+      },
+      "potato": {
+        "FP": 25,
+        "FN": 11
+      }
+    },
+    "size_bin": {
+      "small": {
+        "FP": 1,
+        "FN": 3
+      },
+      "medium": {
+        "FP": 21,
+        "FN": 10
+      },
+      "large": {
+        "FP": 4,
+        "FN": 0
+      }
+    },
+    "visible_occlusion": {
+      "yes": {
+        "FP": 2,
+        "FN": 2
+      },
+      "unknown": {
+        "FP": 4,
+        "FN": 10
+      },
+      "no": {
+        "FP": 6,
+        "FN": 1
+      },
+      "not_applicable": {
+        "FP": 14,
+        "FN": 0
+      }
+    },
+    "actual_frame_truncated_object": {
+      "no": {
+        "FP": 8,
+        "FN": 5
+      },
+      "unknown": {
+        "FP": 1,
+        "FN": 7
+      },
+      "yes": {
+        "FP": 3,
+        "FN": 1
+      },
+      "not_applicable": {
+        "FP": 14,
+        "FN": 0
+      }
+    },
+    "background_tags": {
+      "conveyor_machinery": {
+        "FP": 26,
+        "FN": 13
+      },
+      "hand_glove": {
+        "FP": 18,
+        "FN": 1
+      },
+      "soil_debris": {
+        "FP": 0,
+        "FN": 0
+      },
+      "other": {
+        "FP": 0,
+        "FN": 0
+      },
+      "unclear": {
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "issue_observation": {
+      "small_or_truncated_target": {
+        "FP": 0,
+        "FN": 3
+      },
+      "possible_annotation_issue": {
+        "FP": 6,
+        "FN": 7
+      },
+      "background_object": {
+        "FP": 19,
+        "FN": 0
+      },
+      "unclear": {
+        "FP": 1,
+        "FN": 3
+      },
+      "possible_duplicate": {
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "split_class_size": {
+    "val/stone/small": {
+      "FP": 0,
+      "FN": 1
+    },
+    "val/potato/small": {
+      "FP": 0,
+      "FN": 1
+    },
+    "test/potato/medium": {
+      "FP": 2,
+      "FN": 0
+    },
+    "test/stone/small": {
+      "FP": 1,
+      "FN": 1
+    },
+    "external/potato/large": {
+      "FP": 4,
+      "FN": 0
+    },
+    "external/potato/medium": {
+      "FP": 19,
+      "FN": 10
+    }
+  },
+  "missing_and_na_counts": {
+    "split": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 0
+    },
+    "class_name": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 0
+    },
+    "size_bin": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 0
+    },
+    "visible_occlusion": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 14
+    },
+    "actual_frame_truncated_object": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 14
+    },
+    "background_tags": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 0
+    },
+    "issue_observation": {
+      "missing": 0,
+      "null": 0,
+      "NA": 0,
+      "not_applicable": 0
+    }
+  },
+  "expected_absent_counterpart_indices": {
+    "gt_index_null_for_FP": 26,
+    "prediction_index_null_for_FN": 13,
+    "meaning": "unmatched error counterpart; not missing visual annotation or NA"
+  },
+  "background_membership": {
+    "multi_tag": true,
+    "unique_errors": 39,
+    "tag_memberships": 58,
+    "hand_glove_and_conveyor_overlap": 19,
+    "not_an_exclusive_partition": true
+  },
+  "size_rule": {
+    "coordinate_space": "original xyxy pixels; no +1",
+    "FP": "stored prediction box",
+    "FN": "stored GT box",
+    "small": "area < 1024",
+    "medium": "1024 <= area < 9216",
+    "large": "area >= 9216"
+  },
+  "limitations": {
+    "stratum_full_GT_denominators_annotated": false,
+    "stratified_precision_recall_F1": "NOT_COMPUTED",
+    "AP": "NOT_COMPUTED",
+    "NMS": "stored class-aware result consistency only; no rerun of inference or NMS",
+    "source_video": "manifest provenance only; full source video not decoded or rehashed",
+    "visual_review": "AI unblinded diagnostic observations, not expert truth or confirmed causes",
+    "unknown": "preserved; not a negative finding",
+    "GT": "source labels and cached truth unchanged; possible_annotation_issue never relabels"
+  },
+  "cleanup": {
+    "write_allowlist": [
+      "independent-gate.md",
+      "verified-strata.json"
+    ],
+    "existing_sidecar_files_before": 100,
+    "existing_render_files_preserved": 88,
+    "new_render_files": 0,
+    "temporary_files_created": 0,
+    "background_processes_started": 0,
+    "installs": 0,
+    "inference_runs": 0,
+    "subagents": 0,
+    "source_or_label_edits": 0
+  },
+  "blockers": [],
+  "records": [
+    {
+      "ordinal": 1,
+      "error_id": "err-14c5f92d36cd4ed4296daea00737c5c9c8a27939e706b7d380a06340bdabb4d7",
+      "split": "val",
+      "image_id": "frame_000098",
+      "error_type": "FN",
+      "class_name": "stone",
+      "gt_index": 7,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        612,
+        591.99999984,
+        653,
+        614.99999952
+      ],
+      "area_original_pixels": 942.9999868799989,
+      "size_bin": "small",
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "small_or_truncated_target",
+      "verdict": "PASS",
+      "independent_note": "하단 삼각형 회색 노출부와 검은 이송판의 겹침 확인. 프레임 내부.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000098-FN-1-7-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000098-FN-1-7-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/val/frame_000098.png"
+    },
+    {
+      "ordinal": 2,
+      "error_id": "err-f8d5bfcfb18bcc5f28ca0d86ca82eac63cfd6fd95f387c2fc194f2b9f51c6515",
+      "split": "val",
+      "image_id": "frame_000100",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 6,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        750,
+        600.99999984,
+        803.0000000000001,
+        614.99999952
+      ],
+      "area_original_pixels": 741.9999830400002,
+      "size_bin": "small",
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "small_or_truncated_target",
+      "verdict": "PASS",
+      "independent_note": "검은 판 위 얇은 황갈색 노출부 확인. small GT와 내부 경계 구분.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000100-FN-0-6-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000100-FN-0-6-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/val/frame_000100.png"
+    },
+    {
+      "ordinal": 3,
+      "error_id": "err-5cd9eb864ae4e5b6c22ae70388077d970f7175cb60b6d82c1e9d5da8eb5c5dcb",
+      "split": "test",
+      "image_id": "frame_000120",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        324.6445617675781,
+        1.5920867919921875,
+        400.8396301269531,
+        56.20451354980469
+      ],
+      "area_original_pixels": 4161.197590082884,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "P5 갈색 영역과 장갑의 경계가 모호하고 인접 P4와 구분된다. unknown 유지가 타당.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000120-FP-0-None-5-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000120-FP-0-None-5-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000120.png"
+    },
+    {
+      "ordinal": 4,
+      "error_id": "err-008a11d722d72214d87f52c4a36f5d40e66d5c8898cb68481500886622f7469c",
+      "split": "test",
+      "image_id": "frame_000126",
+      "error_type": "FP",
+      "class_name": "stone",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        513.533203125,
+        0.6126708984375,
+        541.445068359375,
+        29.451416015625
+      ],
+      "area_original_pixels": 804.9431672394276,
+      "size_bin": "small",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "상단 밖으로 이어지는 회색 세로 조각 확인. 작은 돌 후보라는 유보 표현에 동의.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000126-FP-1-None-5-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000126-FP-1-None-5-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000126.png"
+    },
+    {
+      "ordinal": 5,
+      "error_id": "err-d06f2cc4ce8bf7129a1c3ac83dd83d0ad3a4d89c826b3faefa0d5a44578ca4d6",
+      "split": "test",
+      "image_id": "frame_000134",
+      "error_type": "FN",
+      "class_name": "stone",
+      "gt_index": 2,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        415,
+        0,
+        448,
+        18
+      ],
+      "area_original_pixels": 594,
+      "size_bin": "small",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "small_or_truncated_target",
+      "verdict": "PASS",
+      "independent_note": "G2는 원본 상단에서 잘린 흐린 회색 조각이며 오른쪽 P2와 다른 위치.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000134-FN-1-2-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000134-FN-1-2-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000134.png"
+    },
+    {
+      "ordinal": 6,
+      "error_id": "err-5172e99e29bb547718d0bdbf48e71854e20c9cab5294a306d85d11c5bf84a661",
+      "split": "test",
+      "image_id": "frame_000136",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        395.61334228515625,
+        0.38333892822265625,
+        475.41790771484375,
+        72.00032043457031
+      ],
+      "area_original_pixels": 5715.362086500041,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "P1의 상단 연속성과 밝은 세로 타원 노출부 확인. 접촉 경계는 불명확.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000136-FP-0-None-1-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000136-FP-0-None-1-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000136.png"
+    },
+    {
+      "ordinal": 7,
+      "error_id": "err-4e6126d976ae25cd04fe1b082ff5af0af9fb76fb64c3f70b14cf065b51927bf9",
+      "split": "external",
+      "image_id": "extra2_t000002000ms_f000030",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        0.6968994140625,
+        66.87112426757812,
+        135.80841064453125,
+        243.08038330078125
+      ],
+      "area_original_pixels": 23807.8992807772,
+      "size_bin": "large",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "니트 조직과 접힌 손가락 확인. 감자에 대한 not_applicable 타당.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000002000ms_f000030-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000002000ms_f000030-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000002000ms_f000030.png"
+    },
+    {
+      "ordinal": 8,
+      "error_id": "err-d577490320d25f4009766f514c2df7c232aa2580697520acd6d68dc6338f517b",
+      "split": "external",
+      "image_id": "extra2_t000009000ms_f000135",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.305816650390625,
+        98.38199615478516,
+        124.43603515625,
+        271.4233093261719
+      ],
+      "area_original_pixels": 21306.61470133369,
+      "size_bin": "large",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "흐린 주먹과 손가락 굴곡 확인. 감자 대상은 식별되지 않는다.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000009000ms_f000135-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000009000ms_f000135-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000009000ms_f000135.png"
+    },
+    {
+      "ordinal": 9,
+      "error_id": "err-a32399389936422e40b26985a723dd3a35f1cd51e6029eab30130ffb1457c4cf",
+      "split": "external",
+      "image_id": "extra2_t000016000ms_f000240",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 1,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.13359615999999797,
+        663.86035152,
+        27.174144,
+        711.6926270399999
+      ],
+      "area_original_pixels": 1293.4109344946194,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "GT 안은 붉은 면과 검은 경계이며 독립 감자는 확인 불가. unknown 유지.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000016000ms_f000240-FN-0-1-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000016000ms_f000240-FN-0-1-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000016000ms_f000240.png"
+    },
+    {
+      "ordinal": 10,
+      "error_id": "err-52c453ae9663444eee36a7c43f6bcf0fa8daf273087fcd22c34f0f6ee6c79924",
+      "split": "external",
+      "image_id": "extra2_t000017000ms_f000255",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 2,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.14458048000000057,
+        667.5209352,
+        26.995535999999998,
+        712.40045184
+      ],
+      "area_original_pixels": 1205.057905059737,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "중앙 감자와 떨어진 붉은 설비 하단 GT. 새 GT 판단 없이 의문만 유지.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000017000ms_f000255-FN-0-2-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000017000ms_f000255-FN-0-2-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000017000ms_f000255.png"
+    },
+    {
+      "ordinal": 11,
+      "error_id": "err-4e36448ff2080c4aff89d3569b4b8fe5b2d4a0697440db7333eceec40a9c4557",
+      "split": "external",
+      "image_id": "extra2_t000018000ms_f000270",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 2,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.09297983999999815,
+        656.6600343599999,
+        29.858848639999998,
+        700.10449236
+      ],
+      "area_original_pixels": 1293.162036915112,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "붉은 페인트와 검은 테두리만 확인되며 감자 존재 불명.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000018000ms_f000270-FN-0-2-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000018000ms_f000270-FN-0-2-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000018000ms_f000270.png"
+    },
+    {
+      "ordinal": 12,
+      "error_id": "err-cde87f72a63abb320b794d98798eac6cee5681dd5660455d1f4265a00d6d450d",
+      "split": "external",
+      "image_id": "extra2_t000021000ms_f000315",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.0923859199999999,
+        654.15844728,
+        30.3611488,
+        697.53491208
+      ],
+      "area_original_pixels": 1312.9519276038668,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "붉은 면 둥근 음영은 보이나 감자 윤곽은 확인 불가. FN 보존.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000021000ms_f000315-FN-0-0-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000021000ms_f000315-FN-0-0-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000021000ms_f000315.png"
+    },
+    {
+      "ordinal": 13,
+      "error_id": "err-51da05eaa26bbdaf7e98de1d211a063c237ea5fd300a620a156a47a3ead6a7d1",
+      "split": "external",
+      "image_id": "extra2_t000028000ms_f000420",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 1,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.324014720000001,
+        671.69873016,
+        26.12432832,
+        713.7924803999999
+      ],
+      "area_original_pixels": 1086.0319567920742,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "GT는 붉은 설비 질감과 하단 경계를 포함한다. 독립 감자 불명.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000028000ms_f000420-FN-0-1-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000028000ms_f000420-FN-0-1-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000028000ms_f000420.png"
+    },
+    {
+      "ordinal": 14,
+      "error_id": "err-b2dd7060503d071eb7ee711fd91692c85ea15cf65055364fb94116b9c381ac4f",
+      "split": "external",
+      "image_id": "extra2_t000029000ms_f000435",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.10066944000000078,
+        660.66320808,
+        27.6867712,
+        707.0504148
+      ],
+      "area_original_pixels": 1279.6422049400755,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "어두운 둥근 음영은 있으나 감자로 확정할 수 없다. 두 unknown 보존.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000029000ms_f000435-FN-0-0-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000029000ms_f000435-FN-0-0-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000029000ms_f000435.png"
+    },
+    {
+      "ordinal": 15,
+      "error_id": "err-61d76b7db6a9af81365e883af194b7571f1f23672012f6dc747bb824ebecaec5",
+      "split": "external",
+      "image_id": "extra2_t000037000ms_f000555",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        446.15582208,
+        543.84375024,
+        510.96673536000003,
+        620.09423856
+      ],
+      "area_original_pixels": 4941.863786065178,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "verdict": "PASS",
+      "independent_note": "G0는 롤러와 흐린 밝은 세로 흔적이 중첩되어 가림/흐림 구분 불가.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000037000ms_f000555-FN-0-0-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000037000ms_f000555-FN-0-0-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000037000ms_f000555.png"
+    },
+    {
+      "ordinal": 16,
+      "error_id": "err-ca5c75c7395d12ddb4e6c6d943c1d755a566e5c1ee3e613e926c07ed14aeaa34",
+      "split": "external",
+      "image_id": "extra2_t000040000ms_f000600",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        709.2698974609375,
+        15.331893920898438,
+        789.3636474609375,
+        107.52626037597656
+      ],
+      "area_original_pixels": 7384.192538261414,
+      "size_bin": "medium",
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "P2 흰 윗면 아래 갈색 둥근 부분과 붉은 손가락 띠의 겹침 확인. 물체 재질은 확정하지 않음.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000040000ms_f000600-FP-0-None-2-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000040000ms_f000600-FP-0-None-2-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000040000ms_f000600.png"
+    },
+    {
+      "ordinal": 17,
+      "error_id": "err-3c3536f080db4b4a4c2ebb898ea90fe458495dd3f093d0bffe8560317de2e0f6",
+      "split": "external",
+      "image_id": "extra2_t000049000ms_f000735",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        359.639892578125,
+        591.0872192382812,
+        422.1583251953125,
+        621.2274780273438
+      ],
+      "area_original_pixels": 1884.3217381685972,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "흰 낮은 조각이 감자 왼쪽 판 위에 있다. 하단 윤곽 흐림으로 가림 unknown 동의.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000049000ms_f000735-FP-0-None-2-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000049000ms_f000735-FP-0-None-2-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000049000ms_f000735.png"
+    },
+    {
+      "ordinal": 18,
+      "error_id": "err-0ebc3023eb2488c5d56ccb8d0c1440c99163cc1f95c8d2b4530628e046a45cbc",
+      "split": "external",
+      "image_id": "extra2_t000050000ms_f000750",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        327.3830261230469,
+        362.4453430175781,
+        404.4056091308594,
+        435.1481628417969
+      ],
+      "area_original_pixels": 5599.758974812925,
+      "size_bin": "medium",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "매끈한 청백색 타원체와 별도 각진 조각 확인. 돌 확정 없이 감자 FP 유지.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000050000ms_f000750-FP-0-None-2-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000050000ms_f000750-FP-0-None-2-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000050000ms_f000750.png"
+    },
+    {
+      "ordinal": 19,
+      "error_id": "err-e489c24893a5053f45f3de4c7f414ffbf0aa6ef708f118352a85d6a25defada6",
+      "split": "external",
+      "image_id": "extra2_t000052000ms_f000780",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        363.72023872,
+        19.73586348,
+        405.74404799999996,
+        61.815476520000004
+      ],
+      "area_original_pixels": 1768.3456329691599,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "verdict": "PASS",
+      "independent_note": "G0 주변 갈색 세로 영역과 흰 손 모양 경계 흐림 확인. 물체 가림 unknown.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000052000ms_f000780-FN-0-0-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000052000ms_f000780-FN-0-0-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000052000ms_f000780.png"
+    },
+    {
+      "ordinal": 20,
+      "error_id": "err-fa7da88981e694bd028f935e36ee31cc64095f53373269e0765818e0db17f94e",
+      "split": "external",
+      "image_id": "extra2_t000057000ms_f000855",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.28228759765625,
+        3.0770301818847656,
+        133.02459716796875,
+        104.632568359375
+      ],
+      "area_original_pixels": 13379.161149158608,
+      "size_bin": "large",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "접힌 니트 장갑 주먹이고 감자 별도 식별 불가. 적용 불가 두 필드 타당.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000057000ms_f000855-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000057000ms_f000855-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000057000ms_f000855.png"
+    },
+    {
+      "ordinal": 21,
+      "error_id": "err-00a825d25a8298940f7a3129c987d90e7cab2b6a35a42946692650566c4f2e2a",
+      "split": "external",
+      "image_id": "extra2_t000060000ms_f000900",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        368.7939453125,
+        468.7822265625,
+        433.4443359375,
+        563.8170166015625
+      ],
+      "area_original_pixels": 6144.03629899025,
+      "size_bin": "medium",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "청백색 길쭉한 타원체와 어두운 아래 윤곽, 명확한 앞쪽 가림 없음.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000060000ms_f000900-FP-0-None-1-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000060000ms_f000900-FP-0-None-1-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000060000ms_f000900.png"
+    },
+    {
+      "ordinal": 22,
+      "error_id": "err-3a1a459bc5bd52c8eef4f90edd24d3431d02ccd1645e85cc2aea1528a19e7b9c",
+      "split": "external",
+      "image_id": "extra2_t000061000ms_f000915",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        280.29592896,
+        96.35448456,
+        334.10086079999996,
+        170.50103783999998
+      ],
+      "area_original_pixels": 3989.4502454013227,
+      "size_bin": "medium",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "verdict": "PASS",
+      "independent_note": "G0는 레일 옆 흰 윗면/갈색 아랫면 물체. 하단 P0와 다른 물체이며 원인 불명.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FN-0-0-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FN-0-0-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000061000ms_f000915.png"
+    },
+    {
+      "ordinal": 23,
+      "error_id": "err-bd6eea159f8c73590b6c4282524d636f1b2157d7197ee805ef0521f7ec2e74d1",
+      "split": "external",
+      "image_id": "extra2_t000061000ms_f000915",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        359.44720458984375,
+        211.0930938720703,
+        420.92657470703125,
+        296.12908935546875
+      ],
+      "area_original_pixels": 5227.959439607337,
+      "size_bin": "medium",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "P0 청백색 타원체는 G0와 떨어져 있어 FN/FP 상쇄 불가. 가림 없음.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000061000ms_f000915.png"
+    },
+    {
+      "ordinal": 24,
+      "error_id": "err-b457b6c272ca8cf70181f68537e54e9257e2f43a754486e5fb042f854322c0d1",
+      "split": "external",
+      "image_id": "extra2_t000064000ms_f000960",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        1.57623291015625,
+        6.7239227294921875,
+        131.72280883789062,
+        110.78056335449219
+      ],
+      "area_original_pixels": 13542.615479886532,
+      "size_bin": "large",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "좌상단 직물과 접힌 손가락 확인. 감자 별도 식별 불가.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000064000ms_f000960-FP-0-None-4-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000064000ms_f000960-FP-0-None-4-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000064000ms_f000960.png"
+    },
+    {
+      "ordinal": 25,
+      "error_id": "err-dfaed331d1440a6f8254f04ef8fbbaa8e9ab515f051c7cfe6ac7eaf73bf2a7cd",
+      "split": "external",
+      "image_id": "extra2_t000068000ms_f001020",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        519.1201171875,
+        596.2382202148438,
+        573.1103515625,
+        621.7044067382812
+      ],
+      "area_original_pixels": 1374.925379037857,
+      "size_bin": "medium",
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "하단 판과 롤러 사이 황갈색 초승달 노출부 확인. 실제 프레임 가장자리 아님.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000068000ms_f001020-FP-0-None-4-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000068000ms_f001020-FP-0-None-4-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000068000ms_f001020.png"
+    },
+    {
+      "ordinal": 26,
+      "error_id": "err-0fa29651fec663da8d3c5daff1e647cc7162842382302ace2a319da21a73a27d",
+      "split": "external",
+      "image_id": "extra2_t000070000ms_f001050",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        519.783203125,
+        2.5249462127685547,
+        560.9365234375,
+        44.61134338378906
+      ],
+      "area_original_pixels": 1731.9949835781008,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "P5는 감자 오른쪽 붉은 손가락형 영역. 인접 박스 접촉만으로 중복 아님.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000070000ms_f001050-FP-0-None-5-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000070000ms_f001050-FP-0-None-5-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000070000ms_f001050.png"
+    },
+    {
+      "ordinal": 27,
+      "error_id": "err-6e2d8cc97a2d6a0f27dab12520b29d244aa4c425d238bb3764a5bbaf2ce79c91",
+      "split": "external",
+      "image_id": "extra2_t000076000ms_f001140",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.5443038940429688,
+        0,
+        121.54341125488281,
+        64.98979949951172
+      ],
+      "area_original_pixels": 7798.717927501362,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "좌상단 장갑 끝과 붉은 배경 확인. 감자 절단이 아님.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000076000ms_f001140-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000076000ms_f001140-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000076000ms_f001140.png"
+    },
+    {
+      "ordinal": 28,
+      "error_id": "err-3b37e0013e0e4a68e302950ac2cbf4f786e475f660dc1b56a0177f45800770b5",
+      "split": "external",
+      "image_id": "extra2_t000077000ms_f001155",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        0,
+        0,
+        120.50409698486328,
+        67.8515625
+      ],
+      "area_original_pixels": 8176.3912680745125,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "좌상단 장갑과 중앙 감자 위치 분리 확인. x=0,y=0은 감자 절단 근거 아님.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000077000ms_f001155-FP-0-None-1-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000077000ms_f001155-FP-0-None-1-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000077000ms_f001155.png"
+    },
+    {
+      "ordinal": 29,
+      "error_id": "err-82dd14e5e66cfd89d3f7b9c6297bffd3952972aa3ca379e3567193524ff66f19",
+      "split": "external",
+      "image_id": "extra2_t000079000ms_f001185",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        1.620208740234375,
+        0,
+        123.13386535644531,
+        69.34246826171875
+      ],
+      "area_original_pixels": 8426.056877274998,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "접힌 손가락과 직물 조직이 중앙 감자들과 분리. 두 not_applicable 동의.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000079000ms_f001185-FP-0-None-4-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000079000ms_f001185-FP-0-None-4-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000079000ms_f001185.png"
+    },
+    {
+      "ordinal": 30,
+      "error_id": "err-74aef1d3a23b3366921953d19be2ec1e84416a83ff6bb40f503a9cd47734d5e0",
+      "split": "external",
+      "image_id": "extra2_t000080000ms_f001200",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        520.3190307617188,
+        1.6855411529541016,
+        581.5529174804688,
+        33.087806701660156
+      ],
+      "area_original_pixels": 1922.8827713215724,
+      "size_bin": "medium",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "P0 갈색 물체가 원본 상단에서 잘리고 좌우 장갑과 분리. GT 누락 가능성만 유지.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000080000ms_f001200-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000080000ms_f001200-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000080000ms_f001200.png"
+    },
+    {
+      "ordinal": 31,
+      "error_id": "err-3182a20298eb79c162ea341fc1db2a62b54dfebd0f1acb0543f34886b4459d0d",
+      "split": "external",
+      "image_id": "extra2_t000100000ms_f001500",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        636.5689697265625,
+        579.699951171875,
+        717.8643798828125,
+        621.1351318359375
+      ],
+      "area_original_pixels": 3368.49000698328,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "verdict": "PASS",
+      "independent_note": "밝은 수평 띠와 겹친 납작한 회백색 영역. 독립 물체 경계 흐려 unclear 타당.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000100000ms_f001500-FP-0-None-1-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000100000ms_f001500-FP-0-None-1-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000100000ms_f001500.png"
+    },
+    {
+      "ordinal": 32,
+      "error_id": "err-94f85699488bd111296db89e0f566310faa8f2991d1fa62f88aa1b0c4ede730a",
+      "split": "external",
+      "image_id": "extra2_t000104000ms_f001560",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        0,
+        0,
+        107.80587005615234,
+        39.833885192871094
+      ],
+      "area_original_pixels": 4294.326650934352,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "붉은 프레임 위 장갑 끝과 손가락 접힘 확인. 감자 대상은 없다.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000104000ms_f001560-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000104000ms_f001560-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000104000ms_f001560.png"
+    },
+    {
+      "ordinal": 33,
+      "error_id": "err-b4a5b7d2d1019f17fb4d475fcab5061131aab4f6b29688d94f854166d36be913",
+      "split": "external",
+      "image_id": "extra2_t000105000ms_f001575",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        0,
+        0,
+        106.41828155517578,
+        47.1689453125
+      ],
+      "area_original_pixels": 5019.638102926314,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "흐린 니트 끝과 붉은 면 중첩. 중앙 다섯 감자와 위치 분리 확인.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000105000ms_f001575-FP-0-None-5-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000105000ms_f001575-FP-0-None-5-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000105000ms_f001575.png"
+    },
+    {
+      "ordinal": 34,
+      "error_id": "err-e2fb3aad59645e0b8eac1f149bdbec85e78a45ffbf6a8f5732ae7066c7f289d9",
+      "split": "external",
+      "image_id": "extra2_t000106000ms_f001590",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        1.3835220336914062,
+        0,
+        111.00159454345703,
+        50.07263946533203
+      ],
+      "area_original_pixels": 5488.8662236661185,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "좌상단 직물의 가로 접힘 확인. 장갑 프레임 절단을 감자 절단으로 세지 않음.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000106000ms_f001590-FP-0-None-4-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000106000ms_f001590-FP-0-None-4-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000106000ms_f001590.png"
+    },
+    {
+      "ordinal": 35,
+      "error_id": "err-ffbda571cfdb8f3bd76f4820134ed329144af74ed3b608835ee2778b7dc9e201",
+      "split": "external",
+      "image_id": "extra2_t000109000ms_f001635",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        385.50701904296875,
+        443.94549560546875,
+        465.40679931640625,
+        510.77899169921875
+      ],
+      "area_original_pixels": 5339.9816527962685,
+      "size_bin": "medium",
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "불규칙한 흰 각진 조각과 상단 별도 조각 확인. 재질은 확정 불가.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000109000ms_f001635-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000109000ms_f001635-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000109000ms_f001635.png"
+    },
+    {
+      "ordinal": 36,
+      "error_id": "err-04e8e64b9f2bb0fa4d85537a1ee16cb6c45f39854e779a73a9b9216340601d8d",
+      "split": "external",
+      "image_id": "extra2_t000111000ms_f001665",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.433441162109375,
+        1.840118408203125,
+        114.51211547851562,
+        74.77509307861328
+      ],
+      "area_original_pixels": 8247.39024703065,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "좌상단 장갑 주먹의 짙은 손가락 홈 확인. 별도 감자 없음.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000111000ms_f001665-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000111000ms_f001665-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000111000ms_f001665.png"
+    },
+    {
+      "ordinal": 37,
+      "error_id": "err-5a2384baeae9a884b536b439a5de93f4d50a52de0a59dfb82f741c75730fc210",
+      "split": "external",
+      "image_id": "extra2_t000112000ms_f001680",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.3590621948242188,
+        0.8250656127929688,
+        115.63507080078125,
+        72.05712127685547
+      ],
+      "area_original_pixels": 8140.1150060864165,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "세 개 손가락 굴곡과 직물 무늬가 보이는 장갑. 감자 대상 식별 불가.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000112000ms_f001680-FP-0-None-0-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000112000ms_f001680-FP-0-None-0-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000112000ms_f001680.png"
+    },
+    {
+      "ordinal": 38,
+      "error_id": "err-1beb32520cc1b66f5f3e0c4e7cca363edc057b1783f71405e33082ce486a56b4",
+      "split": "external",
+      "image_id": "extra2_t000121000ms_f001815",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        1.25201416015625,
+        1.3959808349609375,
+        123.2558364868164,
+        74.26382446289062
+      ],
+      "area_original_pixels": 8890.155447308789,
+      "size_bin": "medium",
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "verdict": "PASS",
+      "independent_note": "좌상단 장갑은 P0/P1 중앙 감자와 분리. 두 not_applicable 동의.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000121000ms_f001815-FP-0-None-2-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000121000ms_f001815-FP-0-None-2-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000121000ms_f001815.png"
+    },
+    {
+      "ordinal": 39,
+      "error_id": "err-e5760024b7ee202f2c153988caf6d3ca33508e57dca2ca8664caa91f269caed2",
+      "split": "external",
+      "image_id": "extra2_t000151000ms_f002265",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        6.399999996631323e-7,
+        662.14010772,
+        27.766742400000002,
+        707.53598172
+      ],
+      "area_original_pixels": 1260.4955103274997,
+      "size_bin": "medium",
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "verdict": "PASS",
+      "independent_note": "붉은 페인트 질감과 곡선 음영 및 검은 대각 경계 확인. 감자 존재 불명으로 unknown 유지.",
+      "full_frame": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000151000ms_f002265-FN-0-0-None-source.png",
+      "crop": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000151000ms_f002265-FN-0-0-None-crop.png",
+      "source": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000151000ms_f002265.png"
+    }
+  ]
+}

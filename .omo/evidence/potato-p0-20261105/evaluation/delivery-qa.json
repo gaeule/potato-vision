@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-09",
+  "scope": "Existing-data evaluation report only; not overall P0 completion",
+  "ap_independent_verdict": "PASS",
+  "ap_independent_report": "ap/independent-gate-v4.md",
+  "error_analysis_independent_verdict": "PASS",
+  "error_analysis_report": "error-analysis/independent-gate.md",
+  "ap_unique_successes": 6,
+  "actual_model_calls_including_preserved_failure": 7,
+  "error_observations": 39,
+  "post_audit_changes": {
+    "AGG-V4-001": "Corrected relative reference to error-analysis/verified-strata.json",
+    "AGG-V4-002": "Explicitly limited stored arrays to all_ap; raw detections/matching and confidence curves were not saved",
+    "status": "Updated pending audit status to PASS and added actual audit references",
+    "numeric_values_changed": false,
+    "models_labels_settings_changed": false
+  },
+  "checks": {
+    "final_metrics_json_parses": true,
+    "metrics_equal_pre_audit_data_except_expected_status_and_audit_references": true,
+    "six_unique_ap_rows_retained": true,
+    "all_named_report_json_markdown_references_readable": true,
+    "historical_operating_metrics_preserved": true,
+    "new_session_not_evaluated": true,
+    "task_b_not_trained_or_evaluated": true,
+    "overall_P0_complete_false": true,
+    "overall_G005_complete_false": true
+  },
+  "unrun_checks": {
+    "json_lsp": "Existing Biome executable unavailable; actual JSON parsing and data comparison performed instead",
+    "new_session_evaluation": "No accepted source session with provenance and ground truth",
+    "raw_detection_ap_reconstruction": "Raw detection/matching arrays were not saved",
+    "best_f1_argmax_reconstruction": "Confidence curves were not saved"
+  },
+  "remaining_blocker": "New shooting-session media/provenance and task-appropriate ground truth",
+  "no_followup_model_runs_required_for_this_document_correction": true
+}

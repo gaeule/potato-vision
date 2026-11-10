@@ -1,0 +1,1485 @@
+{
+  "schema": "potato-ap-independent-verified-matrix-v4",
+  "date": "2026-11-09",
+  "evidence_date": "2026-11-05",
+  "status": "PASS",
+  "independent": true,
+  "reviewer": "independent-ap-final-gate-v4",
+  "scope": "historical_task_A_AP_only",
+  "historical_AP_complete": true,
+  "overall_P0_complete": false,
+  "overall_G005_complete": false,
+  "new_session_generalization_verified": false,
+  "taskB_status": "NOT_TRAINED/NOT_EVALUATED",
+  "model_calls_by_this_auditor": 0,
+  "model_imports_by_this_auditor": 0,
+  "subdelegations": 0,
+  "installs": 0,
+  "source_edits": 0,
+  "label_edits": 0,
+  "blockers": [],
+  "summary_ko": "고유 성공 6개와 보존 실패 1개, 실제 model.val 누적 7회를 검증했다. current가 모든 클래스·분할에서 개선된 것은 아니다. 부모 수치 집계는 승인하되 출처 축약과 원시 배열 표현에 비차단 주의사항 2개가 있다.",
+  "counts": {
+    "unique_units": 6,
+    "successful_results": 6,
+    "failed_attempts": 1,
+    "total_attempts": 7,
+    "total_model_val_calls": 7,
+    "new_parent_model_val_calls": 5,
+    "replayed_successes": 0,
+    "classes_with_AP": 10,
+    "external_stone_NA_rows": 2
+  },
+  "bindings": {
+    "protocol_sha256": "189c4d8b92b0d5d1579dd09621e235821b3d0efd16b313462053ff0b4d242244",
+    "approval_sha256": "9d374128f6c5e057c87d8501541c0e8da34694fe2076fc1a6fd4e88858aaa3ad",
+    "inputs_manifest_sha256": "05dc668f51ee0fa8c70840c03bcd5438ac9bd5caea04a2ef3f8cf7fd1f55b30f",
+    "models": {
+      "current": {
+        "source": "retraining_experiment/outputs/selection/selected.pt",
+        "private": "private/models/current.pt",
+        "sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8"
+      },
+      "stone40": {
+        "source": "stone_experiment/outputs/selection/selected.pt",
+        "private": "private/models/stone40.pt",
+        "sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1"
+      }
+    },
+    "code_hashes": {
+      "runner.py": "0e79e2c4b623d128e88e8b6be37bb85e01418923fd4379ce18c2c79a53421f85",
+      "prepare_inputs.py": "f6a6d93c348913bab004d6f9a09f8b16db1fdaffe37e424e2edf0127e7613baf",
+      "check_fixtures.py": "b282986d9ab90e6bd88456450801679b9ff7962ecd48d9323662f83a10ba7319",
+      "settings-template.json": "e0646c790b0026fbe0adb11ef2722bbca136ec22c8f9785033602869c4eb81c1",
+      "pyrightconfig.json": "c8dc3945da07898a4fe1812f86da965b97ae2ddaec4de07b59c1b22df8c5a87b",
+      "preparation.md": "2d05c0abe2c458af39a1bb9590120a85c362aa106eace143326c0d1e97c20b2e"
+    }
+  },
+  "matched_conditions": {
+    "task": "detect",
+    "imgsz": 640,
+    "batch": 1,
+    "device": 0,
+    "conf": 0.001,
+    "iou": 0.5,
+    "augment": false,
+    "max_det": 300,
+    "half": false,
+    "quantize": null,
+    "seed": 42,
+    "deterministic": true,
+    "workers": 0,
+    "rect": true,
+    "single_cls": false,
+    "agnostic_nms": false,
+    "cache": false,
+    "plots": false,
+    "save": false,
+    "save_json": false,
+    "save_txt": false,
+    "save_conf": false,
+    "verbose": true,
+    "compile": false,
+    "channels_last": false
+  },
+  "matching_iou_thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "external_policy": {
+    "ground_truth_classes": [
+      0
+    ],
+    "prediction_classes_before_NMS_max_det_and_matching": [
+      0
+    ],
+    "implementation": "ExternalValidator.postprocess -> installed nms.non_max_suppression with classes=[0]; installed default validator omits this argument",
+    "stone_AP50": null,
+    "stone_AP50_95": null,
+    "reason": "external_ground_truth_is_potato_only_no_stone_gt",
+    "single_class_relabeling": false,
+    "usage": "evaluation_only_never_training_selection_or_threshold_search"
+  },
+  "datasets": {
+    "val11": {
+      "images": 11,
+      "labels": 11,
+      "gt": [
+        60,
+        8
+      ],
+      "empty_labels": 0,
+      "max_gt_per_image": 8,
+      "membership_verified": true
+    },
+    "test12": {
+      "images": 12,
+      "labels": 12,
+      "gt": [
+        33,
+        7
+      ],
+      "empty_labels": 3,
+      "max_gt_per_image": 7,
+      "membership_verified": true
+    },
+    "external166": {
+      "images": 166,
+      "labels": 166,
+      "gt": [
+        192,
+        0
+      ],
+      "empty_labels": 87,
+      "max_gt_per_image": 6,
+      "membership_verified": true
+    }
+  },
+  "precision_recall_definition": "library_smoothed_mean_best_F1_not_fixed_confidence_0.45",
+  "historical_operating_confidence": 0.45,
+  "matrix": [
+    {
+      "unit": "current__val11",
+      "model": "current",
+      "dataset": "val11",
+      "status": "verified_success",
+      "images": 11,
+      "gt_instances": [
+        60,
+        8
+      ],
+      "total_model_val_calls": 2,
+      "successful_attempts": 1,
+      "classes": {
+        "potato": {
+          "class_id": 0,
+          "AP50": 0.995,
+          "AP50_95": 0.8816423349934963,
+          "reason": null,
+          "library_best_f1_precision": 1,
+          "library_best_f1_recall": 0.9954200016975621,
+          "row_index": 0,
+          "all_ap": [
+            0.995,
+            0.995,
+            0.995,
+            0.985,
+            0.985,
+            0.985,
+            0.985,
+            0.92249776984835,
+            0.8477691715772635,
+            0.1211564085093497
+          ],
+          "AP50_95_recomputed": 0.8816423349934965
+        },
+        "stone": {
+          "class_id": 1,
+          "AP50": 0.9622727272727274,
+          "AP50_95": 0.7545064935064936,
+          "reason": null,
+          "library_best_f1_precision": 0.9914881797795989,
+          "library_best_f1_recall": 0.875,
+          "row_index": 1,
+          "all_ap": [
+            0.9622727272727274,
+            0.9622727272727274,
+            0.9622727272727274,
+            0.9622727272727274,
+            0.9622727272727274,
+            0.9622727272727274,
+            0.9622727272727274,
+            0.739155844155844,
+            0.06999999999999999,
+            0
+          ],
+          "AP50_95_recomputed": 0.7545064935064938
+        }
+      },
+      "ap_class_index": [
+        0,
+        1
+      ],
+      "aggregate_library_metrics": {
+        "metrics/precision(B)": 0.9957440898897995,
+        "metrics/recall(B)": 0.935210000848781,
+        "metrics/mAP50(B)": 0.9786363636363637,
+        "metrics/mAP50-95(B)": 0.818074414249995,
+        "fitness": 0.818074414249995
+      },
+      "actual_settings": {
+        "task": "detect",
+        "imgsz": 640,
+        "batch": 1,
+        "device": 0,
+        "conf": 0.001,
+        "iou": 0.5,
+        "augment": false,
+        "max_det": 300,
+        "quantize": null,
+        "seed": 42,
+        "deterministic": true,
+        "workers": 0,
+        "rect": true,
+        "single_cls": false,
+        "agnostic_nms": false,
+        "cache": false,
+        "plots": false,
+        "save": false,
+        "save_json": false,
+        "save_txt": false,
+        "save_conf": false,
+        "verbose": true,
+        "compile": false,
+        "channels_last": false,
+        "model": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/models/current.pt",
+        "data": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/val11/data.yaml",
+        "split": "val",
+        "classes": null,
+        "project": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/units/current__val11/attempt-002-a06de807aa584dcfb00d597120832bc7",
+        "name": "validation",
+        "exist_ok": false,
+        "mode": "val"
+      },
+      "validation_started": {
+        "event": "validation_started",
+        "time_ns": "1794204429708282000",
+        "images": 11,
+        "instances": [
+          60,
+          8
+        ],
+        "device": "cuda:0",
+        "deterministic": true
+      },
+      "evidence": {
+        "unit": "current__val11",
+        "attempt": "units/current__val11/attempt-002-a06de807aa584dcfb00d597120832bc7",
+        "outer_receipt": "results-v3/current__val11.json",
+        "outer_receipt_sha256": "db850beecea4a04ea79a425e2327a338c683ba75144b1fa3da793068d2a2eb9c",
+        "monitor_id": "mon_YQPW6ZVY07W1Z9BS",
+        "runner_exit": 0,
+        "worker_exit": 0,
+        "worker_pid": 1330876,
+        "completed_receipt": "units/current__val11/completed.json",
+        "completed_receipt_sha256": "43b0da785bbd71c56b8e7dea3180fd2c54ab1baf9c5f6789c9ff8b76c9fb7298",
+        "native_artifact_sha256": {
+          "intent.json": "3224d33b696b4b56ccc6cf4743ec106ebc2c0571c422a34d6a43e79b6546eabd",
+          "exit.json": "d2d7fdd7b0f9bfd20e9208f492a6bc6ad08c87324361609b5e5e8e51b372c7d0",
+          "events.jsonl": "3aa784b40656086e3cfd753bf7d4af5a620b395552d1a52a1ce8d12c7eaf5f94",
+          "result.json": "c2e5f90a4ce8a96a50a94283e22cb82efa168cd845bbd051b0b7539a2db7e60b",
+          "actual-settings.json": "fd0af5e089206c5d89b74cef095da4dde047ea7e14914875a878db0352e20efa",
+          "stdout.log": "ecc38afcb5cb2a46d8d86c01d68390e78c2f6f652d5a44efcb6a424b90b3a550",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "launch_time_ns": "1794204419021760929",
+        "completion_event": {
+          "event": "validation_completed",
+          "time_ns": "1794204436626376949",
+          "result_sha256": "c2e5f90a4ce8a96a50a94283e22cb82efa168cd845bbd051b0b7539a2db7e60b"
+        },
+        "outer_receipt_mtime_ns": "1794204567034041500",
+        "next_launch_time_ns": "1794205910838370970"
+      },
+      "actual_half_field_present": false,
+      "new_session_generalization_verified": false,
+      "taskB_evaluated": false,
+      "overall_P0_complete": false
+    },
+    {
+      "unit": "current__test12",
+      "model": "current",
+      "dataset": "test12",
+      "status": "verified_success",
+      "images": 12,
+      "gt_instances": [
+        33,
+        7
+      ],
+      "total_model_val_calls": 1,
+      "successful_attempts": 1,
+      "classes": {
+        "potato": {
+          "class_id": 0,
+          "AP50": 0.9897058823529414,
+          "AP50_95": 0.8900288661647286,
+          "reason": null,
+          "library_best_f1_precision": 0.9595157316828486,
+          "library_best_f1_recall": 1,
+          "row_index": 0,
+          "all_ap": [
+            0.9897058823529414,
+            0.9897058823529414,
+            0.9897058823529414,
+            0.9806586270871984,
+            0.9604545454545454,
+            0.9604545454545454,
+            0.9604545454545454,
+            0.8993027606431389,
+            0.8663914450399435,
+            0.3034545454545454
+          ],
+          "AP50_95_recomputed": 0.8900288661647288
+        },
+        "stone": {
+          "class_id": 1,
+          "AP50": 0.855,
+          "AP50_95": 0.7167916666666667,
+          "reason": null,
+          "library_best_f1_precision": 0.9660245528175508,
+          "library_best_f1_recall": 0.8571428571428571,
+          "row_index": 1,
+          "all_ap": [
+            0.855,
+            0.855,
+            0.855,
+            0.855,
+            0.855,
+            0.855,
+            0.855,
+            0.6916666666666667,
+            0.41875000000000007,
+            0.07250000000000001
+          ],
+          "AP50_95_recomputed": 0.7167916666666667
+        }
+      },
+      "ap_class_index": [
+        0,
+        1
+      ],
+      "aggregate_library_metrics": {
+        "metrics/precision(B)": 0.9627701422501997,
+        "metrics/recall(B)": 0.9285714285714286,
+        "metrics/mAP50(B)": 0.9223529411764707,
+        "metrics/mAP50-95(B)": 0.8034102664156977,
+        "fitness": 0.8034102664156977
+      },
+      "actual_settings": {
+        "task": "detect",
+        "imgsz": 640,
+        "batch": 1,
+        "device": 0,
+        "conf": 0.001,
+        "iou": 0.5,
+        "augment": false,
+        "max_det": 300,
+        "quantize": null,
+        "seed": 42,
+        "deterministic": true,
+        "workers": 0,
+        "rect": true,
+        "single_cls": false,
+        "agnostic_nms": false,
+        "cache": false,
+        "plots": false,
+        "save": false,
+        "save_json": false,
+        "save_txt": false,
+        "save_conf": false,
+        "verbose": true,
+        "compile": false,
+        "channels_last": false,
+        "model": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/models/current.pt",
+        "data": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/test12/data.yaml",
+        "split": "test",
+        "classes": null,
+        "project": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/units/current__test12/attempt-001-09a9d7ed3bae49d29b3a558b0d666959",
+        "name": "validation",
+        "exist_ok": false,
+        "mode": "val"
+      },
+      "validation_started": {
+        "event": "validation_started",
+        "time_ns": "1794205920678065117",
+        "images": 12,
+        "instances": [
+          33,
+          7
+        ],
+        "device": "cuda:0",
+        "deterministic": true
+      },
+      "evidence": {
+        "unit": "current__test12",
+        "attempt": "units/current__test12/attempt-001-09a9d7ed3bae49d29b3a558b0d666959",
+        "outer_receipt": "results-v4/current__test12.json",
+        "outer_receipt_sha256": "22c408a570e12962443ed09fbabb39d649d09771e8f06928e63dd9095a978699",
+        "monitor_id": "mon_9BRGRAGANMZK7VVJ",
+        "runner_exit": 0,
+        "worker_exit": 0,
+        "worker_pid": 1340987,
+        "completed_receipt": "units/current__test12/completed.json",
+        "completed_receipt_sha256": "f65f9a893543ad5d013679b33c7963bed92b2fc72f306b9b8e1f81b0ac1ac9f8",
+        "native_artifact_sha256": {
+          "intent.json": "554ae2ca728cd75ab3250f8d022044460694ded8d8d882c692ac1203cc8f4f05",
+          "exit.json": "2025039a9a9b44edf025117680818c2ca7061b5645c934f2f89dbee3651046ae",
+          "result.json": "9542fc45cee71aa20c10ef01dc0e21f8b0cadabc9d410fff79c2f078570e7528",
+          "events.jsonl": "d881f22ffbdf85347f4ef8221453e74c3e0dacef853386e27478e1f525293a69",
+          "actual-settings.json": "7ea37ae5f396c64249d759465e4657c154136844276347d4f1dcebbb704569a9",
+          "stdout.log": "d27d7a94959d75e4ebf7a22afcf4fa825ef1e3b02de1becd95a087a6f6531712",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "launch_time_ns": "1794205910838370970",
+        "completion_event": {
+          "event": "validation_completed",
+          "time_ns": "1794205927742918911",
+          "result_sha256": "9542fc45cee71aa20c10ef01dc0e21f8b0cadabc9d410fff79c2f078570e7528"
+        },
+        "outer_receipt_mtime_ns": "1794206029465930600",
+        "next_launch_time_ns": "1794206079254440427"
+      },
+      "actual_half_field_present": false,
+      "new_session_generalization_verified": false,
+      "taskB_evaluated": false,
+      "overall_P0_complete": false
+    },
+    {
+      "unit": "current__external166",
+      "model": "current",
+      "dataset": "external166",
+      "status": "verified_success",
+      "images": 166,
+      "gt_instances": [
+        192,
+        0
+      ],
+      "total_model_val_calls": 1,
+      "successful_attempts": 1,
+      "classes": {
+        "potato": {
+          "class_id": 0,
+          "AP50": 0.9439637380645731,
+          "AP50_95": 0.7861336712988526,
+          "reason": null,
+          "library_best_f1_precision": 0.9610824735574326,
+          "library_best_f1_recall": 0.9322916666666666,
+          "row_index": 0,
+          "all_ap": [
+            0.9439637380645731,
+            0.9391341639787155,
+            0.9303097257033652,
+            0.9303097257033652,
+            0.9303097257033652,
+            0.9049049251646573,
+            0.8814299913418886,
+            0.8030435818142412,
+            0.5396047034347025,
+            0.05832643207965145
+          ],
+          "AP50_95_recomputed": 0.7861336712988525
+        },
+        "stone": {
+          "class_id": 1,
+          "AP50": null,
+          "AP50_95": null,
+          "reason": "external_ground_truth_is_potato_only_no_stone_gt",
+          "library_best_f1_precision": null,
+          "library_best_f1_recall": null,
+          "row_index": null,
+          "all_ap": null,
+          "AP50_95_recomputed": null
+        }
+      },
+      "ap_class_index": [
+        0
+      ],
+      "aggregate_library_metrics": {
+        "metrics/precision(B)": 0.9610824735574326,
+        "metrics/recall(B)": 0.9322916666666666,
+        "metrics/mAP50(B)": 0.9439637380645731,
+        "metrics/mAP50-95(B)": 0.7861336712988526,
+        "fitness": 0.7861336712988526
+      },
+      "actual_settings": {
+        "task": "detect",
+        "imgsz": 640,
+        "batch": 1,
+        "device": 0,
+        "conf": 0.001,
+        "iou": 0.5,
+        "augment": false,
+        "max_det": 300,
+        "quantize": null,
+        "seed": 42,
+        "deterministic": true,
+        "workers": 0,
+        "rect": true,
+        "single_cls": false,
+        "agnostic_nms": false,
+        "cache": false,
+        "plots": false,
+        "save": false,
+        "save_json": false,
+        "save_txt": false,
+        "save_conf": false,
+        "verbose": true,
+        "compile": false,
+        "channels_last": false,
+        "model": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/models/current.pt",
+        "data": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/external166/data.yaml",
+        "split": "test",
+        "classes": [
+          0
+        ],
+        "project": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/units/current__external166/attempt-001-6987ddbadd014d1c8301ae5cc8472ef6",
+        "name": "validation",
+        "exist_ok": false,
+        "mode": "val"
+      },
+      "validation_started": {
+        "event": "validation_started",
+        "time_ns": "1794206090352966139",
+        "images": 166,
+        "instances": [
+          192,
+          0
+        ],
+        "device": "cuda:0",
+        "deterministic": true
+      },
+      "evidence": {
+        "unit": "current__external166",
+        "attempt": "units/current__external166/attempt-001-6987ddbadd014d1c8301ae5cc8472ef6",
+        "outer_receipt": "results-v4/current__external166.json",
+        "outer_receipt_sha256": "8f0ce31fd91ce873d9ab7656f62252f322c4b7cd9abba46e277c891f79a9ec04",
+        "monitor_id": "mon_BA6V56K3MNP63P1F",
+        "runner_exit": 0,
+        "worker_exit": 0,
+        "worker_pid": 1341304,
+        "completed_receipt": "units/current__external166/completed.json",
+        "completed_receipt_sha256": "e9608fe7bfe0c8b4213ddd90549f05a0ffe3d3e6a4bb651f4fef3ddeebf7b9df",
+        "native_artifact_sha256": {
+          "intent.json": "70e53a4cf871666c9c6b46071f3c71ae644a2b92486117b47ba38f163a96473f",
+          "exit.json": "a60aa456f207ea5b31adaaa67e10c0302816bf7eacdc4758756be9d885e5292d",
+          "result.json": "e4c85675b748d932b36cfc2a3079814eb9b439f7aa1fe9eded0c747b9c513615",
+          "events.jsonl": "5369c3ba1e0ebaa70b2ec5929e3d2bc020c894d71c6b7c406c0845f9da22f69e",
+          "actual-settings.json": "621cec0a0edf230600c22f73f4ae5a98156352b1470696193d8808b80285f758",
+          "stdout.log": "ffe66e70696939a8c92d349449379194bd2d8451a78f77a619135c17c5b776b8",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "launch_time_ns": "1794206079254440427",
+        "completion_event": {
+          "event": "validation_completed",
+          "time_ns": "1794206101700055780",
+          "result_sha256": "e4c85675b748d932b36cfc2a3079814eb9b439f7aa1fe9eded0c747b9c513615"
+        },
+        "outer_receipt_mtime_ns": "1794206138983146400",
+        "next_launch_time_ns": "1794206154957694785"
+      },
+      "actual_half_field_present": false,
+      "new_session_generalization_verified": false,
+      "taskB_evaluated": false,
+      "overall_P0_complete": false
+    },
+    {
+      "unit": "stone40__val11",
+      "model": "stone40",
+      "dataset": "val11",
+      "status": "verified_success",
+      "images": 11,
+      "gt_instances": [
+        60,
+        8
+      ],
+      "total_model_val_calls": 1,
+      "successful_attempts": 1,
+      "classes": {
+        "potato": {
+          "class_id": 0,
+          "AP50": 0.993695652173913,
+          "AP50_95": 0.8579507788861461,
+          "reason": null,
+          "library_best_f1_precision": 0.9736714927372483,
+          "library_best_f1_recall": 0.9833333333333333,
+          "row_index": 0,
+          "all_ap": [
+            0.993695652173913,
+            0.993695652173913,
+            0.993695652173913,
+            0.993695652173913,
+            0.993695652173913,
+            0.985,
+            0.985,
+            0.9117023490930716,
+            0.7079038531425743,
+            0.021423325756251093
+          ],
+          "AP50_95_recomputed": 0.8579507788861462
+        },
+        "stone": {
+          "class_id": 1,
+          "AP50": 0.9186363636363638,
+          "AP50_95": 0.7849025974025976,
+          "reason": null,
+          "library_best_f1_precision": 0.9915600864902235,
+          "library_best_f1_recall": 0.875,
+          "row_index": 1,
+          "all_ap": [
+            0.9186363636363638,
+            0.9186363636363638,
+            0.9186363636363638,
+            0.9186363636363638,
+            0.9186363636363638,
+            0.9186363636363638,
+            0.9186363636363638,
+            0.7092857142857143,
+            0.7092857142857143,
+            0
+          ],
+          "AP50_95_recomputed": 0.7849025974025976
+        }
+      },
+      "ap_class_index": [
+        0,
+        1
+      ],
+      "aggregate_library_metrics": {
+        "metrics/precision(B)": 0.982615789613736,
+        "metrics/recall(B)": 0.9291666666666667,
+        "metrics/mAP50(B)": 0.9561660079051384,
+        "metrics/mAP50-95(B)": 0.8214266881443718,
+        "fitness": 0.8214266881443718
+      },
+      "actual_settings": {
+        "task": "detect",
+        "imgsz": 640,
+        "batch": 1,
+        "device": 0,
+        "conf": 0.001,
+        "iou": 0.5,
+        "augment": false,
+        "max_det": 300,
+        "quantize": null,
+        "seed": 42,
+        "deterministic": true,
+        "workers": 0,
+        "rect": true,
+        "single_cls": false,
+        "agnostic_nms": false,
+        "cache": false,
+        "plots": false,
+        "save": false,
+        "save_json": false,
+        "save_txt": false,
+        "save_conf": false,
+        "verbose": true,
+        "compile": false,
+        "channels_last": false,
+        "model": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/models/stone40.pt",
+        "data": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/val11/data.yaml",
+        "split": "val",
+        "classes": null,
+        "project": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/units/stone40__val11/attempt-001-869faa6058be49df9170ff6a7d3d7044",
+        "name": "validation",
+        "exist_ok": false,
+        "mode": "val"
+      },
+      "validation_started": {
+        "event": "validation_started",
+        "time_ns": "1794206164247670755",
+        "images": 11,
+        "instances": [
+          60,
+          8
+        ],
+        "device": "cuda:0",
+        "deterministic": true
+      },
+      "evidence": {
+        "unit": "stone40__val11",
+        "attempt": "units/stone40__val11/attempt-001-869faa6058be49df9170ff6a7d3d7044",
+        "outer_receipt": "results-v4/stone40__val11.json",
+        "outer_receipt_sha256": "230ba11fba196d4f317f5d7c1661ba81cdc170bcf0ba3f8b010a6201dc7ecece",
+        "monitor_id": "mon_ZWCNWJMDVFQJV8KC",
+        "runner_exit": 0,
+        "worker_exit": 0,
+        "worker_pid": 1341435,
+        "completed_receipt": "units/stone40__val11/completed.json",
+        "completed_receipt_sha256": "a8838338b43c6a1fc2b6a3e20a939519df7bd7c589b8a2bb6a53a418956e1ec9",
+        "native_artifact_sha256": {
+          "intent.json": "d52fb42ff8d894e3b67667e7782eeebfb4daff9ba65b242fc5cc4f42be9eaad6",
+          "exit.json": "5514cf9273d4535cebaff7b9369c24d1f0a50e6b500ae3974bc849dab2e7e575",
+          "result.json": "1e366467253ca2eec45737636951bee82c6aff1d3da2abf2e207131c6b4915ab",
+          "events.jsonl": "b9a1972739cfcec5fd53e7daf36fc64d8b4d2271d783a4e674eb9e2083c80e47",
+          "actual-settings.json": "cee731c9587fba9791d79a57e9cd8acf33aeb48d200394ed76d9b930e6c6172d",
+          "stdout.log": "8153c9147233af4e647bff5fd0e7d21e2241f8aed8c1a20132c1c7edc11ce90b",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "launch_time_ns": "1794206154957694785",
+        "completion_event": {
+          "event": "validation_completed",
+          "time_ns": "1794206171284750525",
+          "result_sha256": "1e366467253ca2eec45737636951bee82c6aff1d3da2abf2e207131c6b4915ab"
+        },
+        "outer_receipt_mtime_ns": "1794206195913555300",
+        "next_launch_time_ns": "1794206214159032535"
+      },
+      "actual_half_field_present": false,
+      "new_session_generalization_verified": false,
+      "taskB_evaluated": false,
+      "overall_P0_complete": false
+    },
+    {
+      "unit": "stone40__test12",
+      "model": "stone40",
+      "dataset": "test12",
+      "status": "verified_success",
+      "images": 12,
+      "gt_instances": [
+        33,
+        7
+      ],
+      "total_model_val_calls": 1,
+      "successful_attempts": 1,
+      "classes": {
+        "potato": {
+          "class_id": 0,
+          "AP50": 0.9887402597402597,
+          "AP50_95": 0.8686566738816739,
+          "reason": null,
+          "library_best_f1_precision": 0.9257739467625467,
+          "library_best_f1_recall": 1,
+          "row_index": 0,
+          "all_ap": [
+            0.9887402597402597,
+            0.9887402597402597,
+            0.9887402597402597,
+            0.9604545454545454,
+            0.9604545454545454,
+            0.9604545454545454,
+            0.9604545454545454,
+            0.9312500000000001,
+            0.8160277777777778,
+            0.13125
+          ],
+          "AP50_95_recomputed": 0.868656673881674
+        },
+        "stone": {
+          "class_id": 1,
+          "AP50": 0.8612820512820513,
+          "AP50_95": 0.7314679487179487,
+          "reason": null,
+          "library_best_f1_precision": 0.9896868255153386,
+          "library_best_f1_recall": 0.8571428571428571,
+          "row_index": 1,
+          "all_ap": [
+            0.8612820512820513,
+            0.8612820512820513,
+            0.8612820512820513,
+            0.855,
+            0.855,
+            0.855,
+            0.855,
+            0.855,
+            0.43166666666666675,
+            0.024166666666666666
+          ],
+          "AP50_95_recomputed": 0.7314679487179488
+        }
+      },
+      "ap_class_index": [
+        0,
+        1
+      ],
+      "aggregate_library_metrics": {
+        "metrics/precision(B)": 0.9577303861389426,
+        "metrics/recall(B)": 0.9285714285714286,
+        "metrics/mAP50(B)": 0.9250111555111555,
+        "metrics/mAP50-95(B)": 0.8000623112998113,
+        "fitness": 0.8000623112998113
+      },
+      "actual_settings": {
+        "task": "detect",
+        "imgsz": 640,
+        "batch": 1,
+        "device": 0,
+        "conf": 0.001,
+        "iou": 0.5,
+        "augment": false,
+        "max_det": 300,
+        "quantize": null,
+        "seed": 42,
+        "deterministic": true,
+        "workers": 0,
+        "rect": true,
+        "single_cls": false,
+        "agnostic_nms": false,
+        "cache": false,
+        "plots": false,
+        "save": false,
+        "save_json": false,
+        "save_txt": false,
+        "save_conf": false,
+        "verbose": true,
+        "compile": false,
+        "channels_last": false,
+        "model": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/models/stone40.pt",
+        "data": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/test12/data.yaml",
+        "split": "test",
+        "classes": null,
+        "project": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/units/stone40__test12/attempt-001-e5567092347945918109db0a15eea5b4",
+        "name": "validation",
+        "exist_ok": false,
+        "mode": "val"
+      },
+      "validation_started": {
+        "event": "validation_started",
+        "time_ns": "1794206223453383269",
+        "images": 12,
+        "instances": [
+          33,
+          7
+        ],
+        "device": "cuda:0",
+        "deterministic": true
+      },
+      "evidence": {
+        "unit": "stone40__test12",
+        "attempt": "units/stone40__test12/attempt-001-e5567092347945918109db0a15eea5b4",
+        "outer_receipt": "results-v4/stone40__test12.json",
+        "outer_receipt_sha256": "051a5590a155ecb79e73512b92a3f74bb534444137ef4cceeeee09b8181a55c2",
+        "monitor_id": "mon_WPZMW7CN094T0WXC",
+        "runner_exit": 0,
+        "worker_exit": 0,
+        "worker_pid": 1341610,
+        "completed_receipt": "units/stone40__test12/completed.json",
+        "completed_receipt_sha256": "b0df8d97414e818cb0e30aa43cbf9f04678a4f3fc6d53fdb744de534d3a8f8b6",
+        "native_artifact_sha256": {
+          "intent.json": "75e84d597c7a3fbde83aa0d7f37757eaad865596992909c79be7959bcf53e6bf",
+          "exit.json": "689f698a6f012ca8fff209e3b015236209a0d3ff503ecb2caee14ae32ac5ba3e",
+          "result.json": "c2440329ed6389f381ed50e109e90b79885c44576a4553719578de69d79294ad",
+          "events.jsonl": "c668aada333f2b1c1db990af6b7c33c0b86b310467063ca6c277420cffe99293",
+          "actual-settings.json": "1b541428f1e820e8010c60a72c913819042e6d07ca85a21a061e646b6a4c2110",
+          "stdout.log": "e6ff882d8a9fbe0c1aec4e79bbbdec16f58b91c4ffe66230349852cc21533e33",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "launch_time_ns": "1794206214159032535",
+        "completion_event": {
+          "event": "validation_completed",
+          "time_ns": "1794206230402161850",
+          "result_sha256": "c2440329ed6389f381ed50e109e90b79885c44576a4553719578de69d79294ad"
+        },
+        "outer_receipt_mtime_ns": "1794206239554868300",
+        "next_launch_time_ns": "1794206256781889487"
+      },
+      "actual_half_field_present": false,
+      "new_session_generalization_verified": false,
+      "taskB_evaluated": false,
+      "overall_P0_complete": false
+    },
+    {
+      "unit": "stone40__external166",
+      "model": "stone40",
+      "dataset": "external166",
+      "status": "verified_success",
+      "images": 166,
+      "gt_instances": [
+        192,
+        0
+      ],
+      "total_model_val_calls": 1,
+      "successful_attempts": 1,
+      "classes": {
+        "potato": {
+          "class_id": 0,
+          "AP50": 0.9476353621484179,
+          "AP50_95": 0.7935464081331041,
+          "reason": null,
+          "library_best_f1_precision": 0.9522907993358819,
+          "library_best_f1_recall": 0.921875,
+          "row_index": 0,
+          "all_ap": [
+            0.9476353621484179,
+            0.9476353621484179,
+            0.9315085792346204,
+            0.9315085792346204,
+            0.9207574854912783,
+            0.9040869378934143,
+            0.8976497490754397,
+            0.7963773316044184,
+            0.5649236751265081,
+            0.09338101937390522
+          ],
+          "AP50_95_recomputed": 0.793546408133104
+        },
+        "stone": {
+          "class_id": 1,
+          "AP50": null,
+          "AP50_95": null,
+          "reason": "external_ground_truth_is_potato_only_no_stone_gt",
+          "library_best_f1_precision": null,
+          "library_best_f1_recall": null,
+          "row_index": null,
+          "all_ap": null,
+          "AP50_95_recomputed": null
+        }
+      },
+      "ap_class_index": [
+        0
+      ],
+      "aggregate_library_metrics": {
+        "metrics/precision(B)": 0.9522907993358819,
+        "metrics/recall(B)": 0.921875,
+        "metrics/mAP50(B)": 0.9476353621484179,
+        "metrics/mAP50-95(B)": 0.7935464081331041,
+        "fitness": 0.7935464081331041
+      },
+      "actual_settings": {
+        "task": "detect",
+        "imgsz": 640,
+        "batch": 1,
+        "device": 0,
+        "conf": 0.001,
+        "iou": 0.5,
+        "augment": false,
+        "max_det": 300,
+        "quantize": null,
+        "seed": 42,
+        "deterministic": true,
+        "workers": 0,
+        "rect": true,
+        "single_cls": false,
+        "agnostic_nms": false,
+        "cache": false,
+        "plots": false,
+        "save": false,
+        "save_json": false,
+        "save_txt": false,
+        "save_conf": false,
+        "verbose": true,
+        "compile": false,
+        "channels_last": false,
+        "model": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/models/stone40.pt",
+        "data": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/private/external166/data.yaml",
+        "split": "test",
+        "classes": [
+          0
+        ],
+        "project": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/units/stone40__external166/attempt-001-f8b0be763add4ebf90bde07858ff4215",
+        "name": "validation",
+        "exist_ok": false,
+        "mode": "val"
+      },
+      "validation_started": {
+        "event": "validation_started",
+        "time_ns": "1794206266626672935",
+        "images": 166,
+        "instances": [
+          192,
+          0
+        ],
+        "device": "cuda:0",
+        "deterministic": true
+      },
+      "evidence": {
+        "unit": "stone40__external166",
+        "attempt": "units/stone40__external166/attempt-001-f8b0be763add4ebf90bde07858ff4215",
+        "outer_receipt": "results-v4/stone40__external166.json",
+        "outer_receipt_sha256": "7a5400f1d04789f38c9187ddbdafc102b7867f4a1f10d97eaf8059d60935f452",
+        "monitor_id": "mon_2MF98WCEA04FPNCQ",
+        "runner_exit": 0,
+        "worker_exit": 0,
+        "worker_pid": 1341729,
+        "completed_receipt": "units/stone40__external166/completed.json",
+        "completed_receipt_sha256": "dec585977463a4bcc2ec30bac61786a8c1c86ac858cc1a2f2ae5e5e6fe90b00d",
+        "native_artifact_sha256": {
+          "intent.json": "c5b96d6068a77691b70008d78ae62866e3c5851c195a38d2136007e55e277048",
+          "exit.json": "58e17fa012d880d8db0dc1811fb0b902dc5ded76382d3ea3a436eed082c42624",
+          "result.json": "d349dd32294f7f537765bd4fc46704b224c51665162becefadc32d683c259f01",
+          "events.jsonl": "e69a7b4b8f9b3413647c7d98fca8511df614870bc8c4170767ee28f6374a850c",
+          "actual-settings.json": "abdc4138fe772ebc084d82aba160f9d833633402eb57c3f7078e300a6eaf8617",
+          "stdout.log": "e60948b6f2c86e5fee17cd457a60c1662d6f2c9b54c4a35bab85b706c21e541c",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "launch_time_ns": "1794206256781889487",
+        "completion_event": {
+          "event": "validation_completed",
+          "time_ns": "1794206277681245044",
+          "result_sha256": "d349dd32294f7f537765bd4fc46704b224c51665162becefadc32d683c259f01"
+        },
+        "outer_receipt_mtime_ns": "1794206293192858200",
+        "next_launch_time_ns": null
+      },
+      "actual_half_field_present": false,
+      "new_session_generalization_verified": false,
+      "taskB_evaluated": false,
+      "overall_P0_complete": false
+    }
+  ],
+  "comparison": {
+    "direction": "current_minus_stone40",
+    "AP_scale": "ratio_0_to_1",
+    "current_improved_every_class_split": false,
+    "comparable_class_split_pairs": 5,
+    "improved_both_AP_metrics": 2,
+    "regressed_at_least_one_AP_metric": 3,
+    "rows": [
+      {
+        "dataset": "val11",
+        "class": "potato",
+        "current_minus_stone40_AP50": 0.0013043478260870156,
+        "current_minus_stone40_AP50_95": 0.023691556107350187,
+        "current_minus_stone40_AP50_percentage_points": 0.13043478260870156,
+        "current_minus_stone40_AP50_95_percentage_points": 2.3691556107350187,
+        "improved_both": true,
+        "reason": null
+      },
+      {
+        "dataset": "val11",
+        "class": "stone",
+        "current_minus_stone40_AP50": 0.043636363636363584,
+        "current_minus_stone40_AP50_95": -0.030396103896104032,
+        "current_minus_stone40_AP50_percentage_points": 4.363636363636358,
+        "current_minus_stone40_AP50_95_percentage_points": -3.039610389610403,
+        "improved_both": false,
+        "reason": null
+      },
+      {
+        "dataset": "test12",
+        "class": "potato",
+        "current_minus_stone40_AP50": 0.000965622612681738,
+        "current_minus_stone40_AP50_95": 0.02137219228305476,
+        "current_minus_stone40_AP50_percentage_points": 0.0965622612681738,
+        "current_minus_stone40_AP50_95_percentage_points": 2.137219228305476,
+        "improved_both": true,
+        "reason": null
+      },
+      {
+        "dataset": "test12",
+        "class": "stone",
+        "current_minus_stone40_AP50": -0.006282051282051282,
+        "current_minus_stone40_AP50_95": -0.014676282051282019,
+        "current_minus_stone40_AP50_percentage_points": -0.6282051282051282,
+        "current_minus_stone40_AP50_95_percentage_points": -1.467628205128202,
+        "improved_both": false,
+        "reason": null
+      },
+      {
+        "dataset": "external166",
+        "class": "potato",
+        "current_minus_stone40_AP50": -0.0036716240838448044,
+        "current_minus_stone40_AP50_95": -0.0074127368342514766,
+        "current_minus_stone40_AP50_percentage_points": -0.36716240838448044,
+        "current_minus_stone40_AP50_95_percentage_points": -0.7412736834251477,
+        "improved_both": false,
+        "reason": null
+      },
+      {
+        "dataset": "external166",
+        "class": "stone",
+        "current_minus_stone40_AP50": null,
+        "current_minus_stone40_AP50_95": null,
+        "current_minus_stone40_AP50_percentage_points": null,
+        "current_minus_stone40_AP50_95_percentage_points": null,
+        "improved_both": null,
+        "reason": "external_ground_truth_is_potato_only_no_stone_gt"
+      }
+    ]
+  },
+  "execution_inventory": [
+    {
+      "unit": "current__external166",
+      "attempt": "units/current__external166/attempt-001-6987ddbadd014d1c8301ae5cc8472ef6",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 0,
+      "result_exists": true,
+      "validation_completed": 1
+    },
+    {
+      "unit": "current__test12",
+      "attempt": "units/current__test12/attempt-001-09a9d7ed3bae49d29b3a558b0d666959",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 0,
+      "result_exists": true,
+      "validation_completed": 1
+    },
+    {
+      "unit": "current__val11",
+      "attempt": "units/current__val11/attempt-001-21893e66ad3440c7957e1e2e73b26ee2",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 1,
+      "result_exists": false,
+      "validation_completed": 0
+    },
+    {
+      "unit": "current__val11",
+      "attempt": "units/current__val11/attempt-002-a06de807aa584dcfb00d597120832bc7",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 0,
+      "result_exists": true,
+      "validation_completed": 1
+    },
+    {
+      "unit": "stone40__external166",
+      "attempt": "units/stone40__external166/attempt-001-f8b0be763add4ebf90bde07858ff4215",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 0,
+      "result_exists": true,
+      "validation_completed": 1
+    },
+    {
+      "unit": "stone40__test12",
+      "attempt": "units/stone40__test12/attempt-001-e5567092347945918109db0a15eea5b4",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 0,
+      "result_exists": true,
+      "validation_completed": 1
+    },
+    {
+      "unit": "stone40__val11",
+      "attempt": "units/stone40__val11/attempt-001-869faa6058be49df9170ff6a7d3d7044",
+      "calls": 1,
+      "process_started": 1,
+      "worker_exit": 0,
+      "result_exists": true,
+      "validation_completed": 1
+    }
+  ],
+  "preserved_failure": {
+    "attempt": "units/current__val11/attempt-001-21893e66ad3440c7957e1e2e73b26ee2",
+    "exit_code": 1,
+    "result_exists": false,
+    "model_val_calls": 1,
+    "error": "RuntimeError: Offline/no-subprocess guard: subprocess.Popen",
+    "artifact_sha256": {
+      "intent.json": "c997de4a98bf67d0805c9a7d16e360418817a7edc0418c57265a0b9358337f53",
+      "events.jsonl": "0802f78e95b4c36f48f9600ae422af59d73c803c002ee0b7d1fa2abe010b1ca2",
+      "exit.json": "837fcc5291ca9e4484eec43b01830522b6f50408774714f58118309040199c88",
+      "stdout.log": "82c5dd86efa330005dc169d59cd24f91989a76ac7a32976c0ef97f3cfd11081c",
+      "stderr.log": "83d83b741452de161c0de29ca937d7a528dbe8dc3d3d9866317bbb63e46696f3"
+    }
+  },
+  "execution_contract_verification": {
+    "approved_single_unit_argv_match": true,
+    "outer_exit_zero_receipts_verified": 6,
+    "native_exit_result_completed_event_log_hashes_verified": true,
+    "strict_event_order_verified": true,
+    "predecessor_receipts_precede_next_launch": true,
+    "automatic_matrix_loop_observed": false,
+    "replay_observed": false,
+    "scope_ko": "부모의 monitor 종료 영수증과 승인 argv, native 이벤트, 파일 시각 및 동결 단일 호출 runner를 교차 확인했다. 과거 OS 이벤트를 재관측한 것은 아니며 DAG 노드 상태를 성공 근거로 사용하지 않았다."
+  },
+  "verification": {
+    "semantic_checks_passed": 503,
+    "semantic_failures": [],
+    "expected_hash_comparisons": 1239,
+    "hash_mismatches": [],
+    "hash_comparison_groups": {
+      "source_hashes": 419,
+      "installed_source_hashes": 355,
+      "config_hashes": 3,
+      "private_copies": 392,
+      "code_hashes": 6,
+      "python": 1,
+      "protocol": 1,
+      "manifest": 1,
+      "approved_old_evidence": 17,
+      "font_manager": 1,
+      "native_artifacts": 42,
+      "completed_receipt": 1
+    },
+    "installed_source_membership": 355,
+    "installed_versions_matched": 65,
+    "private_copies_no_links": 392,
+    "AP_class_rows_checked": 10,
+    "AP_mean_max_absolute_error": 2.220446049250313e-16,
+    "numeric_tolerance": 1e-12,
+    "AP_row_checks": [
+      {
+        "unit": "current__val11",
+        "class": "potato",
+        "row_index": 0,
+        "AP50": 0.995,
+        "AP50_95_recomputed": 0.8816423349934965,
+        "AP50_95_stored": 0.8816423349934963,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "unit": "current__val11",
+        "class": "stone",
+        "row_index": 1,
+        "AP50": 0.9622727272727274,
+        "AP50_95_recomputed": 0.7545064935064938,
+        "AP50_95_stored": 0.7545064935064936,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "unit": "current__test12",
+        "class": "potato",
+        "row_index": 0,
+        "AP50": 0.9897058823529414,
+        "AP50_95_recomputed": 0.8900288661647288,
+        "AP50_95_stored": 0.8900288661647286,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "unit": "current__test12",
+        "class": "stone",
+        "row_index": 1,
+        "AP50": 0.855,
+        "AP50_95_recomputed": 0.7167916666666667,
+        "AP50_95_stored": 0.7167916666666667,
+        "absolute_difference": 0
+      },
+      {
+        "unit": "current__external166",
+        "class": "potato",
+        "row_index": 0,
+        "AP50": 0.9439637380645731,
+        "AP50_95_recomputed": 0.7861336712988525,
+        "AP50_95_stored": 0.7861336712988526,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "unit": "stone40__val11",
+        "class": "potato",
+        "row_index": 0,
+        "AP50": 0.993695652173913,
+        "AP50_95_recomputed": 0.8579507788861462,
+        "AP50_95_stored": 0.8579507788861461,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "unit": "stone40__val11",
+        "class": "stone",
+        "row_index": 1,
+        "AP50": 0.9186363636363638,
+        "AP50_95_recomputed": 0.7849025974025976,
+        "AP50_95_stored": 0.7849025974025976,
+        "absolute_difference": 0
+      },
+      {
+        "unit": "stone40__test12",
+        "class": "potato",
+        "row_index": 0,
+        "AP50": 0.9887402597402597,
+        "AP50_95_recomputed": 0.868656673881674,
+        "AP50_95_stored": 0.8686566738816739,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "unit": "stone40__test12",
+        "class": "stone",
+        "row_index": 1,
+        "AP50": 0.8612820512820513,
+        "AP50_95_recomputed": 0.7314679487179488,
+        "AP50_95_stored": 0.7314679487179487,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "unit": "stone40__external166",
+        "class": "potato",
+        "row_index": 0,
+        "AP50": 0.9476353621484179,
+        "AP50_95_recomputed": 0.793546408133104,
+        "AP50_95_stored": 0.7935464081331041,
+        "absolute_difference": 1.1102230246251565e-16
+      }
+    ],
+    "process_scan": {
+      "observed_at": "2026-11-09T06:42:38.054Z",
+      "pids_scanned": 89,
+      "read_errors": [],
+      "owned_evaluation_processes": [],
+      "known_worker_pids": [
+        1330876,
+        1340987,
+        1341304,
+        1341435,
+        1341610,
+        1341729,
+        1044683
+      ],
+      "known_worker_pids_present": []
+    },
+    "active_locks": [],
+    "old_v2_snapshot": {
+      "files": 442,
+      "unchanged": 439,
+      "approved_pre_v3_font_repair_changes": [
+        "check_fixtures.py",
+        "protocol.json",
+        "runner.py"
+      ],
+      "before_after_snapshots_byte_identical": true
+    },
+    "preservation": {
+      "preexisting_evidence_files": 737,
+      "parent_reports_added_to_protection": 2,
+      "other_session_added_files": [
+        "new-session/inventory-refresh-20261109.json"
+      ],
+      "protected_files": 740,
+      "prewrite_hash_mismatches": [],
+      "authorized_writes": [
+        "independent-gate-v4.md",
+        "verified-ap-v4.json"
+      ]
+    }
+  },
+  "limitations": {
+    "raw_detection_arrays_saved": false,
+    "matching_arrays_saved": false,
+    "confidence_PR_F1_curves_saved": false,
+    "independent_raw_AP_regeneration": false,
+    "best_F1_argmax_independently_reproduced": false,
+    "AP_verification": "저장 all_ap의 클래스 행 매핑과 첫 열·10개 IoU 평균 및 집계 평균 검산",
+    "precision_recall": "라이브러리의 평활화된 클래스 평균 F1 곡선이 최대인 공통 confidence 지점. 고정 conf0.45 및 클래스별 독립 최적점과 별개.",
+    "actual_half_field_present": false,
+    "precision_evidence": "actual quantize=null, 동결 runner FP32 검사와 설치 validator의 fp16/전처리 경로. 감사자가 tensor dtype을 재관측하지 않음.",
+    "outer_exit_evidence": "보존된 실제 monitor 종료 영수증을 native worker exit/result/completed/events/logs와 교차 검증. 감사자가 과거 OS 종료 이벤트를 다시 관측하지 않음.",
+    "annotation_issues": "기존 error-analysis/independent-gate.md의 possible_annotation_issue 13건(FP 6/FN 7)은 잠정 비블라인드 관찰이며 확정 GT 수정이 아님. 라벨과 지표는 변경하지 않음.",
+    "scope": "기존 Task A의 동일 장면·시간 상관 holdout 및 이미 열람한 외부 탐색 자료. 신규 촬영 세션 일반화, Task B, 전체 P0 완료 근거가 아님."
+  },
+  "annotation_issues": {
+    "source": "../error-analysis/independent-gate.md",
+    "possible_total": 13,
+    "FP": 6,
+    "FN": 7,
+    "confirmed_GT_corrections": false,
+    "metrics_adjusted": false,
+    "labels_modified": false
+  },
+  "parent_aggregation": {
+    "status": "APPROVED_WITH_NOTES",
+    "numeric_aggregation_approved": true,
+    "ap_rounding_decimals": 4,
+    "operating_rounding_decimals": 6,
+    "checks_passed": 132,
+    "numeric_mismatches": [],
+    "notes": [
+      {
+        "id": "AGG-V4-001",
+        "severity": "low",
+        "kind": "source_path_shorthand",
+        "location": "../report.md:56",
+        "detail_ko": "verified-strata.json은 evaluation/ 기준으로 존재하지 않는다. 문맥상 error-analysis/verified-strata.json을 뜻하며 metrics.json의 source는 올바르다. 독립 감사에서는 정확한 경로로 검증했다.",
+        "correct_reference": "error-analysis/verified-strata.json",
+        "blocks_AP": false
+      },
+      {
+        "id": "AGG-V4-002",
+        "severity": "low",
+        "kind": "evidence_wording_scope",
+        "location": "../report.md:17",
+        "detail_ko": "원시 배열 보존은 result.json의 all_ap를 뜻하는 범위에서만 인정한다. raw detection/matching 배열과 P/R/F1 곡선은 저장되지 않아 그 배열에서 AP나 best-F1 argmax를 재생성할 수 없다.",
+        "blocks_AP": false
+      }
+    ],
+    "source_sha256": {
+      "report.md": "335cfdbf73fc4101987dba21527d145c9c646b0650c17b2822ed4e976cf9386d",
+      "metrics.json": "b3922c6dec1ef9892bd8b03a05c5646197101a99dd0219ca60ba8e9baf8cec61"
+    },
+    "historical_rows_exact": 15,
+    "historical_area_rows_exact": 15,
+    "AP_rows_exact": 6,
+    "error_counts": {
+      "records": 39,
+      "FP": 26,
+      "FN": 13,
+      "unique_frames": 38,
+      "external_stone": "NOT_SCORED"
+    },
+    "possible_annotation_issues": {
+      "FP": 6,
+      "FN": 7,
+      "total": 13,
+      "confirmed_corrections": false
+    },
+    "source_links": {
+      "checks": [
+        {
+          "reference": "metrics.json",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/metrics.json",
+          "exists": true
+        },
+        {
+          "reference": "historical-metrics.json",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/historical-metrics.json",
+          "exists": true
+        },
+        {
+          "reference": "historical-report.md",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/historical-report.md",
+          "exists": true
+        },
+        {
+          "reference": "ap/protocol.json",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/protocol.json",
+          "exists": true
+        },
+        {
+          "reference": "ap/approval-v3.json",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/approval-v3.json",
+          "exists": true
+        },
+        {
+          "reference": "ap/parent-recovery-v4.md",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap/parent-recovery-v4.md",
+          "exists": true
+        },
+        {
+          "reference": "error-analysis/annotations.json",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/annotations.json",
+          "exists": true
+        },
+        {
+          "reference": "verified-strata.json",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/verified-strata.json",
+          "exists": false
+        },
+        {
+          "reference": "historical-report.md",
+          "resolved": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/historical-report.md",
+          "exists": true
+        }
+      ],
+      "json_source_pointers_verified": 15,
+      "AP_source_paths_and_hashes_verified": 6
+    },
+    "snapshot_status": "부모 보고서는 독립 감사 대기 상태로 보존한다. 이 감사의 PASS가 부모 파일을 수정하거나 P0/G005 완료를 뜻하지 않는다."
+  },
+  "output_validation": {
+    "status": "PASS",
+    "persisted_json_reparsed": true,
+    "assertions_passed": 12,
+    "six_unique_matrix_rows": true,
+    "total_calls_equal_seven": true,
+    "completion_hashes_match": true,
+    "external_stone_reasoned_nulls": true,
+    "report_table_matches_matrix": true,
+    "protected_files": 740,
+    "changed_protected_files": [],
+    "only_authorized_files_added": true,
+    "lsp_status": "NOT_RUN_BIOME_NOT_INSTALLED",
+    "lsp_reason": "Command not found: biome; 설치 금지 범위를 지켰으며 JSON 파싱과 정합성 검사는 통과함",
+    "models_fixtures_preflight_rerun": false
+  },
+  "evidence_sha256": {
+    "protocol.json": "189c4d8b92b0d5d1579dd09621e235821b3d0efd16b313462053ff0b4d242244",
+    "approval-v3.json": "9d374128f6c5e057c87d8501541c0e8da34694fe2076fc1a6fd4e88858aaa3ad",
+    "inputs-manifest.json": "05dc668f51ee0fa8c70840c03bcd5438ac9bd5caea04a2ef3f8cf7fd1f55b30f",
+    "parent-recovery-v4.md": "1acd7f18ef38fdfa2a505d21cb304d5580c2a23f7eb3bbd4d5348a1756913413",
+    "../historical-metrics.json": "c5b3521518562e9c07d370fb4a45d44a07b440cee72996ada7b52ecc60694c11",
+    "../error-analysis/independent-gate.md": "398613922725dab994d4065b69471fa531cbc4d4d23e6d31045c5b824b86e70c",
+    "../error-analysis/verified-strata.json": "c542f901905c3aedf5ce27c0e77ddc3f03c8dfe488f6cf79ab234af13a8b0776",
+    "../report.md": "335cfdbf73fc4101987dba21527d145c9c646b0650c17b2822ed4e976cf9386d",
+    "../metrics.json": "b3922c6dec1ef9892bd8b03a05c5646197101a99dd0219ca60ba8e9baf8cec61"
+  }
+}
+

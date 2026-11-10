@@ -1,0 +1,9 @@
+{
+  "include": ["runner.py", "prepare_inputs.py", "check_fixtures.py"],
+  "exclude": [],
+  "pythonVersion": "3.12",
+  "pythonPlatform": "Linux",
+  "venvPath": "/home/sc/.cache/potato-baseline",
+  "venv": ".venv",
+  "typeCheckingMode": "standard"
+}

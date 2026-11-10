@@ -1,0 +1,91 @@
+{
+  "schema_version": "current-historical-error-review-v1",
+  "date": "2026-11-05",
+  "status": "frozen_before_any_visual_annotation",
+  "scope": "current-model historical Task A FP/FN only; frame observations, not unique objects",
+  "model": {
+    "id": "current",
+    "path": "retraining_experiment/outputs/selection/selected.pt",
+    "sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8"
+  },
+  "operating_point": {
+    "confidence": 0.45,
+    "nms_iou": 0.5,
+    "matching_iou": 0.5,
+    "nms": "historical class-aware NMS; use stored outputs, no inference",
+    "matching": "confidence_ranked_class_agnostic_one_to_one",
+    "external": "potato-only truth and predictions filtered before matching; stone NOT_SCORED"
+  },
+  "roster": {
+    "source": "retraining_experiment/outputs/comparison/new_selected/{val,test,external}/*.json excluding summary.json",
+    "derivation": "unmatched prediction -> FP; unmatched truth -> FN; wrong-class match -> predicted-class FP and truth-class FN",
+    "authority": "derive from stored matches; independently verify greedy matching and label coordinates; never force expected counts",
+    "expected_counts_reference_only": {
+      "val": {"FP": 0, "FN": 2},
+      "test": {"FP": 3, "FN": 1},
+      "external": {"FP": 23, "FN": 10}
+    },
+    "canonicalization": "UTF-8 JSON ensure_ascii=False sort_keys=True separators=(',',':') allow_nan=False",
+    "error_id": "sha256(canonical identity) prefixed err-; identity binds model bytes, source path/hash, label path/hash, GT/pred array hashes, complete match-state hash, split/image/class/type, GT/pred indices and actual original xyxy",
+    "immutability": "exclusive-create errors.json and renders; protocol bytes unchanged; roster SHA256 covers ordered identities and IDs, independent of visual annotations; changed input requires a new version, never overwrite"
+  },
+  "size_bins": {
+    "coordinate_space": "original image pixels, xyxy, no inclusive +1",
+    "area": "(x2-x1)*(y2-y1); FP uses prediction, FN uses GT",
+    "small": "area < 1024",
+    "medium": "1024 <= area < 9216",
+    "large": "area >= 9216",
+    "interpretation": "descriptive error counts only; not AP, COCO evaluation, physical millimeters, or complete stratified performance"
+  },
+  "visual_annotation": {
+    "annotator": "AI assistant; not human expert truth",
+    "blinding": "errors, GT and predictions visible; posthoc diagnostic analysis, not blind new ground truth",
+    "visible_occlusion": {
+      "values": ["yes", "no", "unknown", "not_applicable"],
+      "rule": "yes only for a visible object partly hidden by another visible object; no when identifiable object has no visible occluder; unknown when uncertain; not_applicable for no identifiable target object"
+    },
+    "actual_frame_truncated_object": {
+      "values": ["yes", "no", "unknown", "not_applicable"],
+      "rule": "judge object continuation beyond original frame, not crop border or box touching border; yes only visible continuation at actual frame edge, unknown if ambiguous; not_applicable for no identifiable target object"
+    },
+    "background_tags": {
+      "values": ["hand_glove", "conveyor_machinery", "soil_debris", "other", "unclear"],
+      "multi_tag": true,
+      "rule": "visible local context at error box/crop; tags describe context, never establish cause"
+    },
+    "issue_observation": {
+      "values": ["background_object", "possible_duplicate", "possible_annotation_issue", "small_or_truncated_target", "unclear"],
+      "multi_tag": false,
+      "rule": "tentative observation, not forced causal truth; possible_duplicate requires visible overlap/same object context; possible_annotation_issue never changes stored GT; small uses original pixel bin; unclear when evidence insufficient"
+    },
+    "required_fields": ["visible_occlusion", "actual_frame_truncated_object", "background_tags", "issue_observation", "reason", "viewed_paths"],
+    "forbidden_interpretations": ["human truth", "expert gold", "Task B defect labels", "confirmed causal failure categories", "new ground truth", "generalization performance"]
+  },
+  "rendering": {
+    "directory": "ownrenders",
+    "full_frame": "all original pixels at 1:1 plus 64px legend header; original GT green solid, stored prediction magenta dashed; target yellow outer outline; indices/classes and confidence shown",
+    "crop": "integer floor/ceil of target xyxy expanded by max(48px, 0.6*max(box width,height)) on each side, clipped to original frame; resize longest side to 768px using bicubic; add 64px legend",
+    "transform": "store original crop xyxy, output content width/height, scale_x/scale_y, header offset and forward/inverse affine matrices; no letterboxing",
+    "overlay": "all stored GT/pred intersecting viewport, not fabricated boxes; GT/pred retain separate color and line style; labels clipped to canvas",
+    "pixels": "source image pixels only, no synthetic masks, generated objects or segmentation"
+  },
+  "constraints": {
+    "write_root": ".omo/evidence/potato-p0-20261105/evaluation/error-analysis",
+    "new_inference": false,
+    "new_labels": false,
+    "training": false,
+    "gpu": false,
+    "downloads": false,
+    "subagents": false
+  },
+  "validation": [
+    "actual counts and per-class counts agree with stored summary and historical metrics",
+    "all 189 frame caches and source/label hashes captured and unchanged",
+    "GT agrees with original YOLO label coordinates and source manifests",
+    "stored matching equals independent confidence-ranked greedy matching at IoU 0.5",
+    "model hash agrees with historical and comparison provenance",
+    "each error identity, index, bbox, area bin and SHA256 reconstructs from stored evidence",
+    "each full-frame/crop path exists, decodes, has correct dimensions and recorded transform",
+    "all visual observations identify viewed diagnostic paths and conform to frozen enums"
+  ]
+}

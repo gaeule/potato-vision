@@ -1,0 +1,314 @@
+{
+  "event": "binding",
+  "utc": "2026-11-05T08:27:22.798708+00:00",
+  "selected_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+  "historical_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+  "historical_match": true,
+  "selection_sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+  "selection_match": true,
+  "selected_candidate": "best",
+  "receipt_bindings": {
+    "provenance_sha256": {
+      "expected": "b5986ecfee8b4dfd99b7362f9ac00245969adbcbece3d8ec0c0dba73a8ad7f19",
+      "actual": "b5986ecfee8b4dfd99b7362f9ac00245969adbcbece3d8ec0c0dba73a8ad7f19",
+      "match": true
+    },
+    "environment_sha256": {
+      "expected": "bd1c85da06db121a8d62e60553f213a9bb899d106c2d3699b7de8a5e5b8d5975",
+      "actual": "bd1c85da06db121a8d62e60553f213a9bb899d106c2d3699b7de8a5e5b8d5975",
+      "match": true
+    },
+    "dataset_receipt_sha256": {
+      "expected": "ed3e3f29626ae3fd1bedcd5caa575afdaeb73b8f6499ba2f0c0b6a2ce9435faa",
+      "actual": "ed3e3f29626ae3fd1bedcd5caa575afdaeb73b8f6499ba2f0c0b6a2ce9435faa",
+      "match": true
+    }
+  },
+  "checkpoint_checks": {
+    "/mnt/c/Users/USER/Desktop/협력/potato/retraining_experiment/outputs/train/weights/best.pt": {
+      "expected": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+      "actual": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8",
+      "match": true
+    },
+    "/mnt/c/Users/USER/Desktop/협력/potato/retraining_experiment/outputs/train/weights/last.pt": {
+      "expected": "d734a9e5fe7bf8a60e1f406e788f996ba5534dc26f4fb3da00e6bc57bd215cc0",
+      "actual": "d734a9e5fe7bf8a60e1f406e788f996ba5534dc26f4fb3da00e6bc57bd215cc0",
+      "match": true
+    }
+  },
+  "source_checks": {
+    "retraining_experiment/__init__.py": {
+      "expected": "142fa3540e0f0ac8b061a0de04404956141c70ac971be9a5084f8ca6769049b6",
+      "actual": "142fa3540e0f0ac8b061a0de04404956141c70ac971be9a5084f8ca6769049b6",
+      "match": true
+    },
+    "retraining_experiment/cli.py": {
+      "expected": "9127e9059483984720a7b7a0e1a33494fd559d1cda25df5158a7b58aef20bb81",
+      "actual": "9127e9059483984720a7b7a0e1a33494fd559d1cda25df5158a7b58aef20bb81",
+      "match": true
+    },
+    "retraining_experiment/common.py": {
+      "expected": "81fa819c8bd6526bac21fad1f3b0215e619b0cd02c87d8641c0ea54a361470da",
+      "actual": "81fa819c8bd6526bac21fad1f3b0215e619b0cd02c87d8641c0ea54a361470da",
+      "match": true
+    },
+    "retraining_experiment/data.py": {
+      "expected": "19982d37ec0f5a93a343b62ce647d16c79441757439bdfff88b35822c7afd553",
+      "actual": "19982d37ec0f5a93a343b62ce647d16c79441757439bdfff88b35822c7afd553",
+      "match": true
+    },
+    "retraining_experiment/evaluate.py": {
+      "expected": "0a159c55b264a99d1ec1036f101da18d7f388875d514c2df913c916bff5356cf",
+      "actual": "0a159c55b264a99d1ec1036f101da18d7f388875d514c2df913c916bff5356cf",
+      "match": true
+    },
+    "retraining_experiment/select.py": {
+      "expected": "e2c380c5311fc27c580c356f74852f0fb267b69788cd69fa6c46bef0807cc94c",
+      "actual": "e2c380c5311fc27c580c356f74852f0fb267b69788cd69fa6c46bef0807cc94c",
+      "match": true
+    },
+    "retraining_experiment/smoke.py": {
+      "expected": "589b9d0254b2f2513d4281dd90734a2c086a294ab585dfc3bfef2938a721e972",
+      "actual": "589b9d0254b2f2513d4281dd90734a2c086a294ab585dfc3bfef2938a721e972",
+      "match": true
+    },
+    "retraining_experiment/train.py": {
+      "expected": "19ab71c9c8343bb4b754f787a653f6385e8b1a8220c430ed39f19c53ef2584e3",
+      "actual": "19ab71c9c8343bb4b754f787a653f6385e8b1a8220c430ed39f19c53ef2584e3",
+      "match": true
+    },
+    "retraining_experiment/video.py": {
+      "expected": "dea2b744d4c1af56bc6dd1560440d9a26571543f98049e6ccf287c6cd9a0fa6d",
+      "actual": "dea2b744d4c1af56bc6dd1560440d9a26571543f98049e6ccf287c6cd9a0fa6d",
+      "match": true
+    },
+    "retraining_experiment/video_smoke.py": {
+      "expected": "f433e9b54bf5b5ef8232f36caa99482b0b6ea0018965c722a53db6a91edabe97",
+      "actual": "f433e9b54bf5b5ef8232f36caa99482b0b6ea0018965c722a53db6a91edabe97",
+      "match": true
+    },
+    "retraining_data/__init__.py": {
+      "expected": "18ffa607c0448df2eebf3be843a8fd339175fa2898595eb1c13de2490dbdf5e5",
+      "actual": "18ffa607c0448df2eebf3be843a8fd339175fa2898595eb1c13de2490dbdf5e5",
+      "match": true
+    },
+    "retraining_data/common.py": {
+      "expected": "8cc341b5b2a46a08815fde0790e7b891575970d5d6c5038358b0fad553be4e8f",
+      "actual": "8cc341b5b2a46a08815fde0790e7b891575970d5d6c5038358b0fad553be4e8f",
+      "match": true
+    },
+    "retraining_data/native.py": {
+      "expected": "9f52f5d34a4ba2e96ad5b7d0f8415efe70c8334fbd94f8b88f7d341addfb41b0",
+      "actual": "9f52f5d34a4ba2e96ad5b7d0f8415efe70c8334fbd94f8b88f7d341addfb41b0",
+      "match": true
+    },
+    "retraining_data/prepare.py": {
+      "expected": "41358e2371e00e3ed6b7d89c5f9b9eaa9774be4d80a55b967ed10f7b5caf956a",
+      "actual": "41358e2371e00e3ed6b7d89c5f9b9eaa9774be4d80a55b967ed10f7b5caf956a",
+      "match": true
+    },
+    "retraining_data/schema.py": {
+      "expected": "b2bf6ad2c884197c48fc88c1992ba76c29857a0f3a2d1b9415836c172b81ca06",
+      "actual": "b2bf6ad2c884197c48fc88c1992ba76c29857a0f3a2d1b9415836c172b81ca06",
+      "match": true
+    },
+    "retraining_data/smoke.py": {
+      "expected": "26817e1a535e02e9666234d873bb45effe0560ed0cb30249c0033dc24a2c50d1",
+      "actual": "26817e1a535e02e9666234d873bb45effe0560ed0cb30249c0033dc24a2c50d1",
+      "match": true
+    },
+    "retraining_data/sources.py": {
+      "expected": "b43ccdbc29762deefc44a1ce5beb1a1e86b09ada4a4749bf512085937fddda7d",
+      "actual": "b43ccdbc29762deefc44a1ce5beb1a1e86b09ada4a4749bf512085937fddda7d",
+      "match": true
+    },
+    "retraining_data/verify.py": {
+      "expected": "bf406927614bb13f8b8b025c533e765c1c754e8d95cd2d12c37adfd20bcb6523",
+      "actual": "bf406927614bb13f8b8b025c533e765c1c754e8d95cd2d12c37adfd20bcb6523",
+      "match": true
+    },
+    "stone_experiment/__init__.py": {
+      "expected": "bdeab2945c65925c37a7ef6dcebfd11d3e7334d23b85b69798281b8a7c164715",
+      "actual": "bdeab2945c65925c37a7ef6dcebfd11d3e7334d23b85b69798281b8a7c164715",
+      "match": true
+    },
+    "stone_experiment/common.py": {
+      "expected": "230544089f184222bdc3001fd80f927d7cfbcbcc766b7667072cca318b5904f2",
+      "actual": "230544089f184222bdc3001fd80f927d7cfbcbcc766b7667072cca318b5904f2",
+      "match": true
+    },
+    "stone_experiment/compare.py": {
+      "expected": "10b983d58b5591278d1b60371168fd98d5e1000999da748b90b879b2177c5253",
+      "actual": "10b983d58b5591278d1b60371168fd98d5e1000999da748b90b879b2177c5253",
+      "match": true
+    },
+    "stone_experiment/evaluate.py": {
+      "expected": "4ac8f01b380b76800d9bdea1518fd14b1de94a96b745c95deaccc0833145b1ba",
+      "actual": "4ac8f01b380b76800d9bdea1518fd14b1de94a96b745c95deaccc0833145b1ba",
+      "match": true
+    },
+    "stone_experiment/metrics.py": {
+      "expected": "24d4925b6c9df07bac73a861cdc91ca43957752ba1891a49c721c2b9eca806fc",
+      "actual": "24d4925b6c9df07bac73a861cdc91ca43957752ba1891a49c721c2b9eca806fc",
+      "match": true
+    },
+    "stone_experiment/predict.py": {
+      "expected": "6fae1ef3d40fbbd1d63f9d29858a989ebe2e16eedc1f6ddc87e4127e958095c5",
+      "actual": "6fae1ef3d40fbbd1d63f9d29858a989ebe2e16eedc1f6ddc87e4127e958095c5",
+      "match": true
+    },
+    "stone_experiment/prepare.py": {
+      "expected": "412282eb6fead4e2c133c73b405d0a1ff065a17f07281cd1f00700a22961f991",
+      "actual": "412282eb6fead4e2c133c73b405d0a1ff065a17f07281cd1f00700a22961f991",
+      "match": true
+    },
+    "stone_experiment/schema.py": {
+      "expected": "30f1ca46e8e4ecbff0b044c08c5c74b32ed0c247ea265c947202372e5e269667",
+      "actual": "30f1ca46e8e4ecbff0b044c08c5c74b32ed0c247ea265c947202372e5e269667",
+      "match": true
+    },
+    "stone_experiment/select.py": {
+      "expected": "f47a9ba2b9eea80aed0a5542d2c5fd06bd86b9b8df16ccf0b205748fda0614ac",
+      "actual": "f47a9ba2b9eea80aed0a5542d2c5fd06bd86b9b8df16ccf0b205748fda0614ac",
+      "match": true
+    },
+    "stone_experiment/smoke.py": {
+      "expected": "307c4773b8de51f93b8d225591fbaf254ce13e2d4193e57c76dbfd50994c2272",
+      "actual": "307c4773b8de51f93b8d225591fbaf254ce13e2d4193e57c76dbfd50994c2272",
+      "match": true
+    },
+    "stone_experiment/train.py": {
+      "expected": "b567d4eb57ea8666f343a9b6a0d49f5d26d2a8f8b219b0f0ab287bbd326403bf",
+      "actual": "b567d4eb57ea8666f343a9b6a0d49f5d26d2a8f8b219b0f0ab287bbd326403bf",
+      "match": true
+    },
+    "stone_experiment/video.py": {
+      "expected": "e25ffd71364c6cd194e6f5ab85352d53d5612a036622b9a865dba85845cf16eb",
+      "actual": "e25ffd71364c6cd194e6f5ab85352d53d5612a036622b9a865dba85845cf16eb",
+      "match": true
+    },
+    "postprocess_review/common.py": {
+      "expected": "2bf23ec69f876efeb4518078e6567b77d09232fbe4dbb012a9136a445b7425f9",
+      "actual": "2bf23ec69f876efeb4518078e6567b77d09232fbe4dbb012a9136a445b7425f9",
+      "match": true
+    },
+    "scripts/baseline_common.py": {
+      "expected": "67507facf7e8dc69c5749c2bd9a3a9dea8aaf536db49e0a201781a86eab1a212",
+      "actual": "67507facf7e8dc69c5749c2bd9a3a9dea8aaf536db49e0a201781a86eab1a212",
+      "match": true
+    },
+    "scripts/run_baseline.py": {
+      "expected": "8e8244c9fe90583574bd35e4b15df527a330beed320b1b9995db48d7e84d5dbe",
+      "actual": "8e8244c9fe90583574bd35e4b15df527a330beed320b1b9995db48d7e84d5dbe",
+      "match": true
+    },
+    "baseline/config/train.json": {
+      "expected": "2a5f5c17bf4236e247c8041fe3c217225482fc8f712a4a43bf572ff8734ca7ee",
+      "actual": "2a5f5c17bf4236e247c8041fe3c217225482fc8f712a4a43bf572ff8734ca7ee",
+      "match": true
+    },
+    "stone_experiment/config/train.json": {
+      "expected": "2a5f5c17bf4236e247c8041fe3c217225482fc8f712a4a43bf572ff8734ca7ee",
+      "actual": "2a5f5c17bf4236e247c8041fe3c217225482fc8f712a4a43bf572ff8734ca7ee",
+      "match": true
+    },
+    "retraining_experiment/review/protocol.json": {
+      "expected": "0bfda1b8c2ab508389895083c874b0db5378e920c1b13dd1dcfe41d8954b416f",
+      "actual": "0bfda1b8c2ab508389895083c874b0db5378e920c1b13dd1dcfe41d8954b416f",
+      "match": true
+    },
+    "retraining_experiment/review/baseline_reference.json": {
+      "expected": "ef2ba7b48eace3605debe14acc7b1e9aafd0f1e7df1ddc1093374fd060bd1045",
+      "actual": "ef2ba7b48eace3605debe14acc7b1e9aafd0f1e7df1ddc1093374fd060bd1045",
+      "match": true
+    },
+    "retraining_experiment/review/protected_before.json": {
+      "expected": "0407381b90de9f0b5854ab8e8cdf320ccf2926c3a54e96e89a6c326a4c63c166",
+      "actual": "0407381b90de9f0b5854ab8e8cdf320ccf2926c3a54e96e89a6c326a4c63c166",
+      "match": true
+    }
+  },
+  "python": {
+    "actual": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "stored": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "match": true,
+    "executable": "/home/sc/.cache/potato-baseline/.venv/bin/python",
+    "executable_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+    "stored_executable_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+  },
+  "platform": {
+    "actual": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "stored": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "packages": {
+    "PyYAML": {
+      "actual": "6.0.3",
+      "stored": "6.0.3",
+      "match": true
+    },
+    "av": {
+      "actual": "19.0.2",
+      "stored": "19.0.2",
+      "match": true
+    },
+    "numpy": {
+      "actual": "2.5.2",
+      "stored": "2.5.2",
+      "match": true
+    },
+    "opencv-contrib-python": {
+      "actual": null,
+      "stored": null,
+      "match": null
+    },
+    "opencv-python": {
+      "actual": "5.0.0.93",
+      "stored": null,
+      "match": null
+    },
+    "opencv-python-headless": {
+      "actual": null,
+      "stored": null,
+      "match": null
+    },
+    "pillow": {
+      "actual": "12.3.0",
+      "stored": "12.3.0",
+      "match": true
+    },
+    "ruff": {
+      "actual": "0.17.1",
+      "stored": "0.17.1",
+      "match": true
+    },
+    "scikit-image": {
+      "actual": "0.26.0",
+      "stored": "0.26.0",
+      "match": true
+    },
+    "scipy": {
+      "actual": "1.18.1",
+      "stored": "1.18.1",
+      "match": true
+    },
+    "torch": {
+      "actual": "2.9.1+cu128",
+      "stored": "2.9.1+cu128",
+      "match": true
+    },
+    "torchvision": {
+      "actual": "0.24.1+cu128",
+      "stored": "0.24.1+cu128",
+      "match": true
+    },
+    "ultralytics": {
+      "actual": "8.4.183",
+      "stored": "8.4.183",
+      "match": true
+    }
+  },
+  "provenance_environment_match": true,
+  "source_video_match": true,
+  "heavy_modules_loaded": [],
+  "cuda_gpu_runtime_checked": false
+}

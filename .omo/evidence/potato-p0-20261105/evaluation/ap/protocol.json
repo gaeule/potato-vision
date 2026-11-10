@@ -1,0 +1,118 @@
+{
+  "schema": "potato-frozen-ap-evaluation-v1",
+  "date": "2026-11-05",
+  "prepared_by": "ap-preparation-node",
+  "status": "prepared_only_independent_gate_required",
+  "writable_root": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/ap",
+  "inputs_manifest_sha256": "05dc668f51ee0fa8c70840c03bcd5438ac9bd5caea04a2ef3f8cf7fd1f55b30f",
+  "code_hashes": {
+    "runner.py": "0e79e2c4b623d128e88e8b6be37bb85e01418923fd4379ce18c2c79a53421f85",
+    "prepare_inputs.py": "f6a6d93c348913bab004d6f9a09f8b16db1fdaffe37e424e2edf0127e7613baf",
+    "check_fixtures.py": "b282986d9ab90e6bd88456450801679b9ff7962ecd48d9323662f83a10ba7319",
+    "settings-template.json": "e0646c790b0026fbe0adb11ef2722bbca136ec22c8f9785033602869c4eb81c1",
+    "pyrightconfig.json": "c8dc3945da07898a4fe1812f86da965b97ae2ddaec4de07b59c1b22df8c5a87b",
+    "preparation.md": "2d05c0abe2c458af39a1bb9590120a85c362aa106eace143326c0d1e97c20b2e"
+  },
+  "models": {
+    "current": {
+      "source": "retraining_experiment/outputs/selection/selected.pt",
+      "private": "private/models/current.pt",
+      "sha256": "8b2cb7982fcd11f61a33cab8659de23128d0065cfa8e8966093be297a7e216c8"
+    },
+    "stone40": {
+      "source": "stone_experiment/outputs/selection/selected.pt",
+      "private": "private/models/stone40.pt",
+      "sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1"
+    }
+  },
+  "matrix": [
+    {"id": "current__val11", "model": "current", "dataset": "val11", "images": 11},
+    {"id": "current__test12", "model": "current", "dataset": "test12", "images": 12},
+    {"id": "current__external166", "model": "current", "dataset": "external166", "images": 166},
+    {"id": "stone40__val11", "model": "stone40", "dataset": "val11", "images": 11},
+    {"id": "stone40__test12", "model": "stone40", "dataset": "test12", "images": 12},
+    {"id": "stone40__external166", "model": "stone40", "dataset": "external166", "images": 166}
+  ],
+  "classes": {"0": "potato", "1": "stone"},
+  "settings": {
+    "task": "detect",
+    "imgsz": 640,
+    "batch": 1,
+    "device": 0,
+    "conf": 0.001,
+    "iou": 0.5,
+    "augment": false,
+    "max_det": 300,
+    "half": false,
+    "quantize": null,
+    "seed": 42,
+    "deterministic": true,
+    "workers": 0,
+    "rect": true,
+    "single_cls": false,
+    "agnostic_nms": false,
+    "cache": false,
+    "plots": false,
+    "save": false,
+    "save_json": false,
+    "save_txt": false,
+    "save_conf": false,
+    "verbose": true,
+    "compile": false,
+    "channels_last": false
+  },
+  "determinism": {
+    "PYTHONHASHSEED_before_worker_start": "42",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "CUBLAS_WORKSPACE_CONFIG_before_torch_import": ":4096:8",
+    "installed_init_seeds": {"seed": 42, "deterministic": true},
+    "torch_use_deterministic_algorithms": true,
+    "warn_only": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false
+  },
+  "metric_contract": {
+    "authoritative_implementation": "installed ultralytics 8.4.183 source hashed by inputs-manifest.json",
+    "AP50": "metrics.box.ap50[row] == metrics.box.all_ap[row,0]",
+    "AP50_95": "metrics.box.ap[row] == metrics.box.all_ap[row].mean()",
+    "row_mapping": "enumerate(metrics.box.ap_class_index), not class ID as row offset",
+    "never_use": ["aggregate duplication", "box.maps for absent classes"],
+    "precision_recall": "library smoothed mean best-F1 operating point; separate from historical fixed confidence 0.45",
+    "historical_fixed_confidence": 0.45,
+    "historical_nms_iou": 0.5,
+    "matching_iou_thresholds": [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95],
+    "missing_class": {"AP50": null, "AP50_95": null, "reason_required": true}
+  },
+  "external_policy": {
+    "ground_truth_classes": [0],
+    "prediction_classes_before_NMS_max_det_and_matching": [0],
+    "implementation": "ExternalValidator.postprocess -> installed nms.non_max_suppression with classes=[0]; installed default validator omits this argument",
+    "stone_AP50": null,
+    "stone_AP50_95": null,
+    "reason": "external_ground_truth_is_potato_only_no_stone_gt",
+    "single_class_relabeling": false,
+    "usage": "evaluation_only_never_training_selection_or_threshold_search"
+  },
+  "execution_policy": {
+    "device_fallback": false,
+    "unavailable_cuda": "blocker_exit_2",
+    "threshold_search": false,
+    "initialization_or_inference_in_preparation": false,
+    "task_b_model_or_metrics": false,
+    "protected_dataset_model_val": false,
+    "independent_gate_before_model_import": true,
+    "gate_binding_fields": ["protocol_sha256", "inputs_manifest_sha256", "code_hashes", "unit_ids"],
+    "automatic_replay_of_completed_units": false,
+    "automatic_retry_or_matrix_loop": false,
+    "failed_attempts": "preserved; explicit --retry-failed and independent allow_retry_failed=true required",
+    "completed_units": "immutable completed receipt or any result file blocks replay",
+    "attempt_receipts": ["intent.json", "events.jsonl", "actual-settings.json", "stdout.log", "stderr.log", "exit.json", "result.json on success"],
+    "imports": "standalone runner; no existing project helper imports",
+    "network": "YOLO_OFFLINE plus Python audit guard",
+    "mutable_library_paths": "private attempt runtime only; isolated env before imports",
+    "font": "private/font.ttf copied to private YOLO config Arial request names; MPL_IGNORE_SYSTEM_FONTS=1 avoids system font subprocesses without weakening the guard",
+    "installs_downloads_global_settings_writes": false
+  }
+}

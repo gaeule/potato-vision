@@ -1,0 +1,3159 @@
+{
+  "schema_version": "frozen-protocol-independent-ai-visual-annotations-v1",
+  "review_date": "2026-11-09",
+  "recovery_from": "2026-11-05 provider quota failure",
+  "protocol_sha256": "d4914a282d3da2639b6713bfca2084ffdbf332746650572e8a28fb24b7c4249f",
+  "roster_sha256": "9f6f36b54cd24d03ca481196d96b204e5035369fcc276424e5953d488bb3fe04",
+  "roster_core_file_sha256": "202402d2a81423d9eb99db3263dd3e0e94501983c895b6eba5af1b7e7de5b942",
+  "annotator": "AI assistant; posthoc, unblinded; not human expert truth, new ground truth, new-session evaluation, or Task B labels",
+  "authority": "Immutable roster-core.json identities and actual named image/render pixels, not collector visual observations.",
+  "collector_audit": {
+    "status": "collector_provisional_not_verified_or_reused",
+    "files": [
+      "errors.json#records[].visual_annotation",
+      "observations.json#observations"
+    ],
+    "comparison_timing": "Independent notes for all 39 cases were written before reading collector observation rows.",
+    "changed_cases": [
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "identical_reason_count": 0,
+    "authority": "Only annotations.json records are the completed November 9 visual annotations; collector observation equality is not verification."
+  },
+  "count": 39,
+  "view_summary": {
+    "case_count": 39,
+    "full_frame_views": 39,
+    "crop_views": 39,
+    "unique_original_images_viewed": 38,
+    "unique_diagnostic_images_viewed": 78,
+    "unique_total_images_viewed": 116,
+    "unviewable_items": [],
+    "method": "functions.read via eval tool.read, displayed as image attachments; all diagnostic full frames and crops viewed individually, plus all unoverlaid originals; no contact-sheet-only substitute."
+  },
+  "interpretation": {
+    "visibility_is_not_causation": true,
+    "background_tags_multi_membership_not_partition": true,
+    "possible_annotation_issue_does_not_relabel": true,
+    "stored_fp_fn_unchanged": true,
+    "external_stone": "NOT_SCORED",
+    "unknown": "Insufficient visual evidence, not a negative finding; no unviewable files in this review."
+  },
+  "records": [
+    {
+      "ordinal": 1,
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "small_or_truncated_target",
+      "reason": "하단 중앙 G7의 작은 회백색 삼각형 돌이 인접 감자 오른쪽 아래에 보인다. 돌의 아래쪽은 검은 이송판 뒤로 이어져 가려지며 감자 자체가 가린다고 확정하지 않는다. 원본 프레임 내부이고 GT 면적은 small이다.",
+      "error_id": "err-14c5f92d36cd4ed4296daea00737c5c9c8a27939e706b7d380a06340bdabb4d7",
+      "split": "val",
+      "image_id": "frame_000098",
+      "error_type": "FN",
+      "class_name": "stone",
+      "gt_index": 7,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        612,
+        591.99999984,
+        653,
+        614.99999952
+      ],
+      "size_bin": "small",
+      "area_original_pixels": 942.9999868799989,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/val/frame_000098.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000098-FN-1-7-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000098-FN-1-7-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "29967e816719492934f09d9ff927957e4065717f2e7037d9fd34b6a9ce6b2184",
+        "crop_viewport_xyxy_original": [
+          564,
+          543,
+          701,
+          663
+        ],
+        "full_frame_sha256": "de288cc79312579bf942369aa06f192cef85dce258604c61c12d1aa948b2520c",
+        "crop_sha256": "78567d55afcdcd561150e2f897c9baf12e4e0faa008b56c2c7e591fddd334cc8",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "하단 중앙 G7의 작은 회백색 삼각형 돌이 인접 감자 오른쪽 아래에 보인다. 돌의 아래쪽은 검은 이송판 뒤로 이어져 가려지며 감자 자체가 가린다고 확정하지 않는다. 원본 프레임 내부이고 GT 면적은 small이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/val/frame_000098.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000098-FN-1-7-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000098-FN-1-7-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "small_or_truncated_target",
+      "reason": "G6에는 밝은 황갈색의 얇은 감자 윗부분만 보이며 하단 검은 이송판이 아래 윤곽을 가린다. 원본 y=601~615의 내부 설비 경계이지 y=720 프레임 끝이 아니다. GT 면적은 small이다.",
+      "error_id": "err-f8d5bfcfb18bcc5f28ca0d86ca82eac63cfd6fd95f387c2fc194f2b9f51c6515",
+      "split": "val",
+      "image_id": "frame_000100",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 6,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        750,
+        600.99999984,
+        803.0000000000001,
+        614.99999952
+      ],
+      "size_bin": "small",
+      "area_original_pixels": 741.9999830400002,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/val/frame_000100.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000100-FN-0-6-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000100-FN-0-6-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "02fd614f5ade9eaa03b7344f0c7e5ec30f8cb55e9dac3e9208074158fc18ae89",
+        "crop_viewport_xyxy_original": [
+          702,
+          552,
+          852,
+          663
+        ],
+        "full_frame_sha256": "f7932d05d378250d75780bc4483abfe703bd29d556e6509b8879804f705124c4",
+        "crop_sha256": "b62beaad81726f861a5f2d09d05eabe73a2aad605e076d5a736df55d79111946",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G6에는 밝은 황갈색의 얇은 감자 윗부분만 보이며 하단 검은 이송판이 아래 윤곽을 가린다. 원본 y=601~615의 내부 설비 경계이지 y=720 프레임 끝이 아니다. GT 면적은 small이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/val/frame_000100.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000100-FN-0-6-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/val-frame_000100-FN-0-6-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "상단 P5에는 장갑 아래 어두운 둥근 갈색 영역과 밝은 가장자리가 보이고 오른쪽 P4 감자와는 위치가 다르다. 장갑과 대상 경계 및 원본 상단 너머 연속성이 불분명하여 가림·프레임 절단은 unknown이다. 별도 감자 GT 누락 가능성만 남기며 저장 FP를 유지한다.",
+      "error_id": "err-5cd9eb864ae4e5b6c22ae70388077d970f7175cb60b6d82c1e9d5da8eb5c5dcb",
+      "split": "test",
+      "image_id": "frame_000120",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        324.6445617675781,
+        1.5920867919921875,
+        400.8396301269531,
+        56.20451354980469
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 4161.197590082884,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000120.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000120-FP-0-None-5-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000120-FP-0-None-5-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "1230504d3e64271afb2d3f2c94012f99f6167b76445bbcd55755a1d3c7653bc7",
+        "crop_viewport_xyxy_original": [
+          276,
+          0,
+          449,
+          105
+        ],
+        "full_frame_sha256": "6e1a08a649bda8cc8fcfe0c588b881724ab9f967793e45d3488d977824dae67b",
+        "crop_sha256": "0aad6294f5afc825bc0cb25876202f77f3b4ae4b1127ce098c9c725a4565bef2",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "상단 P5에는 장갑 아래 어두운 둥근 갈색 영역과 밝은 가장자리가 보이고 오른쪽 P4 감자와는 위치가 다르다. 장갑과 대상 경계 및 원본 상단 너머 연속성이 불분명하여 가림·프레임 절단은 unknown이다. 별도 감자 GT 누락 가능성만 남기며 저장 FP를 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000120.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000120-FP-0-None-5-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000120-FP-0-None-5-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "P5의 회갈색 세로 물체는 원본 상단에서 이어져 내려오고 둥근 아래 끝이 보인다. 다른 물체가 앞을 덮는 증거는 없다. GT 없는 작은 돌 후보로 보이나 정답 누락 확정 없이 저장 FP를 유지한다.",
+      "error_id": "err-008a11d722d72214d87f52c4a36f5d40e66d5c8898cb68481500886622f7469c",
+      "split": "test",
+      "image_id": "frame_000126",
+      "error_type": "FP",
+      "class_name": "stone",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        513.533203125,
+        0.6126708984375,
+        541.445068359375,
+        29.451416015625
+      ],
+      "size_bin": "small",
+      "area_original_pixels": 804.9431672394276,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000126.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000126-FP-1-None-5-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000126-FP-1-None-5-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "d1ea4ad5a4675b815cc3982bfc65659b8f624ece820e9aea22b6a0f497ab4e0a",
+        "crop_viewport_xyxy_original": [
+          465,
+          0,
+          590,
+          78
+        ],
+        "full_frame_sha256": "3e2621d59f805eb06f86b7eda4ded4595e96f3147504a53f5e6e095511ec5e7d",
+        "crop_sha256": "447b55f3c63ec74406cb2fda867cffcde47053d175f871ba6b1c336a5f51dde1",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P5의 회갈색 세로 물체는 원본 상단에서 이어져 내려오고 둥근 아래 끝이 보인다. 다른 물체가 앞을 덮는 증거는 없다. GT 없는 작은 돌 후보로 보이나 정답 누락 확정 없이 저장 FP를 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000126.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000126-FP-1-None-5-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000126-FP-1-None-5-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "small_or_truncated_target",
+      "reason": "G2에는 상단에 걸린 흐릿한 회백색 조각의 아래쪽만 보인다. 원본 상단에서 물체가 잘리며 오른쪽의 별도 P2 돌과 위치가 다르다. 작은 GT이고 윤곽이 흐려 추가 가림 여부는 unknown이다.",
+      "error_id": "err-d06f2cc4ce8bf7129a1c3ac83dd83d0ad3a4d89c826b3faefa0d5a44578ca4d6",
+      "split": "test",
+      "image_id": "frame_000134",
+      "error_type": "FN",
+      "class_name": "stone",
+      "gt_index": 2,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        415,
+        0,
+        448,
+        18
+      ],
+      "size_bin": "small",
+      "area_original_pixels": 594,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000134.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000134-FN-1-2-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000134-FN-1-2-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "764f32a116813462e86816211c2c12c4226d12f8df84039246f9e62db2570452",
+        "crop_viewport_xyxy_original": [
+          367,
+          0,
+          496,
+          66
+        ],
+        "full_frame_sha256": "6e52532afe67b708c1d88ae3e2d4b4472f92004a0a5858d49408ca648420fae0",
+        "crop_sha256": "f7d116fcfcdf058916a8d8dc3ed1fbdeaebe56d7cec79b129a9c897696d5c6f2",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G2에는 상단에 걸린 흐릿한 회백색 조각의 아래쪽만 보인다. 원본 상단에서 물체가 잘리며 오른쪽의 별도 P2 돌과 위치가 다르다. 작은 GT이고 윤곽이 흐려 추가 가림 여부는 unknown이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000134.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000134-FN-1-2-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000134-FN-1-2-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "P1에는 상단에서 들어오는 황갈색 세로 타원체와 오른쪽 밝은 장갑 모양 영역이 보인다. 타원체가 실제 원본 상단을 넘어가며 장갑과의 접촉 경계는 흐려 가림은 unknown이다. 감자 GT 누락 가능성만 기록하고 FP를 유지한다.",
+      "error_id": "err-5172e99e29bb547718d0bdbf48e71854e20c9cab5294a306d85d11c5bf84a661",
+      "split": "test",
+      "image_id": "frame_000136",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        395.61334228515625,
+        0.38333892822265625,
+        475.41790771484375,
+        72.00032043457031
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 5715.362086500041,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000136.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000136-FP-0-None-1-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000136-FP-0-None-1-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "c288612f7b0b3b10d4281afe9eaa3b57e2e58fa1b89c3e4d2ba6986572ed8b30",
+        "crop_viewport_xyxy_original": [
+          347,
+          0,
+          524,
+          121
+        ],
+        "full_frame_sha256": "50cc65acbcb5708d392b3f99f76e547bce669ff36992d579a5f7dcee7c2822e5",
+        "crop_sha256": "41a9b2b6f49baabde14b7d1caf733bd1dc92e44743bbc9cc53e234e4b9826c01",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P1에는 상단에서 들어오는 황갈색 세로 타원체와 오른쪽 밝은 장갑 모양 영역이 보인다. 타원체가 실제 원본 상단을 넘어가며 장갑과의 접촉 경계는 흐려 가림은 unknown이다. 감자 GT 누락 가능성만 기록하고 FP를 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/retraining_data/outputs/dataset_v2/images/test/frame_000136.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000136-FP-0-None-1-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/test-frame_000136-FP-0-None-1-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0는 왼쪽 붉은 설비 앞의 회색 니트 장갑 주먹을 둘러싼다. 손가락 굴곡과 직물 조직이 보이고 별도 감자는 식별되지 않는다. 대상 감자를 상정하지 않아 가림·절단은 적용하지 않는다.",
+      "error_id": "err-4e6126d976ae25cd04fe1b082ff5af0af9fb76fb64c3f70b14cf065b51927bf9",
+      "split": "external",
+      "image_id": "extra2_t000002000ms_f000030",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        0.6968994140625,
+        66.87112426757812,
+        135.80841064453125,
+        243.08038330078125
+      ],
+      "size_bin": "large",
+      "area_original_pixels": 23807.8992807772,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000002000ms_f000030.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000002000ms_f000030-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000002000ms_f000030-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "33f1b0551705c7ae56e2815425526074e31c42b70e6afc5b1b21fd59d45e343a",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          242,
+          349
+        ],
+        "full_frame_sha256": "9f8e859f4faa1a96a3c8356652f5fd74d48240b23bf50c54ff90dceb9af410c9",
+        "crop_sha256": "901dfea2a321edae196618ea13f77559983af947ba3492b4e7a58bbba6891eef",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 왼쪽 붉은 설비 앞의 회색 니트 장갑 주먹을 둘러싼다. 손가락 굴곡과 직물 조직이 보이고 별도 감자는 식별되지 않는다. 대상 감자를 상정하지 않아 가림·절단은 적용하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000002000ms_f000030.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000002000ms_f000030-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000002000ms_f000030-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0는 왼쪽 붉은 프레임 앞의 흐릿한 장갑 주먹이다. 오른쪽에 접힌 손가락 모양이 있고 크롭 안에 별도 감자 윤곽은 없다. 장갑이 프레임에 걸린 사실을 감자 절단으로 세지 않는다.",
+      "error_id": "err-d577490320d25f4009766f514c2df7c232aa2580697520acd6d68dc6338f517b",
+      "split": "external",
+      "image_id": "extra2_t000009000ms_f000135",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.305816650390625,
+        98.38199615478516,
+        124.43603515625,
+        271.4233093261719
+      ],
+      "size_bin": "large",
+      "area_original_pixels": 21306.61470133369,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000009000ms_f000135.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000009000ms_f000135-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000009000ms_f000135-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "2f402cba000e9f950fd86957bcc0877eb09d4bc342ca3ea5aa276dc5be678087",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          229,
+          376
+        ],
+        "full_frame_sha256": "da8c6063fd7c377fb88bdc633b02c17ec7c024ba35db03cb1231197e3db1c908",
+        "crop_sha256": "77b2772880f31b0f59301160584ecf10b8c2e0840c0269876d449a91b970618a",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 왼쪽 붉은 프레임 앞의 흐릿한 장갑 주먹이다. 오른쪽에 접힌 손가락 모양이 있고 크롭 안에 별도 감자 윤곽은 없다. 장갑이 프레임에 걸린 사실을 감자 절단으로 세지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000009000ms_f000135.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000009000ms_f000135-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000009000ms_f000135-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "G1은 원본 좌하단 붉은 설비와 검은 대각 테두리에 놓인다. 확대해도 붉은 면과 테두리 외 독립 감자를 식별하기 어렵다. 감자 GT 위치에 대한 의문만 기록하며 가림·실제 물체 절단은 판정하지 못한다.",
+      "error_id": "err-a32399389936422e40b26985a723dd3a35f1cd51e6029eab30130ffb1457c4cf",
+      "split": "external",
+      "image_id": "extra2_t000016000ms_f000240",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 1,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.13359615999999797,
+        663.86035152,
+        27.174144,
+        711.6926270399999
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1293.4109344946194,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000016000ms_f000240.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000016000ms_f000240-FN-0-1-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000016000ms_f000240-FN-0-1-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "dd7ce942cfb401e3659398797412f539aaa941bded4d626b148c0f216485e1c6",
+        "crop_viewport_xyxy_original": [
+          0,
+          615,
+          76,
+          720
+        ],
+        "full_frame_sha256": "a3577ac347a3daa27d52aa667f3bb8dbbb159244116d588362516f88b6e264d4",
+        "crop_sha256": "a78a1ae7979d4d648d722dc0b25631ec6a45047f0df6023d7b1a06572ddfcf25",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G1은 원본 좌하단 붉은 설비와 검은 대각 테두리에 놓인다. 확대해도 붉은 면과 테두리 외 독립 감자를 식별하기 어렵다. 감자 GT 위치에 대한 의문만 기록하며 가림·실제 물체 절단은 판정하지 못한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000016000ms_f000240.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000016000ms_f000240-FN-0-1-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000016000ms_f000240-FN-0-1-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "좌하단 G2에는 붉은 세로 설비면과 하단 검은 대각선 띠가 보인다. 중앙의 두 감자와 떨어져 있고 GT 내부에서 별도 감자 표면은 식별되지 않는다. 프레임 근접 좌표만으로 물체 절단을 단정하지 않는다.",
+      "error_id": "err-52c453ae9663444eee36a7c43f6bcf0fa8daf273087fcd22c34f0f6ee6c79924",
+      "split": "external",
+      "image_id": "extra2_t000017000ms_f000255",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 2,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.14458048000000057,
+        667.5209352,
+        26.995535999999998,
+        712.40045184
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1205.057905059737,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000017000ms_f000255.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000017000ms_f000255-FN-0-2-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000017000ms_f000255-FN-0-2-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "3000980d0725a6d4d60d9f2c04ade54f87e9abc009b5fd8d73793506aea4a6b8",
+        "crop_viewport_xyxy_original": [
+          0,
+          619,
+          75,
+          720
+        ],
+        "full_frame_sha256": "ddf61d2dada0ae6bb4857164c7f652a7fc5db376b74888c4a0b97b176157d28c",
+        "crop_sha256": "2c7611aa966cc7434d45ed81d2775e4d06bdd87b461da7d5864e77e410075395",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌하단 G2에는 붉은 세로 설비면과 하단 검은 대각선 띠가 보인다. 중앙의 두 감자와 떨어져 있고 GT 내부에서 별도 감자 표면은 식별되지 않는다. 프레임 근접 좌표만으로 물체 절단을 단정하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000017000ms_f000255.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000017000ms_f000255-FN-0-2-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000017000ms_f000255-FN-0-2-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "좌하단 G2의 확대 영역에는 붉은 면의 음영과 검은 이음부가 보인다. 중앙 컨베이어 위 감자와 별개 위치이며 이 GT 안의 감자는 확인되지 않는다. 대상 존재와 경계가 불확실하여 가림·절단 모두 unknown이다.",
+      "error_id": "err-4e36448ff2080c4aff89d3569b4b8fe5b2d4a0697440db7333eceec40a9c4557",
+      "split": "external",
+      "image_id": "extra2_t000018000ms_f000270",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 2,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.09297983999999815,
+        656.6600343599999,
+        29.858848639999998,
+        700.10449236
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1293.162036915112,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000018000ms_f000270.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000018000ms_f000270-FN-0-2-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000018000ms_f000270-FN-0-2-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "49bf420e82dc076b574e34fdcf4f7892286fdc6b29bdce0aed73e11d196f8748",
+        "crop_viewport_xyxy_original": [
+          0,
+          608,
+          78,
+          720
+        ],
+        "full_frame_sha256": "c78640b2a01513d1c724e6f8e8b1a5853eb43687fafdbd1ed635fed8c6e6765f",
+        "crop_sha256": "b03dcde75347bccc3128bc03b3d4c271282b153d31bdf7affd0ecd1287b812e4",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌하단 G2의 확대 영역에는 붉은 면의 음영과 검은 이음부가 보인다. 중앙 컨베이어 위 감자와 별개 위치이며 이 GT 안의 감자는 확인되지 않는다. 대상 존재와 경계가 불확실하여 가림·절단 모두 unknown이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000018000ms_f000270.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000018000ms_f000270-FN-0-2-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000018000ms_f000270-FN-0-2-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 12,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "G0는 좌하단 붉은 프레임의 둥근 음영과 검은 대각 테두리를 포함한다. 감자로 구분되는 독립 윤곽은 없으며 우측 컨베이어 감자와도 떨어져 있다. GT 위치 의심을 잠정 기록하되 FN과 원본 GT를 그대로 둔다.",
+      "error_id": "err-cde87f72a63abb320b794d98798eac6cee5681dd5660455d1f4265a00d6d450d",
+      "split": "external",
+      "image_id": "extra2_t000021000ms_f000315",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.0923859199999999,
+        654.15844728,
+        30.3611488,
+        697.53491208
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1312.9519276038668,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000021000ms_f000315.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000021000ms_f000315-FN-0-0-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000021000ms_f000315-FN-0-0-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "dfaf3573b79ce0eea8d5899d44b161869ff2a32b3c698e73d2fa410981d28c1c",
+        "crop_viewport_xyxy_original": [
+          0,
+          606,
+          79,
+          720
+        ],
+        "full_frame_sha256": "0e7fd42a6b43d0e19e40cc7fdc85324eabeb8973021806c8372e34214d2d990c",
+        "crop_sha256": "98ab20590be5f8f06f313d25bcabdc9efcbf27a89201eb35a2e5e67ead41e484",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G0는 좌하단 붉은 프레임의 둥근 음영과 검은 대각 테두리를 포함한다. 감자로 구분되는 독립 윤곽은 없으며 우측 컨베이어 감자와도 떨어져 있다. GT 위치 의심을 잠정 기록하되 FN과 원본 GT를 그대로 둔다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000021000ms_f000315.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000021000ms_f000315-FN-0-0-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000021000ms_f000315-FN-0-0-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 13,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "좌하단 G1은 붉은 설비 표면과 아래 검은 대각 테두리에 걸린다. 크롭에서 붉은 질감만 이어지고 감자 고유 윤곽은 구분되지 않는다. 박스가 왼쪽에 닿는 것만으로 실제 감자 절단을 확정하지 않는다.",
+      "error_id": "err-51da05eaa26bbdaf7e98de1d211a063c237ea5fd300a620a156a47a3ead6a7d1",
+      "split": "external",
+      "image_id": "extra2_t000028000ms_f000420",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 1,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.324014720000001,
+        671.69873016,
+        26.12432832,
+        713.7924803999999
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1086.0319567920742,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000028000ms_f000420.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000028000ms_f000420-FN-0-1-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000028000ms_f000420-FN-0-1-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "0478d242e8569c908f6ced37256a57b77e302a2093d0e6dbe42a5ff1352dc74f",
+        "crop_viewport_xyxy_original": [
+          0,
+          623,
+          75,
+          720
+        ],
+        "full_frame_sha256": "895f56de742818881508930862b6d3b100f8c907e81ada3f4d85fd6ccd647cef",
+        "crop_sha256": "ce8206c4e5c05998567d0e7f2057c82e8c3d6e13b9f04728a2f100a8c6556c26",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌하단 G1은 붉은 설비 표면과 아래 검은 대각 테두리에 걸린다. 크롭에서 붉은 질감만 이어지고 감자 고유 윤곽은 구분되지 않는다. 박스가 왼쪽에 닿는 것만으로 실제 감자 절단을 확정하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000028000ms_f000420.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000028000ms_f000420-FN-0-1-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000028000ms_f000420-FN-0-1-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 14,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "좌하단 G0 안에는 붉은 설비의 어두운 둥근 자국과 하단 검은 띠가 있다. 별도 감자 식별 근거가 부족하여 주석 위치의 가능성 문제로 남긴다. 가림·물체 절단은 unknown이며 FN은 유지한다.",
+      "error_id": "err-b2dd7060503d071eb7ee711fd91692c85ea15cf65055364fb94116b9c381ac4f",
+      "split": "external",
+      "image_id": "extra2_t000029000ms_f000435",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        0.10066944000000078,
+        660.66320808,
+        27.6867712,
+        707.0504148
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1279.6422049400755,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000029000ms_f000435.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000029000ms_f000435-FN-0-0-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000029000ms_f000435-FN-0-0-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "23f3572b3d4abd4707357c839e80dab9506c94068b20024514aaf9a20ee46d4a",
+        "crop_viewport_xyxy_original": [
+          0,
+          612,
+          76,
+          720
+        ],
+        "full_frame_sha256": "df2dd8207a9daf69248d4c89f1d588ed0ab42a89b130d18b4501fd8eeddf2883",
+        "crop_sha256": "f354e153ef19f5f3b0b470797a3a1038113ac72212fa1818e8a38471222017b3",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌하단 G0 안에는 붉은 설비의 어두운 둥근 자국과 하단 검은 띠가 있다. 별도 감자 식별 근거가 부족하여 주석 위치의 가능성 문제로 남긴다. 가림·물체 절단은 unknown이며 FN은 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000029000ms_f000435.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000029000ms_f000435-FN-0-0-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000029000ms_f000435-FN-0-0-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 15,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "reason": "G0의 밝은 세로 덩어리는 하단 검은 이송판 바로 위에 있고 수평 롤러와 흐린 물체 흔적이 겹친다. 아래 윤곽이 흐려 실제 설비 가림과 영상 흐림을 구분하기 어려우므로 가림은 unknown이다. 원본 프레임 내부이며 medium이고 실패 원인과 대상 식별 확정은 하지 않는다.",
+      "error_id": "err-61d76b7db6a9af81365e883af194b7571f1f23672012f6dc747bb824ebecaec5",
+      "split": "external",
+      "image_id": "extra2_t000037000ms_f000555",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        446.15582208,
+        543.84375024,
+        510.96673536000003,
+        620.09423856
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 4941.863786065178,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000037000ms_f000555.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000037000ms_f000555-FN-0-0-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000037000ms_f000555-FN-0-0-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "f96f7f53073eb5e41d4534e9746ee2a1485831d53973d9be3463b1c9f9841097",
+        "crop_viewport_xyxy_original": [
+          398,
+          495,
+          559,
+          669
+        ],
+        "full_frame_sha256": "e8f9fcf3e5f44bbaee8b3c77e7acd69f324583b046a759a20f9135cbb18a8e20",
+        "crop_sha256": "befb3812a963f12d6183960c53fc7093815685055b59e88aeb605347ab1a9b38",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G0의 밝은 세로 덩어리는 하단 검은 이송판 바로 위에 있고 수평 롤러와 흐린 물체 흔적이 겹친다. 아래 윤곽이 흐려 실제 설비 가림과 영상 흐림을 구분하기 어려우므로 가림은 unknown이다. 원본 프레임 내부이며 medium이고 실패 원인과 대상 식별 확정은 하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000037000ms_f000555.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000037000ms_f000555-FN-0-0-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000037000ms_f000555-FN-0-0-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 16,
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "상단 우측 P2에는 흰 윗면과 갈색 아랫면의 둥근 감자 유사 물체가 보이며 오른쪽 장갑의 붉은 손가락이 앞을 가로질러 일부를 덮는다. 원본에서도 쥔 물체와 손의 겹침이 보이고 프레임 내부이다. 별도 감자 GT 누락 가능성만 기록하며 FP는 유지한다.",
+      "error_id": "err-ca5c75c7395d12ddb4e6c6d943c1d755a566e5c1ee3e613e926c07ed14aeaa34",
+      "split": "external",
+      "image_id": "extra2_t000040000ms_f000600",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        709.2698974609375,
+        15.331893920898438,
+        789.3636474609375,
+        107.52626037597656
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 7384.192538261414,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000040000ms_f000600.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000040000ms_f000600-FP-0-None-2-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000040000ms_f000600-FP-0-None-2-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "07d06e7adafb7c166cec3f6ea226613365759dcb2d7eeb8d1ca70c860c1c8b39",
+        "crop_viewport_xyxy_original": [
+          653,
+          0,
+          845,
+          163
+        ],
+        "full_frame_sha256": "83d29dc09c431bbeabd98c6c06adb746c9700de777efa64c715be3bdab61533a",
+        "crop_sha256": "b5d0fb12e23d01161373faa5265f939b86cf3ac916a8b2182b20f43e6ddf38e0",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "상단 우측 P2에는 흰 윗면과 갈색 아랫면의 둥근 감자 유사 물체가 보이며 오른쪽 장갑의 붉은 손가락이 앞을 가로질러 일부를 덮는다. 원본에서도 쥔 물체와 손의 겹침이 보이고 프레임 내부이다. 별도 감자 GT 누락 가능성만 기록하며 FP는 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000040000ms_f000600.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000040000ms_f000600-FP-0-None-2-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000040000ms_f000600-FP-0-None-2-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 17,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P2의 흰 낮은 덩어리는 하단 검은 이송판 위쪽, 오른쪽 감자 P1의 왼편에 있다. 위쪽의 흰 비감자성 조각과 함께 보이고 황갈색 감자 표면과 다르다. 하단 경계는 흐려 가림은 unknown이며 프레임 내부이다.",
+      "error_id": "err-3c3536f080db4b4a4c2ebb898ea90fe458495dd3f093d0bffe8560317de2e0f6",
+      "split": "external",
+      "image_id": "extra2_t000049000ms_f000735",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        359.639892578125,
+        591.0872192382812,
+        422.1583251953125,
+        621.2274780273438
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1884.3217381685972,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000049000ms_f000735.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000049000ms_f000735-FP-0-None-2-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000049000ms_f000735-FP-0-None-2-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "5e3d0c9a43723087397c1d6ba2e9c0f6bbaef0059eccb0ab631e7588000ce71b",
+        "crop_viewport_xyxy_original": [
+          311,
+          543,
+          471,
+          670
+        ],
+        "full_frame_sha256": "1d1846ed0a6ea5e718d8a48fa2266244aa6bdaa1b20fd817ef7bd38485b26826",
+        "crop_sha256": "57634c273adc05af1d4c26817e3ddeb1f5005a13f5936b83f06ea028be2c9390",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P2의 흰 낮은 덩어리는 하단 검은 이송판 위쪽, 오른쪽 감자 P1의 왼편에 있다. 위쪽의 흰 비감자성 조각과 함께 보이고 황갈색 감자 표면과 다르다. 하단 경계는 흐려 가림은 unknown이며 프레임 내부이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000049000ms_f000735.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000049000ms_f000735-FP-0-None-2-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000049000ms_f000735-FP-0-None-2-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 18,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P2는 중앙 왼쪽의 매끈한 흰 회색 타원형 돌 유사 물체를 둘러싼다. 위왼쪽에는 별도 각진 흰 조각이 있고 대상 아래에는 어두운 윤곽과 롤러가 보이지만 명확히 앞을 덮는 물체는 없다. 프레임 내부이며 외부 돌은 NOT_SCORED이다. 감자 FP를 돌 TP로 재분류하지 않는다.",
+      "error_id": "err-0ebc3023eb2488c5d56ccb8d0c1440c99163cc1f95c8d2b4530628e046a45cbc",
+      "split": "external",
+      "image_id": "extra2_t000050000ms_f000750",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        327.3830261230469,
+        362.4453430175781,
+        404.4056091308594,
+        435.1481628417969
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 5599.758974812925,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000050000ms_f000750.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000050000ms_f000750-FP-0-None-2-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000050000ms_f000750-FP-0-None-2-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "8096162dcf5bb98d37f787dec00803533b8b6665c8f3491756614d9e2245dbbf",
+        "crop_viewport_xyxy_original": [
+          279,
+          314,
+          453,
+          484
+        ],
+        "full_frame_sha256": "0695650370cb4774bd07387b4f0f59f2abb880e5c74daad044a030d7806446d1",
+        "crop_sha256": "3e605a6e23f062622abc357d45fe07628e976b21a1ed7cf4bfe8c71ffb5860b0",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P2는 중앙 왼쪽의 매끈한 흰 회색 타원형 돌 유사 물체를 둘러싼다. 위왼쪽에는 별도 각진 흰 조각이 있고 대상 아래에는 어두운 윤곽과 롤러가 보이지만 명확히 앞을 덮는 물체는 없다. 프레임 내부이며 외부 돌은 NOT_SCORED이다. 감자 FP를 돌 TP로 재분류하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000050000ms_f000750.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000050000ms_f000750-FP-0-None-2-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000050000ms_f000750-FP-0-None-2-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 19,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "reason": "상단 G0는 짙은 갈색 세로 덩어리의 일부에 놓이고 위오른쪽 흰 장갑 모양 영역과 붙어 있다. 크롭에서 직물과 감자 표면의 경계가 흐려 대상 가림을 확정할 수 없다. GT 자체는 프레임 내부이며 medium이다.",
+      "error_id": "err-e489c24893a5053f45f3de4c7f414ffbf0aa6ef708f118352a85d6a25defada6",
+      "split": "external",
+      "image_id": "extra2_t000052000ms_f000780",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        363.72023872,
+        19.73586348,
+        405.74404799999996,
+        61.815476520000004
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1768.3456329691599,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000052000ms_f000780.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000052000ms_f000780-FN-0-0-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000052000ms_f000780-FN-0-0-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "ed6a8558ddbca01cc8efa3cc510ad7d8cb4d01652b8e5dbdedcbf85aea56b89e",
+        "crop_viewport_xyxy_original": [
+          315,
+          0,
+          454,
+          110
+        ],
+        "full_frame_sha256": "8c12c03fdca2197ebc4aa36b8e9c771a2e7613044325f384896a05327d788235",
+        "crop_sha256": "99c352326d1882fddce6b4ae2d0ac396b75a5100db5d08bb4cd8d34b03deb71d",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "상단 G0는 짙은 갈색 세로 덩어리의 일부에 놓이고 위오른쪽 흰 장갑 모양 영역과 붙어 있다. 크롭에서 직물과 감자 표면의 경계가 흐려 대상 가림을 확정할 수 없다. GT 자체는 프레임 내부이며 medium이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000052000ms_f000780.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000052000ms_f000780-FN-0-0-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000052000ms_f000780-FN-0-0-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 20,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0는 원본 좌상단의 회색 니트 장갑 주먹이다. 접힌 손가락의 가로 홈과 직물 표면이 확대에서 뚜렷하다. 별도 감자는 없고 장갑이 원본 끝에 잘려도 감자 프레임 절단으로 기록하지 않는다.",
+      "error_id": "err-fa7da88981e694bd028f935e36ee31cc64095f53373269e0765818e0db17f94e",
+      "split": "external",
+      "image_id": "extra2_t000057000ms_f000855",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.28228759765625,
+        3.0770301818847656,
+        133.02459716796875,
+        104.632568359375
+      ],
+      "size_bin": "large",
+      "area_original_pixels": 13379.161149158608,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000057000ms_f000855.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000057000ms_f000855-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000057000ms_f000855-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "4dd01aed8a71dd09b142390fc18bd7b5a61af6f92e213595ff15fd4584cde446",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          213,
+          184
+        ],
+        "full_frame_sha256": "71f115a2ef480a3afd0a2014483d80c78b787e746b1bbb69b6c8ebd95d132a44",
+        "crop_sha256": "fc4a392433768588aef641ea2899fe2aa0764be8ff4c676e424487df4fd0a3d9",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 원본 좌상단의 회색 니트 장갑 주먹이다. 접힌 손가락의 가로 홈과 직물 표면이 확대에서 뚜렷하다. 별도 감자는 없고 장갑이 원본 끝에 잘려도 감자 프레임 절단으로 기록하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000057000ms_f000855.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000057000ms_f000855-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000057000ms_f000855-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 21,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P1은 컨베이어 왼쪽 아래의 청백색 길쭉한 돌 유사 물체다. 윗면이 밝고 아래가 짙으며 주변 황갈색 감자와 색·형태가 다르다. 앞을 덮는 물체나 원본 경계 절단은 보이지 않는다. 외부 감자 FP 상태를 유지한다.",
+      "error_id": "err-00a825d25a8298940f7a3129c987d90e7cab2b6a35a42946692650566c4f2e2a",
+      "split": "external",
+      "image_id": "extra2_t000060000ms_f000900",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        368.7939453125,
+        468.7822265625,
+        433.4443359375,
+        563.8170166015625
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 6144.03629899025,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000060000ms_f000900.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000060000ms_f000900-FP-0-None-1-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000060000ms_f000900-FP-0-None-1-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "750357ce37d248d6f6167b48a163949e0a242c4e9528d43960fa6b4eb368ed5e",
+        "crop_viewport_xyxy_original": [
+          311,
+          411,
+          491,
+          621
+        ],
+        "full_frame_sha256": "d0c11e998c239df835237e8f6c68183eafc71eda5da155924e252084680c83dc",
+        "crop_sha256": "98f28983f91ca0bfc60506993e8ceca6f195a01874c0424069d2513f81e176aa",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P1은 컨베이어 왼쪽 아래의 청백색 길쭉한 돌 유사 물체다. 윗면이 밝고 아래가 짙으며 주변 황갈색 감자와 색·형태가 다르다. 앞을 덮는 물체나 원본 경계 절단은 보이지 않는다. 외부 감자 FP 상태를 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000060000ms_f000900.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000060000ms_f000900-FP-0-None-1-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000060000ms_f000900-FP-0-None-1-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 22,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "reason": "G0는 왼쪽 레일 옆의 흰 윗면과 갈색 아랫면을 가진 덩어리다. 위오른쪽에 별도 각진 흰 물체가 있으며 아래 P0의 청백색 돌 유사 물체와도 분리되어 있다. 앞을 가리는 물체나 원본 경계 절단은 보이지 않지만 흐림과 색 대비만으로 GT 대상 성질·실패 이유는 확정하지 않는다.",
+      "error_id": "err-3a1a459bc5bd52c8eef4f90edd24d3431d02ccd1645e85cc2aea1528a19e7b9c",
+      "split": "external",
+      "image_id": "extra2_t000061000ms_f000915",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        280.29592896,
+        96.35448456,
+        334.10086079999996,
+        170.50103783999998
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 3989.4502454013227,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000061000ms_f000915.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FN-0-0-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FN-0-0-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "fcf96f053570891b89f06d898626ea91d847629416042d47cd90a05dc9b79b37",
+        "crop_viewport_xyxy_original": [
+          232,
+          48,
+          383,
+          219
+        ],
+        "full_frame_sha256": "76b526fd5401afa6f763eaeaf883559ac3b7099d48ad88e12626bb6a522ca806",
+        "crop_sha256": "27da69bee40092f6b08f3615293ec819a4f2f58ccb7e583e617aa1598e213c49",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G0는 왼쪽 레일 옆의 흰 윗면과 갈색 아랫면을 가진 덩어리다. 위오른쪽에 별도 각진 흰 물체가 있으며 아래 P0의 청백색 돌 유사 물체와도 분리되어 있다. 앞을 가리는 물체나 원본 경계 절단은 보이지 않지만 흐림과 색 대비만으로 GT 대상 성질·실패 이유는 확정하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000061000ms_f000915.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FN-0-0-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FN-0-0-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 23,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0는 프레임 왼쪽 중앙의 밝은 청백색 세로 타원체다. 위왼쪽 FN G0와 다른 위치이고 감자보다 돌 유사 외관이다. 윤곽 앞을 가리는 물체와 실제 프레임 절단은 보이지 않으며 같은 프레임 FN을 이 FP와 자동 상쇄하지 않는다.",
+      "error_id": "err-bd6eea159f8c73590b6c4282524d636f1b2157d7197ee805ef0521f7ec2e74d1",
+      "split": "external",
+      "image_id": "extra2_t000061000ms_f000915",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        359.44720458984375,
+        211.0930938720703,
+        420.92657470703125,
+        296.12908935546875
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 5227.959439607337,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000061000ms_f000915.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "fcf96f053570891b89f06d898626ea91d847629416042d47cd90a05dc9b79b37",
+        "crop_viewport_xyxy_original": [
+          308,
+          160,
+          472,
+          348
+        ],
+        "full_frame_sha256": "48d8f0be3a31ddddf5cf8f6c6de2334be3d13ce38f7f72c1072f6fd0f9265b2f",
+        "crop_sha256": "7e5256a0d18ecef36ea1828896a24d2357d58a86a0c74ea1706b984dee3fd03f",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 프레임 왼쪽 중앙의 밝은 청백색 세로 타원체다. 위왼쪽 FN G0와 다른 위치이고 감자보다 돌 유사 외관이다. 윤곽 앞을 가리는 물체와 실제 프레임 절단은 보이지 않으며 같은 프레임 FN을 이 FP와 자동 상쇄하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000061000ms_f000915.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": 22
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000061000ms_f000915-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 24,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P4는 좌상단 붉은 설비 앞 장갑 주먹이며 가로로 접힌 손가락과 니트 질감이 보인다. 컨베이어 감자들은 오른쪽 아래 별도 위치다. 장갑 안에 보이지 않는 감자를 상정하지 않는다.",
+      "error_id": "err-b457b6c272ca8cf70181f68537e54e9257e2f43a754486e5fb042f854322c0d1",
+      "split": "external",
+      "image_id": "extra2_t000064000ms_f000960",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        1.57623291015625,
+        6.7239227294921875,
+        131.72280883789062,
+        110.78056335449219
+      ],
+      "size_bin": "large",
+      "area_original_pixels": 13542.615479886532,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000064000ms_f000960.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000064000ms_f000960-FP-0-None-4-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000064000ms_f000960-FP-0-None-4-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "6c906e86b79e1c1aa4c5905ff1a33629b9162302e35c7fadf7a162110af70208",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          210,
+          189
+        ],
+        "full_frame_sha256": "231649b0ada37f8ff316438779007a8be85e818a86c10c77958d11293c2c63d7",
+        "crop_sha256": "ef05952921d0814e7819c0302f52bed73a5a56e4b0873cda7f6257f5488acfb5",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P4는 좌상단 붉은 설비 앞 장갑 주먹이며 가로로 접힌 손가락과 니트 질감이 보인다. 컨베이어 감자들은 오른쪽 아래 별도 위치다. 장갑 안에 보이지 않는 감자를 상정하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000064000ms_f000960.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000064000ms_f000960-FP-0-None-4-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000064000ms_f000960-FP-0-None-4-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 25,
+      "visible_occlusion": "yes",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "P4에는 하단 이송판 바로 위의 작은 황갈색 초승달 모양 노출부가 보인다. 위쪽 롤러와 아래 이송판 사이에 끼어 아래 윤곽이 가려져 있다. 별도 감자 일부의 GT 누락 가능성이나 확정하지 않으며 medium 예측을 small로 바꾸지 않는다.",
+      "error_id": "err-dfaed331d1440a6f8254f04ef8fbbaa8e9ab515f051c7cfe6ac7eaf73bf2a7cd",
+      "split": "external",
+      "image_id": "extra2_t000068000ms_f001020",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        519.1201171875,
+        596.2382202148438,
+        573.1103515625,
+        621.7044067382812
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1374.925379037857,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000068000ms_f001020.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000068000ms_f001020-FP-0-None-4-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000068000ms_f001020-FP-0-None-4-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "c6aa685e3a9bfce62c1e397a543ef59a431b34b04eef506ebc62c28890b65277",
+        "crop_viewport_xyxy_original": [
+          471,
+          548,
+          622,
+          670
+        ],
+        "full_frame_sha256": "3a9c12231ce10c20512cd60c893f292a3bdc8c7ef68a565361cd71fef39d68e6",
+        "crop_sha256": "c3590d87adc59c2589c24dace2056bb7caee32f9caa461a5bdc5f75d3b9e2574",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P4에는 하단 이송판 바로 위의 작은 황갈색 초승달 모양 노출부가 보인다. 위쪽 롤러와 아래 이송판 사이에 끼어 아래 윤곽이 가려져 있다. 별도 감자 일부의 GT 누락 가능성이나 확정하지 않으며 medium 예측을 small로 바꾸지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000068000ms_f001020.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000068000ms_f001020-FP-0-None-4-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000068000ms_f001020-FP-0-None-4-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 26,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P5는 상단의 붉은 장갑 손가락 모양 부분으로 왼쪽 감자 P0의 오른쪽에 있다. 붉은 세로 조직은 위쪽 손 영역으로 이어지며 별도 황갈색 감자 윤곽이 없다. 인접 P0와 박스가 조금 닿아도 동일 개체 중복 근거는 아니다.",
+      "error_id": "err-0fa29651fec663da8d3c5daff1e647cc7162842382302ace2a319da21a73a27d",
+      "split": "external",
+      "image_id": "extra2_t000070000ms_f001050",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        519.783203125,
+        2.5249462127685547,
+        560.9365234375,
+        44.61134338378906
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1731.9949835781008,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000070000ms_f001050.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000070000ms_f001050-FP-0-None-5-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000070000ms_f001050-FP-0-None-5-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "c43c3259440cf3e925c23f9cd948b5c547c46d3f26a709976a418fa54a1a3acc",
+        "crop_viewport_xyxy_original": [
+          471,
+          0,
+          609,
+          93
+        ],
+        "full_frame_sha256": "4edf415c335b41622e28550b3bd8af3d9e9bfde2ae2a2523f5479fd0f897db59",
+        "crop_sha256": "5b7359fa0d0d4b78b45d101007645eda6cb263f6dd762c210094c405b93db3a6",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P5는 상단의 붉은 장갑 손가락 모양 부분으로 왼쪽 감자 P0의 오른쪽에 있다. 붉은 세로 조직은 위쪽 손 영역으로 이어지며 별도 황갈색 감자 윤곽이 없다. 인접 P0와 박스가 조금 닿아도 동일 개체 중복 근거는 아니다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000070000ms_f001050.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000070000ms_f001050-FP-0-None-5-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000070000ms_f001050-FP-0-None-5-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 27,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0는 좌상단 장갑의 아래쪽 둥근 손가락 끝과 붉은 설비 배경이다. 상단에서 장갑이 잘려 들어오지만 식별 가능한 감자는 없다. 감자 가림과 실제 감자 프레임 절단은 적용하지 않는다.",
+      "error_id": "err-6e2d8cc97a2d6a0f27dab12520b29d244aa4c425d238bb3764a5bbaf2ce79c91",
+      "split": "external",
+      "image_id": "extra2_t000076000ms_f001140",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.5443038940429688,
+        0,
+        121.54341125488281,
+        64.98979949951172
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 7798.717927501362,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000076000ms_f001140.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000076000ms_f001140-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000076000ms_f001140-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "d4a40c36b35ec8c1bf09383aab30745af9f330bb60895842109286ada272fbb7",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          194,
+          137
+        ],
+        "full_frame_sha256": "42bb93d6fd1735ad7d25b59e8fbe2e092b44092e54898f09ef88db3240b54450",
+        "crop_sha256": "9efabee561903f666981f5bc984bcd7902c486ba99de72bf9008f531e3a885b0",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 좌상단 장갑의 아래쪽 둥근 손가락 끝과 붉은 설비 배경이다. 상단에서 장갑이 잘려 들어오지만 식별 가능한 감자는 없다. 감자 가림과 실제 감자 프레임 절단은 적용하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000076000ms_f001140.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000076000ms_f001140-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000076000ms_f001140-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 28,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P1은 좌상단 장갑 아래 가장자리이며 손가락 주름과 붉은 설비면이 함께 보인다. 중앙 감자 P0와 공간적으로 분리된 장갑 부위로 별도 감자는 없다. 예측 좌표 x=0,y=0만으로 감자 절단을 부여하지 않는다.",
+      "error_id": "err-3b37e0013e0e4a68e302950ac2cbf4f786e475f660dc1b56a0177f45800770b5",
+      "split": "external",
+      "image_id": "extra2_t000077000ms_f001155",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        0,
+        0,
+        120.50409698486328,
+        67.8515625
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 8176.3912680745125,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000077000ms_f001155.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000077000ms_f001155-FP-0-None-1-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000077000ms_f001155-FP-0-None-1-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "c9fab8d6185692462254f1b5598e50a1979bcf011b691379af089851974c261b",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          193,
+          141
+        ],
+        "full_frame_sha256": "0eb5e6aba5c4bbad5040801aba4f8dd3c54a84fd883a8242393b61caed43994f",
+        "crop_sha256": "37c26e5edde3b71498693637232d51a0107f87305f6490e8918463fa321d0ab8",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P1은 좌상단 장갑 아래 가장자리이며 손가락 주름과 붉은 설비면이 함께 보인다. 중앙 감자 P0와 공간적으로 분리된 장갑 부위로 별도 감자는 없다. 예측 좌표 x=0,y=0만으로 감자 절단을 부여하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000077000ms_f001155.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000077000ms_f001155-FP-0-None-1-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000077000ms_f001155-FP-0-None-1-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 29,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P4는 좌상단 장갑의 접힌 손가락과 둥근 손바닥 아래 부분이다. 중앙 네 감자와 다른 위치이며 회갈색 직물 조직이 보인다. 식별되는 감자가 없어 가림·절단은 not_applicable이다.",
+      "error_id": "err-82dd14e5e66cfd89d3f7b9c6297bffd3952972aa3ca379e3567193524ff66f19",
+      "split": "external",
+      "image_id": "extra2_t000079000ms_f001185",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        1.620208740234375,
+        0,
+        123.13386535644531,
+        69.34246826171875
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 8426.056877274998,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000079000ms_f001185.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000079000ms_f001185-FP-0-None-4-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000079000ms_f001185-FP-0-None-4-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "6c7635d04bdbbb61e81255a097e751fdd0f31523c62c97fd3e72cd0c3047929f",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          197,
+          143
+        ],
+        "full_frame_sha256": "4f3a3257e749a5bfdadc13da8212868f7026695eb83e4a07b5d2b12e2f56ae92",
+        "crop_sha256": "fe879a4fe3819683d4816d3d2ae58368aeec9f7679bb2c346d1c12d6367111f0",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P4는 좌상단 장갑의 접힌 손가락과 둥근 손바닥 아래 부분이다. 중앙 네 감자와 다른 위치이며 회갈색 직물 조직이 보인다. 식별되는 감자가 없어 가림·절단은 not_applicable이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000079000ms_f001185.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000079000ms_f001185-FP-0-None-4-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000079000ms_f001185-FP-0-None-4-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 30,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "yes",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "P0는 상단 중앙 x=520~582의 갈색 물체 아래쪽으로 왼쪽 장갑 및 오른쪽 장갑과 분리되어 있다. 원본에서 이 물체는 실제 상단 너머로 이어져 잘리며 그 앞을 가리는 다른 물체는 보이지 않는다. 감자 일부의 GT 누락 가능성만 기록하며 FP를 유지한다.",
+      "error_id": "err-74aef1d3a23b3366921953d19be2ec1e84416a83ff6bb40f503a9cd47734d5e0",
+      "split": "external",
+      "image_id": "extra2_t000080000ms_f001200",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        520.3190307617188,
+        1.6855411529541016,
+        581.5529174804688,
+        33.087806701660156
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1922.8827713215724,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000080000ms_f001200.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000080000ms_f001200-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000080000ms_f001200-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "d65f8eede3522550559082cef6d3dd19f10bec0b2311f9a1600867bd5a6f6767",
+        "crop_viewport_xyxy_original": [
+          472,
+          0,
+          630,
+          82
+        ],
+        "full_frame_sha256": "4a647baa4ec5fda2cf2055648c2b79e7ff16ed334d73be7b8246d7ec4ff21f8a",
+        "crop_sha256": "72c6ff9211c850efc1c8122352db0139c425e170759e7bf01b3e2648a1791c4c",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 상단 중앙 x=520~582의 갈색 물체 아래쪽으로 왼쪽 장갑 및 오른쪽 장갑과 분리되어 있다. 원본에서 이 물체는 실제 상단 너머로 이어져 잘리며 그 앞을 가리는 다른 물체는 보이지 않는다. 감자 일부의 GT 누락 가능성만 기록하며 FP를 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000080000ms_f001200.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000080000ms_f001200-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000080000ms_f001200-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 31,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "unclear",
+      "reason": "P1은 하단 이송판 위에 납작하게 보이는 흰 회색 영역이다. 수평 롤러의 밝은 띠와 겹쳐 물체의 독립 윤곽 및 감자 여부가 불분명하다. 가림은 unknown, 원본 경계 절단은 없고 배경 오인이나 GT 누락 어느 쪽도 확정하지 않는다.",
+      "error_id": "err-3182a20298eb79c162ea341fc1db2a62b54dfebd0f1acb0543f34886b4459d0d",
+      "split": "external",
+      "image_id": "extra2_t000100000ms_f001500",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 1,
+      "bbox_xyxy_original": [
+        636.5689697265625,
+        579.699951171875,
+        717.8643798828125,
+        621.1351318359375
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 3368.49000698328,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000100000ms_f001500.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000100000ms_f001500-FP-0-None-1-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000100000ms_f001500-FP-0-None-1-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "ffbfa216e75b7c039b51291ba85e1d97777591036c172047c9ac89db7478e2e6",
+        "crop_viewport_xyxy_original": [
+          587,
+          530,
+          767,
+          670
+        ],
+        "full_frame_sha256": "9c1b0ba31ee302187c3aa3eb10724f5d068c593d97b3779640512234d223831f",
+        "crop_sha256": "50dfd86616a08724a47a9fc95e4c9f4054f95c8bc987a1271d85ec18c6d33a72",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P1은 하단 이송판 위에 납작하게 보이는 흰 회색 영역이다. 수평 롤러의 밝은 띠와 겹쳐 물체의 독립 윤곽 및 감자 여부가 불분명하다. 가림은 unknown, 원본 경계 절단은 없고 배경 오인이나 GT 누락 어느 쪽도 확정하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000100000ms_f001500.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000100000ms_f001500-FP-0-None-1-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000100000ms_f001500-FP-0-None-1-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 32,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "좌상단 P0는 장갑의 둥근 아래 끝과 접힌 손가락 줄무늬다. 붉은 세로 프레임 위에 있고 컨베이어 대상과 분리된다. 상단에 걸린 장갑을 감자로 간주하지 않아 가림·절단은 적용하지 않는다.",
+      "error_id": "err-94f85699488bd111296db89e0f566310faa8f2991d1fa62f88aa1b0c4ede730a",
+      "split": "external",
+      "image_id": "extra2_t000104000ms_f001560",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        0,
+        0,
+        107.80587005615234,
+        39.833885192871094
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 4294.326650934352,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000104000ms_f001560.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000104000ms_f001560-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000104000ms_f001560-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "095be9d3099076a230ecdaa10f5ca7c929bb27b00d628768166253931a286a39",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          173,
+          105
+        ],
+        "full_frame_sha256": "33be54e256650fb62ed38b26c75e67fb291c28c528587375fb01d1c0d8642812",
+        "crop_sha256": "297c62870685f413a1d53f6439602564932bc2f15a89a7ac4d713cd4c0bd766e",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌상단 P0는 장갑의 둥근 아래 끝과 접힌 손가락 줄무늬다. 붉은 세로 프레임 위에 있고 컨베이어 대상과 분리된다. 상단에 걸린 장갑을 감자로 간주하지 않아 가림·절단은 적용하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000104000ms_f001560.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000104000ms_f001560-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000104000ms_f001560-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 33,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "좌상단 P5는 장갑의 흐릿한 아래쪽 끝으로 붉은 프레임과 겹친다. 중앙 다섯 개 예측 대상과 달리 니트 질감과 손가락 굴곡이 보인다. 별도 감자 증거가 없어 가림·절단은 not_applicable이다.",
+      "error_id": "err-b4a5b7d2d1019f17fb4d475fcab5061131aab4f6b29688d94f854166d36be913",
+      "split": "external",
+      "image_id": "extra2_t000105000ms_f001575",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 5,
+      "bbox_xyxy_original": [
+        0,
+        0,
+        106.41828155517578,
+        47.1689453125
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 5019.638102926314,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000105000ms_f001575.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000105000ms_f001575-FP-0-None-5-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000105000ms_f001575-FP-0-None-5-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "8af12adab262f54ddc53f07d56c3bab125014a7a3d0e1e88e740c0e660896791",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          171,
+          112
+        ],
+        "full_frame_sha256": "52e56bd682b257d254219d376f6f68628c33adc5d1133b227f128a6ff14d8a91",
+        "crop_sha256": "13f4ad094372ef1b08274837f011a93826a442f2f65dbd8b662ea1d45348daa1",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌상단 P5는 장갑의 흐릿한 아래쪽 끝으로 붉은 프레임과 겹친다. 중앙 다섯 개 예측 대상과 달리 니트 질감과 손가락 굴곡이 보인다. 별도 감자 증거가 없어 가림·절단은 not_applicable이다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000105000ms_f001575.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000105000ms_f001575-FP-0-None-5-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000105000ms_f001575-FP-0-None-5-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 34,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P4에는 좌상단 장갑 손가락 아래쪽과 붉은 설비면이 보인다. 직물의 어두운 가로 접힘이 있으며 중앙 감자와 분리된다. 원본 상단에 걸린 것은 장갑이므로 감자 가림·절단을 부여하지 않는다.",
+      "error_id": "err-e2fb3aad59645e0b8eac1f149bdbec85e78a45ffbf6a8f5732ae7066c7f289d9",
+      "split": "external",
+      "image_id": "extra2_t000106000ms_f001590",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 4,
+      "bbox_xyxy_original": [
+        1.3835220336914062,
+        0,
+        111.00159454345703,
+        50.07263946533203
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 5488.8662236661185,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000106000ms_f001590.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000106000ms_f001590-FP-0-None-4-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000106000ms_f001590-FP-0-None-4-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "b74d7b8ef625f1bf027b969a035ee848a2e322f1755fe7572a5d5b86e791ef6c",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          177,
+          116
+        ],
+        "full_frame_sha256": "dc86c6d7c7651915da9335b45c2f15ed79e8979e27fa9cd714586a7dab14f669",
+        "crop_sha256": "04afb67b74eeb4067dc7a83c6b1ed0d2d6bd42f526e7d1f737d9b59ac0a4d306",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P4에는 좌상단 장갑 손가락 아래쪽과 붉은 설비면이 보인다. 직물의 어두운 가로 접힘이 있으며 중앙 감자와 분리된다. 원본 상단에 걸린 것은 장갑이므로 감자 가림·절단을 부여하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000106000ms_f001590.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000106000ms_f001590-FP-0-None-4-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000106000ms_f001590-FP-0-None-4-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 35,
+      "visible_occlusion": "no",
+      "actual_frame_truncated_object": "no",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0에는 하단 중앙 왼쪽의 밝은 흰 각진 조각이 있다. 위쪽에 별도 회색 각진 조각이 있고 대상은 타원형 황갈색 감자와 다른 불규칙 외관이다. 뚜렷한 앞쪽 가림이나 프레임 절단은 없으며 흰 물체의 정확한 재질은 단정하지 않는다.",
+      "error_id": "err-ffbda571cfdb8f3bd76f4820134ed329144af74ed3b608835ee2778b7dc9e201",
+      "split": "external",
+      "image_id": "extra2_t000109000ms_f001635",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        385.50701904296875,
+        443.94549560546875,
+        465.40679931640625,
+        510.77899169921875
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 5339.9816527962685,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000109000ms_f001635.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000109000ms_f001635-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000109000ms_f001635-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "eaf29dee65519dbcd3d9d9fcf5782ca9fb89906f906144431b9545cebdedb8e2",
+        "crop_viewport_xyxy_original": [
+          337,
+          395,
+          514,
+          559
+        ],
+        "full_frame_sha256": "33cc476f8ddb6869faa505f530e3f0a89eae01af9e29d7a57ca7f9e843ab4976",
+        "crop_sha256": "4de59ed2c8680528b23869e39b4231f6456dd68d3f6f81fe544638d6c33fd0e2",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0에는 하단 중앙 왼쪽의 밝은 흰 각진 조각이 있다. 위쪽에 별도 회색 각진 조각이 있고 대상은 타원형 황갈색 감자와 다른 불규칙 외관이다. 뚜렷한 앞쪽 가림이나 프레임 절단은 없으며 흰 물체의 정확한 재질은 단정하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000109000ms_f001635.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000109000ms_f001635-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000109000ms_f001635-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 36,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "좌상단 P0는 니트 장갑 주먹의 아래쪽이며 오른쪽에 접힌 손가락의 짙은 홈이 보인다. 붉은 설비 배경과 겹치고 중앙에는 별도 감자가 없다. 장갑 외에 대상 감자를 만들지 않고 가림·절단을 적용하지 않는다.",
+      "error_id": "err-04e8e64b9f2bb0fa4d85537a1ee16cb6c45f39854e779a73a9b9216340601d8d",
+      "split": "external",
+      "image_id": "extra2_t000111000ms_f001665",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.433441162109375,
+        1.840118408203125,
+        114.51211547851562,
+        74.77509307861328
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 8247.39024703065,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000111000ms_f001665.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000111000ms_f001665-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000111000ms_f001665-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "abd84ffe4d97cd9069127707d66bd87f3ee344696d97317e1266ccbd18e397aa",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          183,
+          143
+        ],
+        "full_frame_sha256": "8157c89d35ca33ce2ced3cd76abdceaaa5babe3e3a508062d469309b6a988516",
+        "crop_sha256": "3a2743624c23a45d5f4d16efeabcf122e33f0d6e587464d2b1913d66c696481c",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "좌상단 P0는 니트 장갑 주먹의 아래쪽이며 오른쪽에 접힌 손가락의 짙은 홈이 보인다. 붉은 설비 배경과 겹치고 중앙에는 별도 감자가 없다. 장갑 외에 대상 감자를 만들지 않고 가림·절단을 적용하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000111000ms_f001665.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000111000ms_f001665-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000111000ms_f001665-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 37,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P0는 좌상단의 장갑 주먹 아래 부분이다. 세 개의 접힌 손가락 굴곡과 짜인 직물 표면이 보이며 붉은 설비 앞에 놓인다. 감자 윤곽은 식별되지 않아 감자 가림·절단은 적용하지 않는다.",
+      "error_id": "err-5a2384baeae9a884b536b439a5de93f4d50a52de0a59dfb82f741c75730fc210",
+      "split": "external",
+      "image_id": "extra2_t000112000ms_f001680",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 0,
+      "bbox_xyxy_original": [
+        1.3590621948242188,
+        0.8250656127929688,
+        115.63507080078125,
+        72.05712127685547
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 8140.1150060864165,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000112000ms_f001680.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000112000ms_f001680-FP-0-None-0-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000112000ms_f001680-FP-0-None-0-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "af67ff48cbded519b3e5a42b23f89142dee650735d126170a8418104b08294de",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          185,
+          141
+        ],
+        "full_frame_sha256": "bbca141429eff01523e4d09f427ceaa77a44bd06f93ba28801545d230cb3ede4",
+        "crop_sha256": "b9c860b3d1fb49b0b759851a956aab3ce060bf336bfd262ce98b2688eed2a175",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P0는 좌상단의 장갑 주먹 아래 부분이다. 세 개의 접힌 손가락 굴곡과 짜인 직물 표면이 보이며 붉은 설비 앞에 놓인다. 감자 윤곽은 식별되지 않아 감자 가림·절단은 적용하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000112000ms_f001680.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000112000ms_f001680-FP-0-None-0-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000112000ms_f001680-FP-0-None-0-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 38,
+      "visible_occlusion": "not_applicable",
+      "actual_frame_truncated_object": "not_applicable",
+      "background_tags": [
+        "hand_glove",
+        "conveyor_machinery"
+      ],
+      "issue_observation": "background_object",
+      "reason": "P2는 좌상단 회갈색 장갑의 손가락 접힘이며 붉은 프레임 위에 있다. 중앙 P0·P1 감자와 위치가 분리되고 크롭에 별도 감자는 없다. 장갑의 프레임 경계 접촉을 감자 절단으로 해석하지 않는다.",
+      "error_id": "err-1beb32520cc1b66f5f3e0c4e7cca363edc057b1783f71405e33082ce486a56b4",
+      "split": "external",
+      "image_id": "extra2_t000121000ms_f001815",
+      "error_type": "FP",
+      "class_name": "potato",
+      "gt_index": null,
+      "prediction_index": 2,
+      "bbox_xyxy_original": [
+        1.25201416015625,
+        1.3959808349609375,
+        123.2558364868164,
+        74.26382446289062
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 8890.155447308789,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000121000ms_f001815.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000121000ms_f001815-FP-0-None-2-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000121000ms_f001815-FP-0-None-2-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_prediction",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "182d393a3eda6260a5bb24a1e9ada05615230d5a682c47579355b00604d67f98",
+        "crop_viewport_xyxy_original": [
+          0,
+          0,
+          197,
+          148
+        ],
+        "full_frame_sha256": "c5e86a3faa809abccedae34485937c04e2f9d674819480c03c9d276a5d15bbdf",
+        "crop_sha256": "f04dcf5ac078975e01437f39095d2c7970a680ff7c7c87d9d2cf11d9e2591b69",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "P2는 좌상단 회갈색 장갑의 손가락 접힘이며 붉은 프레임 위에 있다. 중앙 P0·P1 감자와 위치가 분리되고 크롭에 별도 감자는 없다. 장갑의 프레임 경계 접촉을 감자 절단으로 해석하지 않는다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000121000ms_f001815.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000121000ms_f001815-FP-0-None-2-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000121000ms_f001815-FP-0-None-2-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    },
+    {
+      "ordinal": 39,
+      "visible_occlusion": "unknown",
+      "actual_frame_truncated_object": "unknown",
+      "background_tags": [
+        "conveyor_machinery"
+      ],
+      "issue_observation": "possible_annotation_issue",
+      "reason": "G0는 원본 좌하단 붉은 프레임의 곡선 음영과 검은 대각 테두리에 놓인다. 확대에서 붉은 페인트 조직과 경계만 보이고 감자는 구분되지 않는다. 대상 존재가 불확실하므로 가림·실제 물체 절단은 unknown이며 기존 FN을 유지한다.",
+      "error_id": "err-e5760024b7ee202f2c153988caf6d3ca33508e57dca2ca8664caa91f269caed2",
+      "split": "external",
+      "image_id": "extra2_t000151000ms_f002265",
+      "error_type": "FN",
+      "class_name": "potato",
+      "gt_index": 0,
+      "prediction_index": null,
+      "bbox_xyxy_original": [
+        6.399999996631323e-7,
+        662.14010772,
+        27.766742400000002,
+        707.53598172
+      ],
+      "size_bin": "medium",
+      "area_original_pixels": 1260.4955103274997,
+      "viewed_paths": [
+        "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000151000ms_f002265.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000151000ms_f002265-FN-0-0-None-source.png",
+        "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000151000ms_f002265-FN-0-0-None-crop.png"
+      ],
+      "evidence": {
+        "target_basis": "stored_GT",
+        "original_size": [
+          1280,
+          720
+        ],
+        "original_source_sha256": "9594f6367df24e7299600c711a735548c7a910dda218e7561506d87375e2d9ea",
+        "crop_viewport_xyxy_original": [
+          0,
+          614,
+          76,
+          720
+        ],
+        "full_frame_sha256": "e67dcac9bbbb6cc3782d4ca45393d667b91299be2cd001806d93b6d38ac2f599",
+        "crop_sha256": "b099f488b386d82982a54d474497d77d4546fe002a60775d9a9442fa5d0d2f8f",
+        "coordinate_rule": "original xyxy; full-frame legend adds 64px y; crop boundary is not original frame boundary",
+        "visual_observation": "G0는 원본 좌하단 붉은 프레임의 곡선 음영과 검은 대각 테두리에 놓인다. 확대에서 붉은 페인트 조직과 경계만 보이고 감자는 구분되지 않는다. 대상 존재가 불확실하므로 가림·실제 물체 절단은 unknown이며 기존 FN을 유지한다."
+      },
+      "view_ledger": [
+        {
+          "kind": "original",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/baseline/external/images/test/extra2_t000151000ms_f002265.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed",
+          "shared_original_with_ordinal": null
+        },
+        {
+          "kind": "full_frame",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000151000ms_f002265-FN-0-0-None-source.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        },
+        {
+          "kind": "crop",
+          "path": "/mnt/c/Users/USER/Desktop/협력/potato/.omo/evidence/potato-p0-20261105/evaluation/error-analysis/ownrenders/external-extra2_t000151000ms_f002265-FN-0-0-None-crop.png",
+          "viewed": true,
+          "review_date": "2026-11-09",
+          "method": "tool.read image attachment displayed"
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "source_and_render_hash_checks": [
+      {
+        "error_id": "err-14c5f92d36cd4ed4296daea00737c5c9c8a27939e706b7d380a06340bdabb4d7",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-f8d5bfcfb18bcc5f28ca0d86ca82eac63cfd6fd95f387c2fc194f2b9f51c6515",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-5cd9eb864ae4e5b6c22ae70388077d970f7175cb60b6d82c1e9d5da8eb5c5dcb",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-008a11d722d72214d87f52c4a36f5d40e66d5c8898cb68481500886622f7469c",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-d06f2cc4ce8bf7129a1c3ac83dd83d0ad3a4d89c826b3faefa0d5a44578ca4d6",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-5172e99e29bb547718d0bdbf48e71854e20c9cab5294a306d85d11c5bf84a661",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-4e6126d976ae25cd04fe1b082ff5af0af9fb76fb64c3f70b14cf065b51927bf9",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-d577490320d25f4009766f514c2df7c232aa2580697520acd6d68dc6338f517b",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-a32399389936422e40b26985a723dd3a35f1cd51e6029eab30130ffb1457c4cf",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-52c453ae9663444eee36a7c43f6bcf0fa8daf273087fcd22c34f0f6ee6c79924",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-4e36448ff2080c4aff89d3569b4b8fe5b2d4a0697440db7333eceec40a9c4557",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-cde87f72a63abb320b794d98798eac6cee5681dd5660455d1f4265a00d6d450d",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-51da05eaa26bbdaf7e98de1d211a063c237ea5fd300a620a156a47a3ead6a7d1",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-b2dd7060503d071eb7ee711fd91692c85ea15cf65055364fb94116b9c381ac4f",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-61d76b7db6a9af81365e883af194b7571f1f23672012f6dc747bb824ebecaec5",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-ca5c75c7395d12ddb4e6c6d943c1d755a566e5c1ee3e613e926c07ed14aeaa34",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-3c3536f080db4b4a4c2ebb898ea90fe458495dd3f093d0bffe8560317de2e0f6",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-0ebc3023eb2488c5d56ccb8d0c1440c99163cc1f95c8d2b4530628e046a45cbc",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-e489c24893a5053f45f3de4c7f414ffbf0aa6ef708f118352a85d6a25defada6",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-fa7da88981e694bd028f935e36ee31cc64095f53373269e0765818e0db17f94e",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-00a825d25a8298940f7a3129c987d90e7cab2b6a35a42946692650566c4f2e2a",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-3a1a459bc5bd52c8eef4f90edd24d3431d02ccd1645e85cc2aea1528a19e7b9c",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-bd6eea159f8c73590b6c4282524d636f1b2157d7197ee805ef0521f7ec2e74d1",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-b457b6c272ca8cf70181f68537e54e9257e2f43a754486e5fb042f854322c0d1",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-dfaed331d1440a6f8254f04ef8fbbaa8e9ab515f051c7cfe6ac7eaf73bf2a7cd",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-0fa29651fec663da8d3c5daff1e647cc7162842382302ace2a319da21a73a27d",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-6e2d8cc97a2d6a0f27dab12520b29d244aa4c425d238bb3764a5bbaf2ce79c91",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-3b37e0013e0e4a68e302950ac2cbf4f786e475f660dc1b56a0177f45800770b5",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-82dd14e5e66cfd89d3f7b9c6297bffd3952972aa3ca379e3567193524ff66f19",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-74aef1d3a23b3366921953d19be2ec1e84416a83ff6bb40f503a9cd47734d5e0",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-3182a20298eb79c162ea341fc1db2a62b54dfebd0f1acb0543f34886b4459d0d",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-94f85699488bd111296db89e0f566310faa8f2991d1fa62f88aa1b0c4ede730a",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-b4a5b7d2d1019f17fb4d475fcab5061131aab4f6b29688d94f854166d36be913",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-e2fb3aad59645e0b8eac1f149bdbec85e78a45ffbf6a8f5732ae7066c7f289d9",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-ffbda571cfdb8f3bd76f4820134ed329144af74ed3b608835ee2778b7dc9e201",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-04e8e64b9f2bb0fa4d85537a1ee16cb6c45f39854e779a73a9b9216340601d8d",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-5a2384baeae9a884b536b439a5de93f4d50a52de0a59dfb82f741c75730fc210",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-1beb32520cc1b66f5f3e0c4e7cca363edc057b1783f71405e33082ce486a56b4",
+        "source": true,
+        "full": true,
+        "crop": true
+      },
+      {
+        "error_id": "err-e5760024b7ee202f2c153988caf6d3ca33508e57dca2ca8664caa91f269caed2",
+        "source": true,
+        "full": true,
+        "crop": true
+      }
+    ],
+    "existing_evidence_baseline_sha256": {
+      "collect-report.md": "0c6fdff8ea845985b1af4db864372a27ae81a4c56f29b35dbbd51f49e412c5d7",
+      "collect.py": "dad80f2fa2f99712c43795d12628f5cfa26809f0aa16450d69c0fb44dc10fd16",
+      "errors.json": "30d697edfd3695b41b77bd6d31a1cfced17a907098a38b01bb08c40c74d825e3",
+      "finalize.py": "a125bab892d38abe1928969e8ee4eac68d56495d77046f9469369786eeed90a7",
+      "observations.json": "4579ef0d68c553aa333708e78fa16fddcf7e3f7902f0eb943668e73e7f6bee4f",
+      "protocol.json": "d4914a282d3da2639b6713bfca2084ffdbf332746650572e8a28fb24b7c4249f",
+      "review_sheets.py": "3d3377c4f68c81487a613d9aadea59f33103499a0bfab9e67073bd88dd412641",
+      "roster-core.json": "202402d2a81423d9eb99db3263dd3e0e94501983c895b6eba5af1b7e7de5b942",
+      "source-hashes.json": "7a579e56b74a223761b4aab66ff5b30d59114b40df280365bec2036033648ff9",
+      "validation.json": "d4c253ad67a85f360a21e243b04cf1931c0c931881409564d58b7a8104d28b87"
+    },
+    "new_inference": false,
+    "new_production_boxes": false,
+    "gt_or_prediction_changes": false,
+    "installs": false,
+    "delegation": false
+  }
+}

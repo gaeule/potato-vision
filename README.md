@@ -75,3 +75,6 @@ Git 도입 검증에서는 기존 파일의 바이트 보존과 승인된 신규
 
 성능표는 기존 동일 장면의 시간 분할과 이미 열람한 외부 자료에 대한 결과다.
 새 촬영 환경의 일반화, 전문가 정답, 배포 준비 완료를 뜻하지 않는다.
+
+상세 진행 상태와 선별된 근거 문서는 [docs/STATUS.md](docs/STATUS.md)에,
+이번 Git 도입의 검사 내역은 [docs/GIT_IMPORT_CHECKS.md](docs/GIT_IMPORT_CHECKS.md)에 정리한다.
