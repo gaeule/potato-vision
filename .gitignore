@@ -1,0 +1,47 @@
+# Track source and documentation by default; add data/config files deliberately.
+*
+!*/
+!*.py
+!*.md
+!*.toml
+!requirements*.txt
+!.gitignore
+!.python-version
+!/baseline/config/train.json
+
+# Local agent state and generated experiments are not repository content.
+/.omo/
+/data/
+/runs/
+/weights/
+**/outputs/
+**/__pycache__/
+**/.venv/
+**/.ruff_cache/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.cache/
+
+# Baseline inputs, predictions, training outputs and review media.
+/baseline/internal/
+/baseline/external/
+/baseline/frames/
+/baseline/evaluations/
+/baseline/inference/
+/baseline/inference_initial_ap/
+/baseline/review/
+/baseline/runs/
+/baseline/selection/
+/baseline/threshold_comparison/
+/label_review/
+/label_review_v2/
+/retraining_data/review/
+/stone_experiment/review/
+
+# Keep secrets and machine-specific files excluded even if extensions change.
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
