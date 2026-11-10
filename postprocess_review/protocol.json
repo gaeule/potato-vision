@@ -1,0 +1,232 @@
+{
+  "checkpoint": "stone_experiment/outputs/selection/selected.pt",
+  "checkpoint_sha256": "06d46e0dc728ffbabf4078f79acaf9d32d809a57a46810acdf39a7927aa2bbd1",
+  "confidence": 0.45,
+  "nms_iou_candidates": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "agnostic_nms": false,
+  "matching_iou": 0.5,
+  "selection": "max validation macroF1; tie max potato recall; then closest to predeclared middle candidate0.5; if equidistant choose largerIoU. Report all equivalent candidates. No production setting changes.",
+  "validation_only_selection": true,
+  "diagnostic_seconds_after_selection": [
+    20,
+    70,
+    78,
+    80,
+    100,
+    130,
+    134
+  ],
+  "draft_confidence": 0.25,
+  "draft_nms": "validation-selected comparison candidate, not globally deployed",
+  "review_requests": [
+    {
+      "second": 1.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 3.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 5.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 7.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 9.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 11.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 13.0,
+      "reason": "hands_background_candidate"
+    },
+    {
+      "second": 15.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 15.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 17.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 19.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 21.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 21.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 23.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 27.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 27.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 29.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 31.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 33.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 33.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 35.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 37.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 39.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 41.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 43.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 43.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 45.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 47.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 47.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 49.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 53.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 55.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 57.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 59.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 61.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 63.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 65.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 65.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 67.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 69.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 69.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 71.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 73.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 75.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 77.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 79.0,
+      "reason": "adjacent_potatoes"
+    },
+    {
+      "second": 81.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 81.5,
+      "reason": "partial_edge"
+    },
+    {
+      "second": 83.0,
+      "reason": "stone_sequence"
+    },
+    {
+      "second": 83.5,
+      "reason": "partial_edge"
+    }
+  ],
+  "review_status": "model_proposal_unreviewed; checked=false; no automatic training inclusion",
+  "x_anylabeling_schema_reference": "CVHub520/X-AnyLabeling v4.2.0 anylabeling/views/labeling/schema.py create_xlabel_template",
+  "retraining": false
+}
